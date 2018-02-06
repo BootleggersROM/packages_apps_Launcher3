@@ -127,6 +127,13 @@ public final class Utilities {
 
     public static final String ALLOW_ROTATION_PREFERENCE_KEY = "pref_allowRotation";
 
+    public static final String KEY_SHOW_SWIPEUP_ARROW = "pref_show_swipeup_arrow";
+
+    public static boolean showSwipeUpIndicator(Context context) {
+        return getPrefs(context).getBoolean(KEY_SHOW_SWIPEUP_ARROW,
+                true);
+    }
+
     public static boolean isPropertyEnabled(String propertyName) {
         return Log.isLoggable(propertyName, Log.VERBOSE);
     }

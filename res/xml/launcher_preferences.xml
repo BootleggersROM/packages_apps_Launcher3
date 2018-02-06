@@ -128,6 +128,12 @@
             android:summary="%s"
             android:title="@string/theme_title" />
 
+        <SwitchPreference
+            android:key="pref_show_swipeup_arrow"
+            android:title="@string/show_swipeup_arrow"
+            android:summary="@string/show_swipeup_arrow_summary"
+            android:defaultValue="true" />
+
         <ListPreference
             android:defaultValue="100"
             android:entries="@array/hotseat_background_names"
