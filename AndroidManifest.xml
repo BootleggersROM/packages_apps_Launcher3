@@ -65,7 +65,6 @@
         android:fullBackupContent="@xml/backupscheme"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:label="@string/derived_app_name"
         android:theme="@style/LauncherTheme"
         android:largeHeap="@bool/config_largeHeap"

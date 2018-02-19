@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="shishu_launcher_app_name">Shishu 家 Launcher</string>
+
     <string name="lean_launcher_app_name">Lean Launcher</string>
 
     <string name="at_a_glance_category">At A Glance</string>
@@ -46,9 +48,13 @@
     <string name="hide_apps_summary">From the app drawer</string>
 
     <string name="lean_github_url">https://github.com/hundeva/Lean-Launcher</string>
+    <string name="shishu_github_url">https://github.com/BootleggersROM/packages_apps_Launcher3</string>
 
-    <string name="about_lean_title">Lean Launcher</string>
-    <string name="about_lean_summary">by hundeva</string>
+    <string name="about_shishu_title">Shishu 家 Launcher</string>
+    <string name="about_shishu_summary">by BootleggersROM</string>
+
+    <string name="about_lean_title">Totally based on Lean Launcher</string>
+    <string name="about_lean_summary">by hundeva (Thank him for all the work and feature, we really love his work)</string>
 
     <string name="about_based_on_title">Based on Rootless Pixel Launcher</string>
     <string name="about_based_on_summary">by Amir Zaidi</string>
@@ -86,7 +92,7 @@
 
     <string name="number_of_columns_title">Grid columns</string>
     <string name="number_of_rows_title">Grid rows</string>
-    <string name="number_of_hotseat_title">Hotseat icons</string>
+    <string name="number_of_hotseat_title">Dock icons</string>
 
     <string name="force_colored_g_icon_title">Force colored G icon</string>
     <string name="force_colored_g_icon_summary">At the bottom search bar</string>
@@ -120,6 +126,14 @@
         <item>extralarge</item>
     </string-array>
 
+    <!-- Our custom preference -->
+    <string name="shishu_preferencecat_ui">Interface</string>
+    <string name="shishu_preferencecat_icons">Icons related</string>
+    <string name="shishu_preferencecat_pixel">Pixel-Related Features</string>
+    <string name="shishu_preferencecat_features">Special Features</string>
+    <string name="shishu_preferencecat_misc">Miscellaneous</string>
+
+    <!-- PreferenceCategories Titles -->
     <string name="companion_app_permission_label">Lean companion permission</string>
     <string name="companion_app_permission_description">Permission to enforce signature protection for companion apps.</string>
 
