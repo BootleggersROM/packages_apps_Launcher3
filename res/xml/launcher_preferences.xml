@@ -564,10 +564,20 @@
         android:title="@string/about">
 
         <Preference
-            android:key="about_lean"
-            android:persistent="false"
+            android:key="about_shishu"
+            android:title="@string/about_shishu_title"
+            android:summary="@string/about_shishu_summary"
+            android:persistent="false" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/shishu_github_url" />
+        </Preference>
+
+        <Preference
+            android:key="about_original_lean"
+            android:title="@string/about_lean_title"
             android:summary="@string/about_lean_summary"
-            android:title="@string/about_lean_title">
+            android:persistent="false" >
             <intent
                 android:action="android.intent.action.VIEW"
                 android:data="@string/lean_github_url" />
@@ -594,7 +604,7 @@
             android:title="@string/app_info_drop_target_label">
             <intent
                 android:action="android.settings.APPLICATION_DETAILS_SETTINGS"
-                android:data="package:com.google.android.apps.nexuslauncher" />
+                android:data="@string/settingsApplicationId" />
         </Preference>
 
         <Preference
