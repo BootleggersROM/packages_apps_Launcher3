@@ -102,7 +102,7 @@
         <activity
             android:name="com.google.android.apps.nexuslauncher.SettingsActivity"
             android:label="@string/settings_button_text"
-            android:theme="@style/SettingsTheme"
+            android:theme="@android:style/Theme.DeviceDefault.Settings"
             android:autoRemoveFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
@@ -114,7 +114,7 @@
             android:name="com.hdeva.launcher.HideAppsActivity"
             android:autoRemoveFromRecents="true"
             android:label="@string/hide_apps_title"
-            android:theme="@style/SettingsTheme" />
+            android:theme="@android:style/Theme.DeviceDefault.Settings" />
 
         <!--
         The settings provider contains Home's data, like the workspace favorites. The permissions
