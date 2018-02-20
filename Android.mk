@@ -38,6 +38,7 @@ LOCAL_SRC_FILES := \
     $(call all-proto-files-under, proto_overrides) \
     $(call all-proto-files-under, proto_pixel)
 
+
 LOCAL_RESOURCE_DIR := \
     $(LOCAL_PATH)/res \
     prebuilts/sdk/current/support/v7/recyclerview/res \
@@ -57,6 +58,7 @@ LOCAL_SDK_VERSION := current
 LOCAL_MIN_SDK_VERSION := 21
 LOCAL_PACKAGE_NAME := Launcher3
 LOCAL_PRIVILEGED_MODULE := true
+LOCAL_CERTIFICATE := platform
 LOCAL_OVERRIDES_PACKAGES := Home Launcher2
 
 LOCAL_FULL_LIBS_MANIFEST_FILES := $(LOCAL_PATH)/AndroidManifest-common.xml
