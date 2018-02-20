@@ -110,7 +110,7 @@
         <activity
             android:name="com.google.android.apps.nexuslauncher.SettingsActivity"
             android:label="@string/lean_settings"
-            android:theme="@style/SettingsTheme"
+            android:theme="@android:style/Theme.DeviceDefault.Settings"
             android:autoRemoveFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -125,7 +125,7 @@
             android:name="com.hdeva.launcher.HideAppsActivity"
             android:autoRemoveFromRecents="true"
             android:label="@string/hide_apps_title"
-            android:theme="@style/SettingsTheme" />
+            android:theme="@android:style/Theme.DeviceDefault.Settings" />
 
         <activity
             android:name="com.hdeva.launcher.IconPackListActivity"
