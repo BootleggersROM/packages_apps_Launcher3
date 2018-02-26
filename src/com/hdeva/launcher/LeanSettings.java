@@ -54,8 +54,8 @@ public class LeanSettings {
 
     private static final boolean SETTINGS_DIRTY_DEFAULT = false;
     private static final boolean LOCK_DESKTOP_DEFAULT = false;
-    private static final String THEME_DEFAULT = "wallpaper";
-    private static final boolean BOTTOM_SEARCH_BAR_DEFAULT = true;
+    private static final String THEME_DEFAULT = "dark";
+    private static final boolean BOTTOM_SEARCH_BAR_DEFAULT = false;
     private static final boolean TOP_SEARCH_BAR_DEFAULT = true;
     private static final boolean PHYSICAL_ANIMATION_DEFAULT = true;
     private static final boolean TRANSPARENT_NAVIGATION_BAR_DEFAULT = false;
