@@ -193,7 +193,7 @@
             <intent
                 android:action="android.intent.action.VIEW"
                 android:targetClass="com.hdeva.launcher.HideAppsActivity"
-                android:targetPackage="@string/xmlApplicationId" />
+                android:targetPackage="com.google.android.apps.nexuslauncher" />
 
         </Preference>
 
@@ -314,7 +314,7 @@
             android:title="@string/app_info_drop_target_label">
             <intent
                 android:action="android.settings.APPLICATION_DETAILS_SETTINGS"
-                android:data="@string/settingsApplicationId" />
+                android:data="package:com.google.android.apps.nexuslauncher" />
         </Preference>
 
     </PreferenceScreen>

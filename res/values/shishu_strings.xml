@@ -133,7 +133,6 @@
     <string name="shishu_preferencecat_features">Special Features</string>
     <string name="shishu_preferencecat_misc">Miscellaneous</string>
 
-<<<<<<< HEAD
     <!-- PreferenceCategories Titles -->
     <string name="companion_app_permission_label">Lean companion permission</string>
     <string name="companion_app_permission_description">Permission to enforce signature protection for companion apps.</string>
