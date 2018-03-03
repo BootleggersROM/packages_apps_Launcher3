@@ -68,9 +68,9 @@
         android:title="@string/search_category">
 
         <SwitchPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="pref_bottom_search_bar"
-            android:persistent="false"
+            android:persistent="true"
             android:summary="@string/bottom_search_bar_summary"
             android:title="@string/bottom_search_bar_title" />
 
