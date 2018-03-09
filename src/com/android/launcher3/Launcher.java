@@ -47,6 +47,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Point;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -138,6 +139,7 @@ import com.android.launcher3.widget.WidgetAddFlowHandler;
 import com.android.launcher3.widget.WidgetHostViewLoader;
 import com.android.launcher3.widget.WidgetsContainerView;
 import com.hdeva.launcher.LeanSettings;
+import com.hdeva.launcher.LeanUtils;
 
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
@@ -1687,6 +1689,12 @@ public class Launcher extends BaseActivity
         }
         super.onNewIntent(intent);
 
+        boolean wasInWidgetResize = false;
+        boolean wasTopOpenView = false;
+        boolean workspaceChanged = false;
+        boolean wasOnDefaultPage = mWorkspace.isOnDefaultPage();
+        boolean wasInSpringMode = false;
+
         boolean alreadyOnHome = mHasFocus && ((intent.getFlags() &
                 Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT)
                 != Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
@@ -1707,9 +1715,11 @@ public class Launcher extends BaseActivity
             UserEventDispatcher ued = getUserEventDispatcher();
 
             // TODO: Log this case.
+            wasInWidgetResize = mWorkspace.isInWidgetResize();
             mWorkspace.exitWidgetResizeMode();
 
             AbstractFloatingView topOpenView = AbstractFloatingView.getTopOpenView(this);
+            wasTopOpenView = topOpenView != null;
             if (topOpenView instanceof PopupContainerWithArrow) {
                 ued.logActionCommand(Action.Command.HOME_INTENT,
                         topOpenView.getExtendedTouchView(), ContainerType.DEEPSHORTCUTS);
@@ -1723,12 +1733,12 @@ public class Launcher extends BaseActivity
 
             // In all these cases, only animate if we're already on home
             AbstractFloatingView.closeAllOpenViews(this, alreadyOnHome);
-            exitSpringLoadedDragMode();
+            wasInSpringMode = exitSpringLoadedDragMode();
 
             // If we are already on home, then just animate back to the workspace,
             // otherwise, just wait until onResume to set the state back to Workspace
             if (alreadyOnHome) {
-                showWorkspace(true);
+                workspaceChanged = showWorkspace(true);
             } else {
                 mOnResumeState = State.WORKSPACE;
             }
@@ -1754,7 +1764,7 @@ public class Launcher extends BaseActivity
                 mLauncherCallbacks.onHomeIntent();
             }
         }
-        PinItemDragListener.handleDragRequest(this, intent);
+        boolean dragHandled = PinItemDragListener.handleDragRequest(this, intent);
 
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.onNewIntent(intent);
@@ -1763,6 +1773,7 @@ public class Launcher extends BaseActivity
         // Defer moving to the default screen until after we callback to the LauncherCallbacks
         // as slow logic in the callbacks eat into the time the scroller expects for the snapToPage
         // animation.
+        boolean movedToDefaultScreen = false;
         if (isActionMain) {
             boolean callbackAllowsMoveToDefaultScreen =
                 mLauncherCallbacks == null || mLauncherCallbacks
@@ -1773,6 +1784,9 @@ public class Launcher extends BaseActivity
                 // We use this flag to suppress noisy callbacks above custom content state
                 // from onResume.
                 mMoveToDefaultScreenFromNewIntent = true;
+                if (mWorkspace != null) {
+                    movedToDefaultScreen = true;
+                }
                 mWorkspace.post(new Runnable() {
                     @Override
                     public void run() {
@@ -1782,6 +1796,20 @@ public class Launcher extends BaseActivity
                     }
                 });
             }
+        }
+
+        if(mState == State.WORKSPACE
+                && alreadyOnHome
+                && shouldMoveToDefaultScreen
+                && isActionMain
+                && !wasInWidgetResize
+                && !wasTopOpenView
+                && !dragHandled
+                && movedToDefaultScreen
+                && !workspaceChanged
+                && wasOnDefaultPage
+                && !wasInSpringMode) {
+            handleLeanHomeAction();
         }
 
         if (DEBUG_RESUME_TIME) {
@@ -2926,7 +2954,18 @@ public class Launcher extends BaseActivity
         if (updatePredictedApps) {
             tryAndUpdatePredictedApps();
         }
-        showAppsOrWidgets(State.APPS, animated);
+        showAppsOrWidgets(State.APPS, animated, false);
+    }
+
+    /**
+     * Shows the apps view with search opened at the end.
+     */
+    public void showAppsViewWithSearch(boolean animated, boolean updatePredictedApps) {
+        markAppsViewShown();
+        if (updatePredictedApps) {
+            tryAndUpdatePredictedApps();
+        }
+        showAppsOrWidgets(State.APPS, animated, true);
     }
 
     /**
@@ -2937,7 +2976,7 @@ public class Launcher extends BaseActivity
         if (resetPageToZero) {
             mWidgetsView.scrollToTop();
         }
-        showAppsOrWidgets(State.WIDGETS, animated);
+        showAppsOrWidgets(State.WIDGETS, animated, false);
 
         mWidgetsView.post(new Runnable() {
             @Override
@@ -2954,7 +2993,7 @@ public class Launcher extends BaseActivity
      */
     // TODO: calling method should use the return value so that when {@code false} is returned
     // the workspace transition doesn't fall into invalid state.
-    private boolean showAppsOrWidgets(State toState, boolean animated) {
+    private boolean showAppsOrWidgets(State toState, boolean animated, boolean showSearch) {
         if (!(mState == State.WORKSPACE ||
                 mState == State.APPS_SPRING_LOADED ||
                 mState == State.WIDGETS_SPRING_LOADED ||
@@ -2972,7 +3011,7 @@ public class Launcher extends BaseActivity
         }
 
         if (toState == State.APPS) {
-            mStateTransitionAnimation.startAnimationToAllApps(animated);
+            mStateTransitionAnimation.startAnimationToAllApps(animated, showSearch);
         } else {
             mStateTransitionAnimation.startAnimationToWidgets(animated);
         }
@@ -3043,14 +3082,21 @@ public class Launcher extends BaseActivity
                 || mState == State.WIDGETS_SPRING_LOADED;
     }
 
-    public void exitSpringLoadedDragMode() {
+    public boolean exitSpringLoadedDragMode() {
+        boolean handled;
         if (mState == State.APPS_SPRING_LOADED) {
             showAppsView(true /* animated */, false /* updatePredictedApps */);
+            handled = true;
         } else if (mState == State.WIDGETS_SPRING_LOADED) {
             showWidgetsView(true, false);
+            handled = true;
         } else if (mState == State.WORKSPACE_SPRING_LOADED) {
             showWorkspace(true);
+            handled = true;
+        } else {
+            handled = false;
         }
+        return handled;
     }
 
     /**
@@ -4048,6 +4094,32 @@ public class Launcher extends BaseActivity
             if (Utilities.KEY_SHOW_SWIPEUP_ARROW.equals(key)) {
                 mAllAppsButton.setVisibility(showSwipeUpIndicator() ? View.VISIBLE : View.INVISIBLE);
             }
+        }
+    }
+
+    private void handleLeanHomeAction() {
+        switch(LeanSettings.getHomeAction(this)) {
+            case "nothing":
+                // ignore
+                break;
+            case "quicksearch":
+                LeanUtils.startQuickSearch(this);
+                break;
+            case "voicesearch":
+                LeanUtils.startVoiceSearch(this);
+                break;
+            case "appdrawer":
+                LeanUtils.openAppDrawer(this);
+                break;
+            case "appsearch":
+                LeanUtils.openAppSearch(this);
+                break;
+            case "overview":
+                LeanUtils.openOverview(this);
+                break;
+            default:
+                // ignore
+                break;
         }
     }
 }
