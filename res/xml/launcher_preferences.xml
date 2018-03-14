@@ -51,10 +51,6 @@
             android:key="pref_smartspace_companion"
             android:title="@string/companion_app_title">
 
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="@string/at_a_glance_companion_url" />
-
         </Preference>
 
         <Preference
@@ -86,10 +82,6 @@
             android:key="pref_google_now_companion_important"
             android:summary="@string/google_now_release_information"
             android:title="@string/important">
-
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="@string/lean_launcher_github_release_url" />
 
         </Preference>
 
@@ -560,7 +552,7 @@
     <PreferenceScreen
         android:icon="@drawable/ic_info_outline_no_shadow"
         android:key="pref_about_screen"
-        android:summary="@string/about_summary"
+        android:summary="@string/about_shishu_title"
         android:title="@string/about">
 
         <Preference
