@@ -5,7 +5,7 @@
   <string name="other_category">Outros</string>
   <string name="feed_category">Feed</string>
   <string name="search_category">Pesquisa</string>
-  <string name="look_and_feel_category">Veja &amo; Notar</string>
+  <string name="look_and_feel_category">Veja &amp; Notar</string>
   <string name="edit_apps_category">Editar apps</string>
   <string name="enable_at_a_glance_title">Num relance</string>
   <string name="enable_at_a_glance_summary">Mostrar no topo da tela inicial</string>
