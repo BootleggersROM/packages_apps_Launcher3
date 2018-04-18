@@ -6,11 +6,14 @@
   <string name="enable_at_a_glance_title">Sekilas</string>
   <string name="lock_desktop_title">Kunci desktop</string>
   <string name="theme_title">Tema</string>
+  <string name="theme_wallpaper">Dari wallpaper</string>
   <string name="theme_always_light">Terang</string>
   <string name="theme_always_dark">Gelap</string>
+  <string name="hide_apps_title">Sembunyikan aplikasi</string>
   <string name="about_shishu_summary">oleh BootleggersROM</string>
   <string name="about_lean_title">Benar-benar berdasarkan Lean Launcher</string>
   <string name="about_based_on_summary">oleh Amir Zaidi</string>
+  <string name="num_default">Default</string>
   <string name="num_three">Tiga</string>
   <string name="num_four">Empat</string>
   <string name="num_five">Lima</string>
@@ -21,8 +24,17 @@
   <string name="icon_size_average">Rata-rata (default)</string>
   <string name="icon_size_large">Besar (+10%)</string>
   <!-- Our custom preference -->
+  <string name="shishu_preferencecat_features">Fitur khusus</string>
+  <string name="shishu_preferencecat_misc">Lain-lain</string>
   <!-- PreferenceCategories Titles -->
+  <string name="search_provider_google">Google</string>
+  <string name="search_provider_bing">Bing</string>
+  <string name="search_provider_duckduckgo">DuckDuckGo</string>
+  <string name="hotseat_background_transparent">Transparan</string>
+  <string name="hotseat_background_gradient">Gradien</string>
   <!-- Swipeup Arrow -->
   <!-- At a Glance Info -->
   <string name="important">Penting</string>
+  <string name="hide_app_label_title">Sembunyikan nama aplikasi</string>
+  <string name="home_action_quick_search">Pencarian cepat</string>
 </resources>

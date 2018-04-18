@@ -11,11 +11,11 @@
   <string name="enable_at_a_glance_summary">Mostrar no topo da tela inicial</string>
   <string name="lock_desktop_title">Bloquear desktop</string>
   <string name="lock_desktop_summary">Para evitar a mudança de ícones e widgets</string>
-  <string name="desktop_is_locked">Desktop está bloqueado</string>
+  <string name="desktop_is_locked">Tela inicial está bloqueada</string>
   <string name="theme_title">Tema</string>
   <string name="theme_wallpaper">Do papel de parede</string>
-  <string name="theme_always_light">Light</string>
-  <string name="theme_always_dark">Dark</string>
+  <string name="theme_always_light">Claro</string>
+  <string name="theme_always_dark">Escuro</string>
   <string name="bottom_search_bar_title">Barra de pesquisa do Google</string>
   <string name="bottom_search_bar_summary">Na parte inferior da tela</string>
   <string name="top_search_bar_title">Barra de pesquisa de aplicativos</string>
