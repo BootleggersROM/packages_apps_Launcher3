@@ -27,6 +27,7 @@ import android.graphics.drawable.Icon;
 import android.os.Bundle;
 import android.os.Process;
 import android.service.notification.StatusBarNotification;
+import android.util.Log;
 import android.view.View;
 
 import com.android.launcher3.AbstractFloatingView;
@@ -59,6 +60,7 @@ public class NotificationInfo implements View.OnClickListener {
     private Drawable mIconDrawable;
     private int mIconColor;
     private boolean mIsIconLarge;
+    private static final String TAG = "LeanNotificationInfo";
 
     /**
      * Extracts the data that we need from the StatusBarNotification.
@@ -98,11 +100,11 @@ public class NotificationInfo implements View.OnClickListener {
             try {
                 appInfo = LauncherAppsCompat.getInstance(context).getApplicationInfo(packageUserKey.mPackageName, 0, statusBarNotification.getUser());
             } catch (Throwable statusBarUserError) {
-                LeanUtils.reportNonFatal(statusBarUserError);
+                Log.e(TAG, "Error:", statusBarUserError);
                 try {
                     appInfo = LauncherAppsCompat.getInstance(context).getApplicationInfo(packageUserKey.mPackageName, 0, Process.myUserHandle());
                 } catch (Throwable myUserError) {
-                    LeanUtils.reportNonFatal(myUserError);
+                    Log.e(TAG, "Error:", myUserError);
                     appInfo = null;
                 }
             }

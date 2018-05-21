@@ -32,6 +32,7 @@ import android.os.UserHandle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.ArrayMap;
+import android.util.Log;
 
 import com.android.launcher3.compat.ShortcutConfigActivityInfo.ShortcutConfigActivityInfoVL;
 import com.android.launcher3.shortcuts.ShortcutInfoCompat;
@@ -45,6 +46,7 @@ public class LauncherAppsCompatVL extends LauncherAppsCompat {
 
     protected final LauncherApps mLauncherApps;
     protected final Context mContext;
+    private static final String TAG = "LauncherAppsCompatVL";
 
     private final ArrayMap<OnAppsChangedCallbackCompat, WrappedCallback> mCallbacks =
         new ArrayMap<>();
@@ -83,7 +85,7 @@ public class LauncherAppsCompatVL extends LauncherAppsCompat {
                         mLauncherApps.getActivityList(packageName, user);
                 return activityList.size() > 0 ? activityList.get(0).getApplicationInfo() : null;
             } catch (Throwable outer) {
-                LeanUtils.reportNonFatal(new Exception("Failed to query launcher apps for outer user: " + user.toString(), outer));
+                Log.e(TAG, "Failed to query launcher apps for outer user: " + user.toString(), outer);
                 // Most likely a SecurityException (or something else...) got thrown on Lollipop
                 // Try falling back to Process.myUserHandle(), it should be good enough
                 try {
@@ -91,7 +93,7 @@ public class LauncherAppsCompatVL extends LauncherAppsCompat {
                             mLauncherApps.getActivityList(packageName, Process.myUserHandle());
                     return activityList.size() > 0 ? activityList.get(0).getApplicationInfo() : null;
                 } catch (Throwable inner) {
-                    LeanUtils.reportNonFatal(new Exception("Failed to query launcher apps for inner user: " + user.toString(), inner));
+                    Log.e(TAG, "Failed to query launcher apps for inner user: " + user.toString(), inner);
                     // Even Process.myUserHandle() wasn't good enough, return nothing
                     // The caller should be able to handle this
                     return null;

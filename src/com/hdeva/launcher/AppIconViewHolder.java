@@ -43,7 +43,7 @@ public class AppIconViewHolder extends RecyclerView.ViewHolder implements View.O
         }
 
         if (drawable == null) {
-            icon.setImageResource(R.drawable.ic_launcher_home);
+            icon.setImageResource(R.mipmap.ic_launcher);
         } else {
             icon.setImageDrawable(drawable);
         }

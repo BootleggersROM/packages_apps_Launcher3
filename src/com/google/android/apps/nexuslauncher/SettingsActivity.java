@@ -146,9 +146,7 @@ public class SettingsActivity extends com.android.launcher3.SettingsActivity imp
                     throw new PackageManager.NameNotFoundException();
                 }
 
-                if (!BuildConfig.DEBUG) {
                     findPreference(ENABLE_MINUS_ONE_PREF).setEnabled(false);
-                }
             } catch (PackageManager.NameNotFoundException ignored) {
                 ((PreferenceScreen) getPreferenceScreen().findPreference("pref_feed_screen")).removePreference(findPreference(SettingsActivity.ENABLE_MINUS_ONE_PREF));
             }

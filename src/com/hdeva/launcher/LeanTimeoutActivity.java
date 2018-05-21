@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 
@@ -16,6 +17,7 @@ public class LeanTimeoutActivity extends Activity {
     private static final String ORIGINAL_TIMEOUT_KEY = "originalTimeoutKey";
     private static final String ORIGINAL_STAY_ON_WHILE_PLUGGED_IN_KEY = "originalStayOnWhilePluggedInKey";
     private static final int TIMEOUT_FALLBACK = 60000;
+    private static final String TAG = "LeanTimeout";
 
     private int originalTimeout;
     private int originalStayOnWhilePluggedIn;
@@ -41,12 +43,12 @@ public class LeanTimeoutActivity extends Activity {
         try {
             Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_OFF_TIMEOUT, 0);
         } catch (Throwable t) {
-            LeanUtils.reportNonFatal(new Exception("Error writing Settings.System.SCREEN_OFF_TIMEOUT", t));
+            Log.e(TAG, "Error writing Settings.System.SCREEN_OFF_TIMEOUT", t);
         }
         try {
             Settings.System.putInt(getContentResolver(), Settings.Global.STAY_ON_WHILE_PLUGGED_IN, 0);
         } catch (Throwable t) {
-            LeanUtils.reportNonFatal(new Exception("Error writing Settings.Global.STAY_ON_WHILE_PLUGGED_IN", t));
+            Log.e(TAG, "Error writing Settings.Global.STAY_ON_WHILE_PLUGGED_IN", t);
         }
     }
 
@@ -102,12 +104,12 @@ public class LeanTimeoutActivity extends Activity {
         try {
             Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_OFF_TIMEOUT, originalTimeout == 0 ? TIMEOUT_FALLBACK : originalTimeout);
         } catch (Throwable t) {
-            LeanUtils.reportNonFatal(new Exception("Error writing Settings.System.SCREEN_OFF_TIMEOUT", t));
+            Log.e(TAG, "Error writing Settings.System.SCREEN_OFF_TIMEOUT", t);
         }
         try {
             Settings.System.putInt(getContentResolver(), Settings.Global.STAY_ON_WHILE_PLUGGED_IN, originalStayOnWhilePluggedIn);
         } catch (Throwable t) {
-            LeanUtils.reportNonFatal(new Exception("Error writing Settings.Global.STAY_ON_WHILE_PLUGGED_IN", t));
+            Log.e(TAG, "Error writing Settings.Global.STAY_ON_WHILE_PLUGGED_IN", t);
         }
     }
 }

@@ -259,14 +259,13 @@ public class WallpaperManagerCompatVL extends WallpaperManagerCompat {
                         Log.e(TAG, "Fetching partial bitmap failed, trying old method", e);
                     } catch (RuntimeException e) {
                         Log.e(TAG, "Runtime error while trying to fetch partial bitmap, trying old method", e);
-                        LeanUtils.reportNonFatal(new Exception("Runtime error while trying to fetch partial bitmap, trying old method", e));
                     }
                 }
                 if (bitmap == null) {
                     try {
                         drawable = wm.getDrawable();
                     } catch (Throwable t) {
-                        LeanUtils.reportNonFatal(new Exception("Error getting wallpaper drawable", t));
+                        Log.e(TAG, "Error getting wallpaper drawable", t);
                     }
                 }
             }

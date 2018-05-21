@@ -203,7 +203,7 @@ public class PopupDataProvider implements NotificationListener.NotificationsChan
                     activeNotifications = notificationListener.getActiveNotifications(new String[]{notificationKey});
                 } catch (Throwable t) {
                     activeNotifications = null;
-                    LeanUtils.reportNonFatal(new Exception("Error querying active status bar notifications", t));
+                    Log.e(TAG, "Error querying active status bar notifications", t);
                 }
                 if (activeNotifications != null && activeNotifications.length == 1) {
                     notificationInfo = new NotificationInfo(mLauncher, activeNotifications[0]);
