@@ -128,12 +128,12 @@
             android:name="com.hdeva.launcher.IconPackListActivity"
             android:autoRemoveFromRecents="true"
             android:label="@string/available_icon_packs"
-            android:theme="@style/SettingsTheme" />
+            android:theme="@android:style/Theme.DeviceDefault.Settings" />
 
         <activity
             android:name="com.hdeva.launcher.IconPickerActivity"
             android:autoRemoveFromRecents="true"
-            android:theme="@style/SettingsTheme" />
+            android:theme="@android:style/Theme.DeviceDefault.Settings" />
 
         <activity
             android:name="com.hdeva.launcher.LeanTimeoutActivity"
