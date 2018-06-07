@@ -116,4 +116,22 @@
     <string name="reset_app_visibility_title">Reset app visibility</string>
     <string name="reset_app_visibility_summary">When changing to default icon pack</string>
 
+    <string name="date_format_title">Date format</string>
+
+    <string name="date_format_long">EEEE, MMMM d</string>
+    <string name="date_format_normal">EEEE, MMM d</string>
+    <string name="date_format_short">EEE, MMM d</string>
+
+    <string-array name="date_format_names">
+        <item>@string/date_format_long</item>
+        <item>@string/date_format_normal</item>
+        <item>@string/date_format_short</item>
+    </string-array>
+
+    <string-array name="date_format_values">
+        <item>@string/date_format_long</item>
+        <item>@string/date_format_normal</item>
+        <item>@string/date_format_short</item>
+    </string-array>
+
 </resources>
