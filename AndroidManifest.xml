@@ -157,7 +157,7 @@
         <provider
             android:name="com.android.launcher3.LauncherProvider"
             android:authorities="com.google.android.apps.nexuslauncher.settings"
-            android:exported="true"
+            android:exported="false"
             android:writePermission="com.google.android.apps.nexuslauncher.permission.WRITE_SETTINGS"
             android:readPermission="com.google.android.apps.nexuslauncher.permission.READ_SETTINGS" />
 
