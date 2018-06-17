@@ -113,4 +113,7 @@
         <item>extralarge</item>
     </string-array>
 
+    <string name="reset_app_visibility_title">Reset app visibility</string>
+    <string name="reset_app_visibility_summary">When changing to default icon pack</string>
+
 </resources>
