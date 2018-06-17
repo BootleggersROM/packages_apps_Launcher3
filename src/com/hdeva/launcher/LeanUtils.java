@@ -18,11 +18,14 @@ import android.graphics.Point;
 import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.icu.text.DateFormat;
+import android.icu.text.DisplayContext;
 import android.net.Uri;
 import android.os.Process;
 import android.os.SystemClock;
 import android.provider.Settings;
 import android.support.v7.graphics.Palette;
+import android.text.format.DateUtils;
 import android.util.Log;
 import android.view.MotionEvent;
 
@@ -35,8 +38,6 @@ import com.android.launcher3.compat.LauncherAppsCompat;
 import com.android.launcher3.dynamicui.WallpaperColorInfo;
 import com.android.launcher3.util.LooperExecutor;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Locale;
 
 public class LeanUtils {
@@ -45,6 +46,7 @@ public class LeanUtils {
     private static final LeanDoubleTapToLockRegistry REGISTRY = new LeanDoubleTapToLockRegistry();
     private static final String GOOGLE_QSB = "com.google.android.googlequicksearchbox";
     private static final int WHITE = 0xffffffff;
+    private static final String TAG = "LeanUtils";
 
     public static void reload(Context context) {
         LauncherAppState.getInstance(context).getModel().forceReload();
@@ -268,8 +270,32 @@ public class LeanUtils {
     }
 
     public static String formatDateTime(Context context, long timeInMillis) {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(LeanSettings.getDateFormat(context), Locale.getDefault());
-        return simpleDateFormat.format(new Date(timeInMillis));
+        try {
+            String format = LeanSettings.getDateFormat(context);
+            String formattedDate;
+            if (Utilities.ATLEAST_NOUGAT) {
+                DateFormat dateFormat = DateFormat.getInstanceForSkeleton(format, Locale.getDefault());
+                dateFormat.setContext(DisplayContext.CAPITALIZATION_FOR_STANDALONE);
+                formattedDate = dateFormat.format(timeInMillis);
+            } else {
+                int flags;
+                if (format.equals(context.getString(R.string.date_format_long))) {
+                    flags = DateUtils.FORMAT_SHOW_WEEKDAY | DateUtils.FORMAT_SHOW_DATE;
+                } else if (format.equals(context.getString(R.string.date_format_normal))) {
+                    flags = DateUtils.FORMAT_SHOW_WEEKDAY | DateUtils.FORMAT_SHOW_DATE | DateUtils.FORMAT_ABBREV_MONTH;
+                } else if (format.equals(context.getString(R.string.date_format_short))) {
+                    flags = DateUtils.FORMAT_SHOW_WEEKDAY | DateUtils.FORMAT_SHOW_DATE | DateUtils.FORMAT_ABBREV_MONTH | DateUtils.FORMAT_ABBREV_WEEKDAY;
+                } else {
+                    flags = DateUtils.FORMAT_SHOW_WEEKDAY | DateUtils.FORMAT_SHOW_DATE | DateUtils.FORMAT_ABBREV_MONTH;
+                }
+
+                formattedDate = DateUtils.formatDateTime(context, timeInMillis, flags);
+            }
+            return formattedDate;
+        } catch (Throwable t) {
+            Log.e(TAG, "Error formatting At A Glance date", t);
+            return DateUtils.formatDateTime(context, timeInMillis, DateUtils.FORMAT_SHOW_WEEKDAY | DateUtils.FORMAT_SHOW_DATE | DateUtils.FORMAT_ABBREV_MONTH);
+        }
     }
 
     private LeanUtils() {
