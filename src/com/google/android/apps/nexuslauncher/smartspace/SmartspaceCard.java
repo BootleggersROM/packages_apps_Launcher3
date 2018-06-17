@@ -23,7 +23,6 @@ import com.google.android.apps.nexuslauncher.smartspace.nano.SmartspaceProto.c;
 import com.google.android.apps.nexuslauncher.smartspace.nano.SmartspaceProto.e;
 import com.google.android.apps.nexuslauncher.smartspace.nano.SmartspaceProto.i;
 import com.google.android.apps.nexuslauncher.utils.ColorManipulation;
-import com.hdeva.launcher.LeanGlanceProxySender;
 
 import java.net.URISyntaxException;
 
@@ -297,9 +296,7 @@ public class SmartspaceCard {
                 }
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.setSourceBounds(launcher.getViewBounds(view));
-                // Google started to enforce a new permission, so we have to forward this event
-                // view.getContext().sendBroadcast(intent);
-                LeanGlanceProxySender.sendWeatherAction(view.getContext(), intent);
+                view.getContext().sendBroadcast(intent);
                 break;
             }
             case 2: {

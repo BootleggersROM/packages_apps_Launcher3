@@ -42,6 +42,15 @@
             android:summary="@string/smartspace_preferences_in_settings_desc"
             android:title="@string/smartspace_preferences_in_settings" />
 
+        <ListPreference
+            android:defaultValue="@string/date_format_normal"
+            android:entries="@array/date_format_names"
+            android:entryValues="@array/date_format_values"
+            android:key="pref_date_format"
+            android:persistent="true"
+            android:summary="%s"
+            android:title="@string/date_format_title" />
+
         <Preference
             android:key="pref_smartspace_settings"
             android:summary="@string/smartspace_settings_summary"
@@ -195,14 +204,14 @@
                 android:defaultValue="false"
                 android:key="pref_dark_bottom_search_bar"
                 android:persistent="true"
-                android:summary="@string/if_theme_is_dark"
+                android:summary="@string/bottom_search_bar_summary"
                 android:title="@string/dark_bottom_search_title" />
 
             <SwitchPreference
                 android:defaultValue="false"
                 android:key="pref_dark_top_search_bar"
                 android:persistent="true"
-                android:summary="@string/if_theme_is_dark"
+                android:summary="@string/top_search_bar_summary"
                 android:title="@string/dark_top_search_title" />
 
             <ListPreference
@@ -277,6 +286,13 @@
                 android:persistent="true"
                 android:summary="@string/show_caret_summary"
                 android:title="@string/show_caret_title" />
+
+            <SwitchPreference
+                android:defaultValue="true"
+                android:key="pref_page_indicator"
+                android:persistent="true"
+                android:summary="@string/show_page_indicator_summary"
+                android:title="@string/show_page_indicator_title" />
 
         </PreferenceCategory>
 
