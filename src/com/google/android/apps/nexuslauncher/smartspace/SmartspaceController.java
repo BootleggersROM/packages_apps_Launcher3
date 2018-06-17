@@ -13,7 +13,6 @@ import com.android.launcher3.OnAlarmListener;
 import com.google.android.apps.nexuslauncher.utils.ActionIntentFilter;
 import com.google.android.apps.nexuslauncher.smartspace.nano.SmartspaceProto.i;
 import com.google.android.apps.nexuslauncher.utils.ProtoStore;
-import com.hdeva.launcher.LeanGlanceProxySender;
 
 import java.io.PrintWriter;
 import java.util.List;
@@ -65,7 +64,6 @@ public class SmartspaceController implements Handler.Callback {
     }
 
     private Intent db() {
-        // TODO
         return new Intent("com.google.android.apps.gsa.smartspace.SETTINGS")
                 .setPackage("com.google.android.googlequicksearchbox")
                 .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -151,9 +149,7 @@ public class SmartspaceController implements Handler.Callback {
     }
 
     public void cZ() {
-        // Google started to enforce a new permission, so we have to forward this event
-        // this.mAppContext.sendBroadcast(this.db());
-        LeanGlanceProxySender.sendPreferenceAction(mAppContext, db());
+        this.mAppContext.sendBroadcast(this.db());
     }
 
     public void da(final ISmartspace ds) {
