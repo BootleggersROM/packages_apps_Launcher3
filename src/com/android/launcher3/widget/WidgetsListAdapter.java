@@ -115,7 +115,7 @@ public class WidgetsListAdapter extends Adapter<WidgetsRowViewHolder> {
                     continue;
                 }
             } catch (Throwable t) {
-                LeanUtils.reportNonFatal(new Exception("Error inspecting widget for origin", t));
+                Log.e(TAG, "Error inspecting widget for origin", t);
             }
             WidgetListRowEntry row = new WidgetListRowEntry(entry.getKey(), entry.getValue());
             row.titleSectionName = mIndexer.computeSectionName(row.pkgItem.title);
