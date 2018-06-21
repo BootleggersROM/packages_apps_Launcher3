@@ -10,6 +10,6 @@
   <!-- Our custom preference -->
   <string name="shishu_preferencecat_misc">कई तरह का</string>
   <!-- PreferenceCategories Titles -->
-  <!-- Swipeup Arrow -->
-  <!-- At a Glance Info -->
+  <string name="gestures_category">इशारों</string>
+  <string name="reset_category">रीसेट करें</string>
 </resources>

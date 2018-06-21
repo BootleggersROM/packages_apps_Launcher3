@@ -13,7 +13,7 @@
   <string name="about_shishu_summary">oleh BootleggersROM</string>
   <string name="about_lean_title">Benar-benar berdasarkan Lean Launcher</string>
   <string name="about_based_on_summary">oleh Amir Zaidi</string>
-  <string name="num_default">Default</string>
+  <string name="num_default">Standar</string>
   <string name="num_three">Tiga</string>
   <string name="num_four">Empat</string>
   <string name="num_five">Lima</string>
@@ -32,9 +32,8 @@
   <string name="search_provider_duckduckgo">DuckDuckGo</string>
   <string name="hotseat_background_transparent">Transparan</string>
   <string name="hotseat_background_gradient">Gradien</string>
-  <!-- Swipeup Arrow -->
-  <!-- At a Glance Info -->
   <string name="important">Penting</string>
   <string name="hide_app_label_title">Sembunyikan nama aplikasi</string>
   <string name="home_action_quick_search">Pencarian cepat</string>
+  <string name="gestures_category">Isyarat</string>
 </resources>

@@ -46,7 +46,6 @@
   <string name="force_colored_g_icon_summary">Na spodním vyhledávacím panelu</string>
   <string name="double_tap_to_lock_title">Dvojitým poklepáním uzamknout</string>
   <string name="double_tap_to_lock_summary">Na domovské obrazovce</string>
-  <string name="double_tap_to_lock_hint">Chcete-li uzamknout dvojitým poklepáním, musíte povolit administrátorský přístup pro Lean Launcher. Jedná se o bezpečný zámek což znamená, že musíte zadat kód PIN pro další odemčení, pokud nějaký máte.</string>
   <string name="double_tap_to_lock_disable_warning">Zakázáním administrátorského přístupu nebudete moci použít dvojité poklepání pro uzamčení na domovské obrazovce.</string>
   <string name="icon_size_title">Velikost ikony</string>
   <string name="icon_size_extra_small">Velmi malé (-25%)</string>
@@ -63,8 +62,6 @@
   <!-- PreferenceCategories Titles -->
   <string name="companion_app_permission_label">Oprávnění Lean Companion</string>
   <string name="companion_app_permission_description">Oprávnění k vynucení ochrany podpisů u aplikací, které jsou společné.</string>
-  <string name="reset_app_visibility_title">Obnovit viditelnost aplikací</string>
-  <string name="reset_app_visibility_summary">Při změně na výchozí balíček ikon</string>
   <string name="companion_app_title">Doprovodná aplikace</string>
   <string name="companion_app_not_installed">Není nainstalována</string>
   <string name="companion_app_version_x">verze %s</string>
@@ -76,10 +73,6 @@
   <string name="hotseat_background_transparent">Transparentní</string>
   <string name="hotseat_background_gradient">Barevný přechod</string>
   <string name="hotseat_background_solid">Plný</string>
-  <!-- Swipeup Arrow -->
-  <string name="show_swipeup_arrow">Povolit ukazatel posunutí nahoru</string>
-  <string name="show_swipeup_arrow_summary">Zobrazit ukazatel šipky nahoru na vrcholu doku</string>
-  <!-- At a Glance Info -->
   <string name="important">Důležité</string>
   <string name="at_a_glance_requirement">Na první pohled se zobrazí informace, pokud máte nainstalovanou aplikaci Google. Pokud se nezobrazují žádné události o počasí ani kalendáři, nejprve se ujistěte, že máte aplikaci Google se všemi oprávněními nebo nainstalujte Google kalendář pro události v kalendáři.</string>
   <string name="google_now_release_information">Pokud jste v této nabídce a není tu žádný přepínač, je to proto, že nemáte nainstalovanou aplikaci Google. Získáte ji z GApps nebo z Obchodu Play. Bude to fungovat oběma způsoby.</string>
@@ -87,13 +80,9 @@
   <string name="smartspace_settings_summary">Události kalendáře atd.</string>
   <string name="dark_bottom_search_title">Tmavý vyhledávací panel Google</string>
   <string name="dark_top_search_title">Tmavý vyhledávací panel aplikací</string>
-  <string name="if_theme_is_dark">Pokud je motiv tmavý</string>
   <string name="hide_app_label_title">Skrýt název aplikace</string>
   <string name="hide_app_label_on_desktop_summary">Na ploše</string>
   <string name="hide_app_label_on_all_apps_summary">V seznamu aplikací</string>
-  <string name="reset_app_names_title">Obnovit názvy aplikací</string>
-  <string name="reset_app_names_summary">Na výchozí</string>
-  <string name="reset_app_names_description">Tímto se obnoví výchozí názvy všech aplikací.</string>
   <string name="tap_to_edit_app_name">Klepnutím upravit název aplikace</string>
   <string name="enter_new_app_name">Zadejte nový název aplikace</string>
   <string name="qsb_voice_icon_title">Zkratka pro hlasové vyhledávání</string>
@@ -105,4 +94,12 @@
   <string name="home_action_app_drawer">Otevřít seznam aplikací</string>
   <string name="home_action_app_search">Otevřít vyhledávání aplikací</string>
   <string name="home_action_overview">Přehled</string>
+  <string name="top_search_category">Vyhledávací panel aplikací</string>
+  <string name="gestures_category">Gesta</string>
+  <string name="reset_category">Resetovat</string>
+  <string name="reset_app_names_title">Obnovit názvy aplikací</string>
+  <string name="reset_app_names_summary">Na výchozí</string>
+  <string name="reset_app_names_description">Tímto se obnoví výchozí názvy všech aplikací.</string>
+  <string name="reset_app_visibility_title">Obnovit viditelnost aplikací</string>
+  <string name="reset_app_visibility_summary">Na výchozí</string>
 </resources>

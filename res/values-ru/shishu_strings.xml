@@ -46,7 +46,6 @@
   <string name="force_colored_g_icon_summary">На нижней панели поиска</string>
   <string name="double_tap_to_lock_title">Двойное нажатие для блокировки</string>
   <string name="double_tap_to_lock_summary">На вашем домашнем экране</string>
-  <string name="double_tap_to_lock_hint">Чтобы иметь возможность использовать двойной тап для блокировки, вы должны включить права администратора для Lean Launcher. Это защитный механизм, по которому требуется ввести PIN код для последующей разблокировки, если он установлен.</string>
   <string name="double_tap_to_lock_disable_warning">Путем отключения прав администратора, вы не сможете использовать двойной тап для блокировки.</string>
   <string name="icon_size_title">Размер значков</string>
   <string name="icon_size_extra_small">Очень маленький (-25%)</string>
@@ -63,8 +62,6 @@
   <!-- PreferenceCategories Titles -->
   <string name="companion_app_permission_label">Разрешение Lean Companion</string>
   <string name="companion_app_permission_description">Разрешение для обеспечения защиты подписи для схожих приложений.</string>
-  <string name="reset_app_visibility_title">Сбросить видимость приложений</string>
-  <string name="reset_app_visibility_summary">Когда установлены значки по уполчанию</string>
   <string name="companion_app_title">Дополнительное приложение</string>
   <string name="companion_app_not_installed">Не установлен</string>
   <string name="companion_app_version_x">версия %s</string>
@@ -76,10 +73,6 @@
   <string name="hotseat_background_transparent">Прозрачность</string>
   <string name="hotseat_background_gradient">Градиент</string>
   <string name="hotseat_background_solid">Сплошной</string>
-  <!-- Swipeup Arrow -->
-  <string name="show_swipeup_arrow">Включить индикатор свайпа вверх</string>
-  <string name="show_swipeup_arrow_summary">Показывать стрелку над док-баром</string>
-  <!-- At a Glance Info -->
   <string name="important">Важно!</string>
   <string name="at_a_glance_requirement">На экране появится информация о том, установлено ли приложение Google. Если не отображаются какие-либо события погоды или календаря, сначала обязательно дайте приложению Google все разрешения или используйте Календарь Google.</string>
   <string name="google_now_release_information">Если вы заходите в это меню и нет никакого переключателя, значит, что у вас нет приложения Google. Получите его из gapps или скачайте из Play Market, он будет работать в обоих направлениях.</string>
@@ -87,13 +80,9 @@
   <string name="smartspace_settings_summary">События календаря.</string>
   <string name="dark_bottom_search_title">Тёмная строка поиска Google</string>
   <string name="dark_top_search_title">Тёмная строка поиска</string>
-  <string name="if_theme_is_dark">Если тёмная тема</string>
   <string name="hide_app_label_title">Скрыть имя приложения</string>
   <string name="hide_app_label_on_desktop_summary">На рабочем столе</string>
   <string name="hide_app_label_on_all_apps_summary">В вашем приложении</string>
-  <string name="reset_app_names_title">Сбросить имена приложений</string>
-  <string name="reset_app_names_summary">По умолчанию</string>
-  <string name="reset_app_names_description">Это приведет к сбросу имён всех приложений.</string>
   <string name="tap_to_edit_app_name">Нажмите, чтобы изменить название приложения</string>
   <string name="enter_new_app_name">Введите новое имя</string>
   <string name="qsb_voice_icon_title">Ярлык голосового поиска</string>
@@ -105,4 +94,12 @@
   <string name="home_action_app_drawer">Открыть редактор приложения</string>
   <string name="home_action_app_search">Открыть поиск приложений</string>
   <string name="home_action_overview">Обзор</string>
+  <string name="top_search_category">Показывать строку поиска</string>
+  <string name="gestures_category">Жесты</string>
+  <string name="reset_category">Сброс</string>
+  <string name="reset_app_names_title">Сбросить имена приложений</string>
+  <string name="reset_app_names_summary">По умолчанию</string>
+  <string name="reset_app_names_description">Это приведет к сбросу имён всех приложений.</string>
+  <string name="reset_app_visibility_title">Сбросить видимость приложений</string>
+  <string name="reset_app_visibility_summary">По умолчанию</string>
 </resources>

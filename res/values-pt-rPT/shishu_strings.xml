@@ -5,6 +5,5 @@
   <!-- Our custom preference -->
   <string name="shishu_preferencecat_misc">Diversos</string>
   <!-- PreferenceCategories Titles -->
-  <!-- Swipeup Arrow -->
-  <!-- At a Glance Info -->
+  <string name="gestures_category">Gestos</string>
 </resources>

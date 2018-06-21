@@ -46,7 +46,6 @@
   <string name="force_colored_g_icon_summary">Bei der unteren Suchleiste</string>
   <string name="double_tap_to_lock_title">Zum Sperren Doppel-Tippen</string>
   <string name="double_tap_to_lock_summary">Auf dem Home-Bildschirm</string>
-  <string name="double_tap_to_lock_hint">Um Doppel-Tippen zum Sperren verwenden zu können, müssen Sie Admin-Zugriff für Lean-Launcher aktivieren. Dies ist eine sichere Sperre, heißt, Sie müssen Ihre PIN beim nächsten Mal eingeben, wenn Sie eine haben.</string>
   <string name="double_tap_to_lock_disable_warning">Mit dem Deaktivieren des Admin-Zugriff, werden Sie nicht in der Lage sein, den Home-Bildschirm mit Doppel-Tippen zu sperren.</string>
   <string name="icon_size_title">Symbolgröße</string>
   <string name="icon_size_extra_small">Extra klein (-25%)</string>
@@ -55,6 +54,7 @@
   <string name="icon_size_large">Groß (+10%)</string>
   <string name="icon_size_extra_large">Extra groß (+25%)</string>
   <!-- Our custom preference -->
+  <string name="shishu_preferencecat_ui">Oberfläche</string>
   <string name="shishu_preferencecat_icons">Symbole entsprechend</string>
   <string name="shishu_preferencecat_pixel">Pixel-bezogene Funktionen</string>
   <string name="shishu_preferencecat_features">Besondere Funktionen</string>
@@ -62,8 +62,6 @@
   <!-- PreferenceCategories Titles -->
   <string name="companion_app_permission_label">Lean Begleiterlaubnis</string>
   <string name="companion_app_permission_description">Erlaubnis zum Signaturschutz der Begleit-Apps erzwingen.</string>
-  <string name="reset_app_visibility_title">App-Sichtbarkeit zurücksetzen</string>
-  <string name="reset_app_visibility_summary">Beim Wechsel auf Standard-Iconpack</string>
   <string name="companion_app_title">Begleit-App</string>
   <string name="companion_app_not_installed">Nicht installiert</string>
   <string name="companion_app_version_x">Version %s</string>
@@ -75,22 +73,16 @@
   <string name="hotseat_background_transparent">Transparent</string>
   <string name="hotseat_background_gradient">Farbverlauf</string>
   <string name="hotseat_background_solid">Solide</string>
-  <!-- Swipeup Arrow -->
-  <string name="show_swipeup_arrow">Aktiviere Pfeil nach oben</string>
-  <string name="show_swipeup_arrow_summary">Zeige den Pfeil nach oben über der Dockleiste</string>
-  <!-- At a Glance Info -->
   <string name="important">Wichtig</string>
+  <string name="at_a_glance_requirement">Auf einen Blick wird Infos anzeigen, falls die Google App installiert ist. Wenn kein Wetter oder keine Kalenderereignisse angezeigt werden, zuerst unbedingt der Google App alle Berechtigungen erteilen oder den Google Kalender für die Kalenderereignisse installieren.</string>
+  <string name="google_now_release_information">Wenn Sie in diesem Menü sind und es keine Schalter gibt, dann deshalb, weil die Google App noch nicht installiert ist. Entweder von den GApps oder aus dem Play-Store, beides wird funktionieren.</string>
   <string name="smartspace_settings_title">Einstellungen</string>
   <string name="smartspace_settings_summary">Kalenderereignisse, etc.</string>
   <string name="dark_bottom_search_title">Dunkle Google-Suchleiste</string>
   <string name="dark_top_search_title">Dunkle App-Suchleiste</string>
-  <string name="if_theme_is_dark">Falls das Thema dunkel ist</string>
   <string name="hide_app_label_title">App-Namen ausblenden</string>
   <string name="hide_app_label_on_desktop_summary">Auf dem Desktop</string>
   <string name="hide_app_label_on_all_apps_summary">In der App-Übersicht</string>
-  <string name="reset_app_names_title">Zurücksetzen der App-Namen</string>
-  <string name="reset_app_names_summary">Auf den Standardwert</string>
-  <string name="reset_app_names_description">Dadurch werden die Namen aller Apps auf ihre Standardeinstellungen zurückgesetzt.</string>
   <string name="tap_to_edit_app_name">Tippen, um den App-Namen zu bearbeiten</string>
   <string name="enter_new_app_name">Geben Sie den neuen App-Namen ein</string>
   <string name="qsb_voice_icon_title">Sprachsuche Tastenkombination</string>
@@ -102,4 +94,12 @@
   <string name="home_action_app_drawer">Öffne App-Übersicht</string>
   <string name="home_action_app_search">Öffne App-Suche</string>
   <string name="home_action_overview">Überischt</string>
+  <string name="top_search_category">App-Suchleiste</string>
+  <string name="gestures_category">Gesten</string>
+  <string name="reset_category">Zurücksetzen</string>
+  <string name="reset_app_names_title">Zurücksetzen der App-Namen</string>
+  <string name="reset_app_names_summary">Auf den Standardwert</string>
+  <string name="reset_app_names_description">Dadurch werden die Namen aller Apps auf ihre Standardeinstellungen zurückgesetzt.</string>
+  <string name="reset_app_visibility_title">App-Sichtbarkeit zurücksetzen</string>
+  <string name="reset_app_visibility_summary">Auf den Standardwert</string>
 </resources>

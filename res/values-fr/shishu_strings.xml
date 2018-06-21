@@ -3,7 +3,7 @@
 <resources>
   <string name="num_default">Par défaut</string>
   <!-- Our custom preference -->
+  <string name="shishu_preferencecat_misc">Divers</string>
   <!-- PreferenceCategories Titles -->
-  <!-- Swipeup Arrow -->
-  <!-- At a Glance Info -->
+  <string name="reset_category">Réinitialiser</string>
 </resources>

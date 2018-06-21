@@ -46,7 +46,6 @@
   <string name="force_colored_g_icon_summary">在底部搜索栏</string>
   <string name="double_tap_to_lock_title">双击休眠</string>
   <string name="double_tap_to_lock_summary">在您的主页屏幕上</string>
-  <string name="double_tap_to_lock_hint">为了能够使用锁定, 您必须启用对Lean启动器的管理员访问。这是一个安全的锁, 意味着你必须进入你的 PIN 在下一个解锁, 如果你有任何。</string>
   <string name="double_tap_to_lock_disable_warning">通过禁用管理员访问, 您将无法使用双点击锁定您的主屏幕。</string>
   <string name="icon_size_title">图标大小</string>
   <string name="icon_size_extra_small">超小 (-25%)</string>
@@ -63,8 +62,6 @@
   <!-- PreferenceCategories Titles -->
   <string name="companion_app_permission_label">Lean相同权限</string>
   <string name="companion_app_permission_description">对相同应用程序实施签名保护的权限。</string>
-  <string name="reset_app_visibility_title">重置应用程序可见性</string>
-  <string name="reset_app_visibility_summary">更改为默认图标包时</string>
   <string name="companion_app_title">相同应用程序</string>
   <string name="companion_app_not_installed">未安装</string>
   <string name="companion_app_version_x">版本 %s</string>
@@ -76,10 +73,6 @@
   <string name="hotseat_background_transparent">透明</string>
   <string name="hotseat_background_gradient">渐变</string>
   <string name="hotseat_background_solid">实心</string>
-  <!-- Swipeup Arrow -->
-  <string name="show_swipeup_arrow">启用向上滑动指示器</string>
-  <string name="show_swipeup_arrow_summary">在顶部显示向上滑动的向上箭头指示器</string>
-  <!-- At a Glance Info -->
   <string name="important">重要</string>
   <string name="at_a_glance_requirement">如果您安装了 Google 应用程序, 一目了然将显示信息。如果没有显示任何天气或日历事件, 首先要确保获得 google 应用程序的所有权限或获取日历事件的 google 日历。</string>
   <string name="google_now_release_information">如果你进入这个菜单, 并没有任何开关, 这是因为你没有安装 Google 应用程序。从认证或戏剧商店得到它, 它将工作两种方式。</string>
@@ -87,13 +80,9 @@
   <string name="smartspace_settings_summary">日历活动</string>
   <string name="dark_bottom_search_title">暗色谷歌搜索栏</string>
   <string name="dark_top_search_title">暗色应用搜索栏</string>
-  <string name="if_theme_is_dark">如果主题是黑暗</string>
   <string name="hide_app_label_title">隐藏应用程序名称</string>
   <string name="hide_app_label_on_desktop_summary">在桌面上</string>
   <string name="hide_app_label_on_all_apps_summary">在您的应用程序抽屉里</string>
-  <string name="reset_app_names_title">重置应用程序名称</string>
-  <string name="reset_app_names_summary">为默认</string>
-  <string name="reset_app_names_description">这将重置所有应用程序的名称为默认值。</string>
   <string name="tap_to_edit_app_name">点击编辑应用程序名称</string>
   <string name="enter_new_app_name">输入新的应用程序名称</string>
   <string name="qsb_voice_icon_title">语音搜索快捷方式</string>
@@ -105,4 +94,12 @@
   <string name="home_action_app_drawer">打开应用程序抽屉</string>
   <string name="home_action_app_search">打开应用程序搜索</string>
   <string name="home_action_overview">输入概览</string>
+  <string name="top_search_category">应用程序搜索栏</string>
+  <string name="gestures_category">手势</string>
+  <string name="reset_category">重置</string>
+  <string name="reset_app_names_title">重置应用程序名称</string>
+  <string name="reset_app_names_summary">为默认</string>
+  <string name="reset_app_names_description">这将重置所有应用程序的名称为默认值。</string>
+  <string name="reset_app_visibility_title">重置应用程序可见性</string>
+  <string name="reset_app_visibility_summary">为默认</string>
 </resources>
