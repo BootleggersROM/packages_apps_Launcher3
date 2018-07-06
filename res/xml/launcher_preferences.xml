@@ -56,6 +56,15 @@
             android:summary="%s"
             android:title="@string/date_format_title" />
 
+        <ListPreference
+            android:defaultValue="google"
+            android:entries="@array/date_style_font_names"
+            android:entryValues="@array/date_style_font_values"
+            android:key="pref_date_font"
+            android:persistent="true"
+            android:summary="%s"
+            android:title="@string/date_style_font" />
+
         <Preference
             android:key="pref_smartspace_companion_important"
             android:summary="@string/at_a_glance_requirement"

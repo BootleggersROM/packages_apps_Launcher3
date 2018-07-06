@@ -54,6 +54,7 @@ public class LeanSettings {
     public static final String CARET_LONG_PRESS = "pref_caret_long_press";
     public static final String DATE_FORMAT = "pref_date_format";
     public static final String PAGE_INDICATOR = "pref_page_indicator";
+    public static final String DATE_STYLE_FONT = "pref_date_font";
 
     private static final boolean SETTINGS_DIRTY_DEFAULT = false;
     private static final boolean LOCK_DESKTOP_DEFAULT = false;
@@ -94,6 +95,7 @@ public class LeanSettings {
     private static final boolean CARET_LONG_PRESS_DEFAULT = true;
     private static final int DATE_FORMAT_DEFAULT = R.string.date_format_normal;
     private static final boolean PAGE_INDICATOR_DEFAULT = true;
+    private static final String DATE_STYLE_FONT_DEFAULT = "google";
 
     private static final String THEME_WALLPAPER = "wallpaper";
     private static final String THEME_LIGHT = "light";
@@ -384,6 +386,10 @@ public class LeanSettings {
 
     public static boolean isPageIndicatorVisible(Context context) {
         return prefs(context).getBoolean(PAGE_INDICATOR, PAGE_INDICATOR_DEFAULT);
+    }
+
+    public static String getDateStyleFont(Context context) {
+        return prefs(context).getString(DATE_STYLE_FONT, DATE_STYLE_FONT_DEFAULT);
     }
 
     private static SharedPreferences prefs(Context context) {
