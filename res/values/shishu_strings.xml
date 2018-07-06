@@ -337,4 +337,8 @@
         <item>system</item>
         <item>google</item>
     </string-array>
+
+    <string name="date_style_transform_title">Show uppercase on date</string>
+    <string name="date_style_transform_summary">Transform all the date/at a glance with uppercased text</string>
+
 </resources>

@@ -218,6 +218,7 @@ public class SmartspaceView extends FrameLayout implements ISmartspace, ValueAni
         for (TextView view : views) {
             if (view != null) {
                 view.setTypeface(tf);
+                view.setAllCaps(LeanSettings.isDateStyleUppercase(getContext()));
             }
         }
     }

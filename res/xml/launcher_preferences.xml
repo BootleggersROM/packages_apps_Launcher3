@@ -65,6 +65,12 @@
             android:summary="%s"
             android:title="@string/date_style_font" />
 
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_date_transform"
+            android:summary="@string/date_style_transform_summary"
+            android:title="@string/date_style_transform_title" />
+
         <Preference
             android:key="pref_smartspace_companion_important"
             android:summary="@string/at_a_glance_requirement"

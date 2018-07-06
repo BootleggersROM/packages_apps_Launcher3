@@ -115,6 +115,7 @@ public class SettingsActivity extends com.android.launcher3.SettingsActivity imp
             findPreference(LeanSettings.ALLOW_TWO_LINE_LABELS).setOnPreferenceChangeListener(this);
             findPreference(LeanSettings.DATE_FORMAT).setOnPreferenceChangeListener(this);
             findPreference(LeanSettings.DATE_STYLE_FONT).setOnPreferenceChangeListener(this);
+            findPreference(LeanSettings.DATE_STYLE_TRANSFORM).setOnPreferenceChangeListener(this);
 
             findPreference(LeanSettings.RESET_APP_NAMES).setOnPreferenceClickListener(this);
             findPreference(LeanSettings.RESET_APP_VISIBILITY).setOnPreferenceClickListener(this);
@@ -209,6 +210,7 @@ public class SettingsActivity extends com.android.launcher3.SettingsActivity imp
                 case LeanSettings.BLACK_COLORS:
                 case LeanSettings.SHOW_CARET:
                 case LeanSettings.ALLOW_TWO_LINE_LABELS:
+                case LeanSettings.DATE_STYLE_TRANSFORM:
                     if (preference instanceof TwoStatePreference) {
                         ((TwoStatePreference) preference).setChecked((boolean) newValue);
                     }
