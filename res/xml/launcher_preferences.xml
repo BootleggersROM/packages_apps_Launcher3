@@ -71,6 +71,15 @@
             android:summary="@string/date_style_transform_summary"
             android:title="@string/date_style_transform_title" />
 
+        <ListPreference
+            android:defaultValue="normal"
+            android:entries="@array/date_style_spacing_names"
+            android:entryValues="@array/date_style_spacing_values"
+            android:key="pref_date_spacing"
+            android:persistent="true"
+            android:summary="%s"
+            android:title="@string/date_style_spacing" />
+
         <Preference
             android:key="pref_smartspace_companion_important"
             android:summary="@string/at_a_glance_requirement"

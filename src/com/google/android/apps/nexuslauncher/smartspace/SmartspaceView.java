@@ -219,6 +219,7 @@ public class SmartspaceView extends FrameLayout implements ISmartspace, ValueAni
             if (view != null) {
                 view.setTypeface(tf);
                 view.setAllCaps(LeanSettings.isDateStyleUppercase(getContext()));
+                view.setLetterSpacing(LeanSettings.getDateStyleTextSpacing(getContext()));
             }
         }
     }
