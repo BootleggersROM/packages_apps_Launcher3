@@ -42,6 +42,11 @@
             android:summary="@string/smartspace_preferences_in_settings_desc"
             android:title="@string/smartspace_preferences_in_settings" />
 
+        <Preference
+            android:key="pref_smartspace_settings"
+            android:summary="@string/smartspace_settings_summary"
+            android:title="@string/smartspace_settings_title" />
+
         <ListPreference
             android:defaultValue="@string/date_format_normal"
             android:entries="@array/date_format_names"
@@ -50,11 +55,6 @@
             android:persistent="true"
             android:summary="%s"
             android:title="@string/date_format_title" />
-
-        <Preference
-            android:key="pref_smartspace_settings"
-            android:summary="@string/smartspace_settings_summary"
-            android:title="@string/smartspace_settings_title" />
 
         <Preference
             android:key="pref_smartspace_companion_important"
