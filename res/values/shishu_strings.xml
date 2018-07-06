@@ -134,15 +134,6 @@
     <string name="shishu_preferencecat_features">Special Features</string>
     <string name="shishu_preferencecat_misc">Miscellaneous</string>
 
-    <!-- PreferenceCategories Titles -->
-    <string name="companion_app_permission_label">Lean companion permission</string>
-    <string name="companion_app_permission_description">Permission to enforce signature protection for companion apps.</string>
-
-    <string name="companion_app_title">Companion app</string>
-    <string name="companion_app_not_installed">Not installed</string>
-    <string name="companion_app_version_x">version %s</string>
-
-    <string name="at_a_glance_companion_url" translatable="false">https://github.com/hundeva/Lean-Launcher/releases/tag/lean-1.0.6</string>
     <string name="lean_launcher_github_release_url" translatable="false">https://github.com/hundeva/Lean-Launcher/releases/</string>
 
     <string name="search_provider_title">Search provider</string>
@@ -227,8 +218,6 @@
         <item>overview</item>
     </string-array>
 
-    <string name="lean_glance_not_up_to_date_please_update">Lean Glance companion is outdated. Please update to make sure everything works correctly!</string>
-
     <string name="double_tap_to_secure_lock_title">Secure lock</string>
     <string name="double_tap_to_secure_lock_summary">When double tap to locking your device, disable biometric authentication</string>
 
@@ -310,4 +299,27 @@
     <string name="reset_app_icons_summary">To system default</string>
     <string name="reset_app_icons_description">This will reset all app icons to their system default.</string>
 
+    <string name="reset_app_visibility_title">Reset app visibility</string>
+    <string name="reset_app_visibility_summary">When changing to default icon pack</string>
+
+    <string name="date_format_title">Date format</string>
+
+    <string name="date_format_long">EEEE, MMMM d</string>
+    <string name="date_format_normal">EEEE, MMM d</string>
+    <string name="date_format_short">EEE, MMM d</string>
+
+    <string-array name="date_format_names">
+        <item>@string/date_format_long</item>
+        <item>@string/date_format_normal</item>
+        <item>@string/date_format_short</item>
+    </string-array>
+
+    <string-array name="date_format_values">
+        <item>@string/date_format_long</item>
+        <item>@string/date_format_normal</item>
+        <item>@string/date_format_short</item>
+    </string-array>
+
+    <string name="show_page_indicator_title">Show page indicator</string>
+    <string name="show_page_indicator_summary">Using horizontal lines</string>
 </resources>
