@@ -326,16 +326,58 @@
     <!-- At a glance style -->
     <string name="date_style_font">Date font</string>
     <string name="date_style_font_system">System default</string>
+    <string name="date_style_font_adamcg" translatable="false">Adan CG Pro</string>
+    <string name="date_style_font_alienleague" translatable="false">Alien League</string>
+    <string name="date_style_font_bignoodleital" translatable="false">Big Noodle Tilting Italic</string>
+    <string name="date_style_font_biko" translatable="false">Biko</string>
+    <string name="date_style_font_ginorasans" translatable="false">Ginora Sans</string>
+    <string name="date_style_font_gobold" translatable="false">GoBold Light</string>
     <string name="date_style_font_google" translatable="false">Google Sans</string>
+    <string name="date_style_font_inkferno" translatable="false">Inkferno</string>
+    <string name="date_style_font_instruction" translatable="false">Instruction</string>
+    <string name="date_style_font_jacklane" translatable="false">Jack Lane</string>
+    <string name="date_style_font_monad" translatable="false">Monad</string>
+    <string name="date_style_font_noir" translatable="false">Noir</string>
+    <string name="date_style_font_outrunfuture" translatable="false">Outrun Future</string>
+    <string name="date_style_font_riviera" translatable="false">Riviera</string>
+    <string name="date_style_font_theoutbox" translatable="false">The Outbox</string>
 
     <string-array name="date_style_font_names" translatable="false">
         <item>@string/date_style_font_system</item>
+        <item>@string/date_style_font_adamcg</item>
+        <item>@string/date_style_font_alienleague</item>
+        <item>@string/date_style_font_bignoodleital</item>
+        <item>@string/date_style_font_biko</item>
+        <item>@string/date_style_font_ginorasans</item>
+        <item>@string/date_style_font_gobold</item>
         <item>@string/date_style_font_google</item>
+        <item>@string/date_style_font_inkferno</item>
+        <item>@string/date_style_font_instruction</item>
+        <item>@string/date_style_font_jacklane</item>
+        <item>@string/date_style_font_monad</item>
+        <item>@string/date_style_font_noir</item>
+        <item>@string/date_style_font_outrunfuture</item>
+        <item>@string/date_style_font_riviera</item>
+        <item>@string/date_style_font_theoutbox</item>
     </string-array>
 
     <string-array name="date_style_font_values" translatable="false">
         <item>system</item>
+        <item>adamcg</item>
+        <item>alien</item>
+        <item>bignoodle</item>
+        <item>biko</item>
+        <item>ginora</item>
+        <item>gobold</item>
         <item>google</item>
+        <item>inkferno</item>
+        <item>instruction</item>
+        <item>jacklane</item>
+        <item>monad</item>
+        <item>noir</item>
+        <item>outrun</item>
+        <item>riviera</item>
+        <item>theoutbox</item>
     </string-array>
 
     <string name="date_style_transform_title">Show uppercase on date</string>

@@ -207,8 +207,64 @@ public class SmartspaceView extends FrameLayout implements ISmartspace, ValueAni
                 tf = Typeface.create("sans-serif-medium", Typeface.NORMAL);
                 break;
 
+            case "adamcg":
+                tf = Typeface.create("adamcg-pro", Typeface.NORMAL);
+                break;
+
+            case "alien":
+                tf = Typeface.create("alien-league", Typeface.NORMAL);
+                break;
+
+            case "bignoodle":
+                tf = Typeface.create("bignoodle-regular", Typeface.NORMAL);
+                break;
+
+            case "biko":
+                tf = Typeface.create("biko", Typeface.NORMAL);
+                break;
+
+            case "ginora":
+                tf = Typeface.create("ginora-sans", Typeface.NORMAL);
+                break;
+
+            case "gobold":
+                tf = Typeface.create("gobold-light-sys", Typeface.NORMAL);
+                break;
+
             case "google":
                 tf = Typeface.createFromAsset(getContext().getAssets(), "fonts/GoogleSans-Regular.ttf");
+                break;
+
+            case "inkferno":
+                tf = Typeface.create("inkferno", Typeface.NORMAL);
+                break;
+
+            case "instruction":
+                tf = Typeface.create("instruction", Typeface.NORMAL);
+                break;
+
+            case "jacklane":
+                tf = Typeface.create("jack-lane", Typeface.NORMAL);
+                break;
+
+            case "monad":
+                tf = Typeface.create("monad", Typeface.NORMAL);
+                break;
+
+            case "noir":
+                tf = Typeface.create("noir", Typeface.NORMAL);
+                break;
+
+            case "outrun":
+                tf = Typeface.create("outrun-future", Typeface.NORMAL);
+                break;
+
+            case "riviera":
+                tf = Typeface.create("riviera", Typeface.NORMAL);
+                break;
+
+            case "theoutbox":
+                tf = Typeface.create("the-outbox", Typeface.NORMAL);
                 break;
 
             default:
