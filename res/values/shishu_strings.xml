@@ -307,21 +307,34 @@
     <string name="date_format_long_name">Long</string>
     <string name="date_format_normal_name">Normal</string>
     <string name="date_format_short_name">Short</string>
+    <string name="date_format_daydate_long_name">Day (with number)</string>
+    <string name="date_format_daydate_short_name">Day (short with number)</string>
+    <string name="date_format_dayonly_name">Just today</string>
+
 
     <string name="date_format_long">EEEEMMMMd</string>
     <string name="date_format_normal">EEEEMMMd</string>
     <string name="date_format_short">EEEMMMd</string>
+    <string name="date_format_daydate_long">EEEEd</string>
+    <string name="date_format_daydate_short">EEEd</string>
+    <string name="date_format_dayonly">EEEE</string>
 
     <string-array name="date_format_names">
         <item>@string/date_format_long_name</item>
         <item>@string/date_format_normal_name</item>
         <item>@string/date_format_short_name</item>
+        <item>@string/date_format_dayonly_name</item>
+        <item>@string/date_format_daydate_short_name</item>
+        <item>@string/date_format_daydate_long_name</item>
     </string-array>
 
     <string-array name="date_format_values">
         <item>@string/date_format_long</item>
         <item>@string/date_format_normal</item>
         <item>@string/date_format_short</item>
+        <item>@string/date_format_dayonly</item>
+        <item>@string/date_format_daydate_short</item>
+        <item>@string/date_format_daydate_long</item>
     </string-array>
 
     <string name="show_page_indicator_title">Show page indicator</string>
