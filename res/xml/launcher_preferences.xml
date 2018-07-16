@@ -384,6 +384,13 @@
                 android:summary="@string/generate_adaptive_background_summary"
                 android:title="@string/generate_adaptive_background_title" />
 
+            <SwitchPreference
+                android:defaultValue="false"
+                android:key="pref_show_badge_counter"
+                android:persistent="true"
+                android:summary="@string/show_badge_count_summary"
+                android:title="@string/show_badge_count_title" />
+
         </PreferenceCategory>
 
         <PreferenceCategory

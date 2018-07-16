@@ -31,6 +31,7 @@ import android.util.SparseArray;
 import com.android.launcher3.R;
 import com.android.launcher3.graphics.IconPalette;
 import com.android.launcher3.graphics.ShadowGenerator;
+import com.hdeva.launcher.LeanSettings;
 
 /**
  * Contains parameters necessary to draw a badge for an icon (e.g. the size of the badge).
@@ -38,7 +39,7 @@ import com.android.launcher3.graphics.ShadowGenerator;
  */
 public class BadgeRenderer {
 
-    private static final boolean DOTS_ONLY = true;
+    private static boolean DOTS_ONLY = true;
 
     // The badge sizes are defined as percentages of the app icon size.
     private static final float SIZE_PERCENTAGE = 0.38f;
@@ -67,6 +68,7 @@ public class BadgeRenderer {
     public BadgeRenderer(Context context, int iconSizePx) {
         mContext = context;
         Resources res = context.getResources();
+        DOTS_ONLY = !LeanSettings.isBadgeCounterEnabled(mContext);
         mSize = (int) (SIZE_PERCENTAGE * iconSizePx);
         mCharSize = (int) (CHAR_SIZE_PERCENTAGE * iconSizePx);
         mOffset = (int) (OFFSET_PERCENTAGE * iconSizePx);

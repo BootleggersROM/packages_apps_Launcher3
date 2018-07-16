@@ -57,6 +57,7 @@ public class LeanSettings {
     public static final String DATE_STYLE_FONT = "pref_date_font";
     public static final String DATE_STYLE_TRANSFORM = "pref_date_transform";
     public static final String DATE_STYLE_SPACING = "pref_date_spacing";
+    public static final String ICON_BADGE_COUNTER = "pref_show_badge_counter";
 
     private static final boolean SETTINGS_DIRTY_DEFAULT = false;
     private static final boolean LOCK_DESKTOP_DEFAULT = false;
@@ -99,7 +100,8 @@ public class LeanSettings {
     private static final boolean PAGE_INDICATOR_DEFAULT = true;
     private static final String DATE_STYLE_FONT_DEFAULT = "google";
     private static final boolean DATE_STYLE_TRANSFORM_DEFAULT = false;
-    private static final String DATE_STYLE_SPACING_DEFAULT = "normal"; 
+    private static final String DATE_STYLE_SPACING_DEFAULT = "normal";
+    private static final boolean ICON_BADGE_COUNTER_DEFAULT = false;
 
     private static final String THEME_WALLPAPER = "wallpaper";
     private static final String THEME_LIGHT = "light";
@@ -425,6 +427,10 @@ public class LeanSettings {
                 break;
         }
         return amountsp;
+    }
+
+    public static boolean isBadgeCounterEnabled(Context context) {
+        return prefs(context).getBoolean(ICON_BADGE_COUNTER, ICON_BADGE_COUNTER_DEFAULT);
     }
 
     private static SharedPreferences prefs(Context context) {
