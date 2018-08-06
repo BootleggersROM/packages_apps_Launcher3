@@ -203,8 +203,24 @@ public class SmartspaceView extends FrameLayout implements ISmartspace, ValueAni
     private void setGlanceFont(TextView... views) {
         Typeface tf;
         switch (LeanSettings.getDateStyleFont(getContext())) {
+            case "systembold":
+                tf = Typeface.create("sans-serif", Typeface.BOLD);
+                break;
+
+            case "systemitalic":
+                tf = Typeface.create("sans-serif", Typeface.ITALIC);
+                break;
+
             case "system":
-                tf = Typeface.create("sans-serif-medium", Typeface.NORMAL);
+                tf = Typeface.create("sans-serif", Typeface.NORMAL);
+                break;
+
+            case "systemlight":
+                tf = Typeface.create("sans-serif-light", Typeface.NORMAL);
+                break;
+
+            case "abelreg":
+                tf = Typeface.create("abelreg", Typeface.NORMAL);
                 break;
 
             case "adamcg":
@@ -215,12 +231,24 @@ public class SmartspaceView extends FrameLayout implements ISmartspace, ValueAni
                 tf = Typeface.create("alien-league", Typeface.NORMAL);
                 break;
 
+            case "archivo":
+                tf = Typeface.create("archivonar", Typeface.NORMAL);
+                break;
+
+            case "badscript":
+                tf = Typeface.create("badscript", Typeface.NORMAL);
+                break;
+
             case "bignoodle":
                 tf = Typeface.create("bignoodle-regular", Typeface.NORMAL);
                 break;
 
             case "biko":
                 tf = Typeface.create("biko", Typeface.NORMAL);
+                break;
+
+            case "cherryswash":
+                tf = Typeface.create("cherryswash", Typeface.NORMAL);
                 break;
 
             case "ginora":
@@ -235,6 +263,10 @@ public class SmartspaceView extends FrameLayout implements ISmartspace, ValueAni
                 tf = Typeface.createFromAsset(getContext().getAssets(), "fonts/GoogleSans-Regular.ttf");
                 break;
 
+            case "ibmplex":
+                tf = Typeface.create("ibmplex-mono", Typeface.NORMAL);
+                break;
+
             case "inkferno":
                 tf = Typeface.create("inkferno", Typeface.NORMAL);
                 break;
@@ -245,6 +277,10 @@ public class SmartspaceView extends FrameLayout implements ISmartspace, ValueAni
 
             case "jacklane":
                 tf = Typeface.create("jack-lane", Typeface.NORMAL);
+                break;
+
+            case "kellyslab":
+                tf = Typeface.create("kellyslab", Typeface.NORMAL);
                 break;
 
             case "monad":
@@ -259,16 +295,48 @@ public class SmartspaceView extends FrameLayout implements ISmartspace, ValueAni
                 tf = Typeface.create("outrun-future", Typeface.NORMAL);
                 break;
 
+            case "pompiere":
+                tf = Typeface.create("pompiere", Typeface.NORMAL);
+                break;
+
+            case "raleway":
+                tf = Typeface.create("raleway-light", Typeface.NORMAL);
+                break;
+
+            case "reemkufi":
+                tf = Typeface.create("reemkufi", Typeface.NORMAL);
+                break;
+
             case "riviera":
                 tf = Typeface.create("riviera", Typeface.NORMAL);
+                break;
+
+            case "satisfy":
+                tf = Typeface.create("satisfy", Typeface.NORMAL);
+                break;
+
+            case "seaweedsc":
+                tf = Typeface.create("seaweedsc", Typeface.NORMAL);
+                break;
+
+            case "snowstorm":
+                tf = Typeface.create("snowstorm-sys", Typeface.NORMAL);
                 break;
 
             case "theoutbox":
                 tf = Typeface.create("the-outbox", Typeface.NORMAL);
                 break;
 
+            case "vibur":
+                tf = Typeface.create("vibur", Typeface.NORMAL);
+                break;
+
+            case "voltaire":
+                tf = Typeface.create("voltaire", Typeface.NORMAL);
+                break;
+
             default:
-                tf = Typeface.create("sans-serif-medium", Typeface.NORMAL);
+                tf = Typeface.createFromAsset(getContext().getAssets(), "fonts/GoogleSans-Regular.ttf");
                 break;
         }
         for (TextView view : views) {
