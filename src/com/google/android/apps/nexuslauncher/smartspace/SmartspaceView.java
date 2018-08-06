@@ -319,6 +319,10 @@ public class SmartspaceView extends FrameLayout implements ISmartspace, ValueAni
                 tf = Typeface.create("seaweedsc", Typeface.NORMAL);
                 break;
 
+            case "sedgwick":
+                tf = Typeface.create("sedgwick-ave", Typeface.NORMAL);
+                break;
+
             case "snowstorm":
                 tf = Typeface.create("snowstorm-sys", Typeface.NORMAL);
                 break;

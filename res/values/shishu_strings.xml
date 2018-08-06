@@ -371,6 +371,7 @@
     <string name="date_style_font_riviera" translatable="false">Riviera</string>
     <string name="date_style_font_satify" translatable="false">Satisfy</string>
     <string name="date_style_font_seaweedsc" translatable="false">Seaweed Script</string>
+    <string name="date_style_font_sedgwick" translatable="false">Sedgwick Ave Display</string>
     <string name="date_style_font_snowstorm" translatable="false">Snowstorm</string>
     <string name="date_style_font_theoutbox" translatable="false">The Outbox</string>
     <string name="date_style_font_vibur" translatable="false">Vibur</string>
@@ -406,6 +407,7 @@
         <item>@string/date_style_font_riviera</item>
         <item>@string/date_style_font_satify</item>
         <item>@string/date_style_font_seaweedsc</item>
+        <item>@string/date_style_font_sedgwick</item>
         <item>@string/date_style_font_snowstorm</item>
         <item>@string/date_style_font_theoutbox</item>
         <item>@string/date_style_font_vibur</item>
@@ -442,6 +444,7 @@
         <item>riviera</item>
         <item>satisfy</item>
         <item>seaweedsc</item>
+        <item>sedgwick</item>
         <item>snowstorm</item>
         <item>theoutbox</item>
         <item>vibur</item>
