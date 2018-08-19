@@ -239,6 +239,10 @@ public class SmartspaceView extends FrameLayout implements ISmartspace, ValueAni
                 tf = Typeface.create("badscript", Typeface.NORMAL);
                 break;
 
+            case "bariol":
+                tf = Typeface.create("bariol-reg", Typeface.NORMAL);
+                break;
+
             case "bignoodle":
                 tf = Typeface.create("bignoodle-regular", Typeface.NORMAL);
                 break;

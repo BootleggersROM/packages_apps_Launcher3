@@ -351,6 +351,7 @@
     <string name="date_style_font_alienleague" translatable="false">Alien League</string>
     <string name="date_style_font_archivo" translatable="false">Archivo Narrow</string>
     <string name="date_style_font_badscript" translatable="false">Bad Script</string>
+    <string name="date_style_font_bariol" translatable="false">Bariol</string>
     <string name="date_style_font_bignoodle" translatable="false">Big Noodle Tilting</string>
     <string name="date_style_font_biko" translatable="false">Biko</string>
     <string name="date_style_font_cherryswash" translatable="false">Cherry Swash</string>
@@ -387,6 +388,7 @@
         <item>@string/date_style_font_alienleague</item>
         <item>@string/date_style_font_archivo</item>
         <item>@string/date_style_font_badscript</item>
+        <item>@string/date_style_font_bariol</item>
         <item>@string/date_style_font_bignoodle</item>
         <item>@string/date_style_font_biko</item>
         <item>@string/date_style_font_cherryswash</item>
@@ -424,6 +426,7 @@
         <item>alien</item>
         <item>archivo</item>
         <item>badscript</item>
+        <item>bariol</item>
         <item>bignoodle</item>
         <item>biko</item>
         <item>cherryswash</item>
