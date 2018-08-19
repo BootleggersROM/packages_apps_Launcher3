@@ -3,5 +3,8 @@
 <resources>
   <string name="num_default">இயல்புநிலை</string>
   <!-- Our custom preference -->
-  <!-- PreferenceCategories Titles -->
+  <string name="date_format_normal_name">இயல்பான</string>
+  <!-- At a glance style -->
+  <string name="date_style_spacing_normal">இயல்பான</string>
+  <!-- Show icon count on badge -->
 </resources>

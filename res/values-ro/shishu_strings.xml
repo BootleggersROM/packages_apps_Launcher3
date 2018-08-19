@@ -4,6 +4,7 @@
   <string name="num_default">Implicit</string>
   <!-- Our custom preference -->
   <string name="shishu_preferencecat_misc">Diverse</string>
-  <!-- PreferenceCategories Titles -->
   <string name="gestures_category">Gesturi</string>
+  <!-- At a glance style -->
+  <!-- Show icon count on badge -->
 </resources>

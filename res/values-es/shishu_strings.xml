@@ -61,12 +61,6 @@
   <string name="shishu_preferencecat_pixel">Funciones relacionadas con Pixel</string>
   <string name="shishu_preferencecat_features">Características especiales</string>
   <string name="shishu_preferencecat_misc">Otros ajustes</string>
-  <!-- PreferenceCategories Titles -->
-  <string name="companion_app_permission_label">Permiso de Lean Companion</string>
-  <string name="companion_app_permission_description">Permiso para enforzar la protección de firma para las apps de companion.</string>
-  <string name="companion_app_title">App de companion</string>
-  <string name="companion_app_not_installed">No instalado</string>
-  <string name="companion_app_version_x">versión %s</string>
   <string name="search_provider_title">Proveedor de búsqueda</string>
   <string name="search_provider_google">Google</string>
   <string name="search_provider_bing">Bing</string>
@@ -157,4 +151,30 @@
   <string name="reset_app_icons_title">Restablecer iconos de las apps</string>
   <string name="reset_app_icons_summary">Usar predeterminados del sistema</string>
   <string name="reset_app_icons_description">Esto volverá a poner los iconos de las apps al predeterminado del sistema.</string>
+  <string name="reset_app_visibility_title">Restablecer la visibilidad de las apps</string>
+  <string name="reset_app_visibility_summary">Por defecto</string>
+  <string name="date_format_title">Formato de fecha</string>
+  <string name="date_format_long_name">Largo</string>
+  <string name="date_format_normal_name">Normal</string>
+  <string name="date_format_short_name">Corto</string>
+  <string name="date_format_daydate_long_name">Día (con el número)</string>
+  <string name="date_format_daydate_short_name">Día (corto con el numero)</string>
+  <string name="date_format_dayonly_name">Solo hoy</string>
+  <string name="show_page_indicator_title">Mostrar indicador de página</string>
+  <string name="show_page_indicator_summary">Usando lineas horizontales</string>
+  <!-- At a glance style -->
+  <string name="date_style_font">Fuente de la fecha</string>
+  <string name="date_style_font_systembold">Negrita del sistema</string>
+  <string name="date_style_font_systemitalic">Cursiva del sistema</string>
+  <string name="date_style_font_system">Predeterminado por el sistema</string>
+  <string name="date_style_font_systemlight">Ligera del sistema</string>
+  <string name="date_style_transform_title">Mostrar la fecha en mayúscula</string>
+  <string name="date_style_transform_summary">Transforma la fecha/en un vistazo con texto en mayúscula</string>
+  <string name="date_style_spacing">Espaciado de fecha</string>
+  <string name="date_style_spacing_normal">Normal</string>
+  <string name="date_style_spacing_barely">Apenas visible</string>
+  <string name="date_style_spacing_ott">Exageradamente</string>
+  <!-- Show icon count on badge -->
+  <string name="show_badge_count_title">Mostrar contador en los puntos</string>
+  <string name="show_badge_count_summary">Agrega un contador de notificaciones en el punto de notificación </string>
 </resources>

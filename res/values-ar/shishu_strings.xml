@@ -46,8 +46,10 @@
   <string name="force_colored_g_icon_summary">في أسفل شريط البحث</string>
   <string name="double_tap_to_lock_title">نقرتين لقفل الجهاز</string>
   <string name="double_tap_to_lock_summary">على الشاشة الرئيسية</string>
+  <string name="double_tap_to_lock_hint">لتتمكن من إستخدام النقر المزدوج للقفل عليك تمكين اذونات المسؤول لـ Lawnchair. هذا قفل تأمين، مما يعني أنه عليك إدخال الرمز لفتح القفل في المرة القادمة، وذلك اذا كان لديك واحد.</string>
   <string name="double_tap_to_lock_disable_warning">عن طريق تعطيل وصول المسؤول، لن تكون قادراً على استخدام الاستفادة من النقر المزدوج لقفل الشاشة الرئيسية الخاصة بك.</string>
   <string name="icon_size_title">حجم الأيقونة</string>
+  <string name="icon_text_size_title">حجم تسمة الرمز</string>
   <string name="icon_size_extra_small">صغيرة جداً (-25%)</string>
   <string name="icon_size_small">صغيرة (-10%)</string>
   <string name="icon_size_average">متوسط (افتراضي)</string>
@@ -59,12 +61,6 @@
   <string name="shishu_preferencecat_pixel">الميزات المتعلقة بـ بكسل</string>
   <string name="shishu_preferencecat_features">ميزات خاصة</string>
   <string name="shishu_preferencecat_misc">متفرقات</string>
-  <!-- PreferenceCategories Titles -->
-  <string name="companion_app_permission_label">أذن خال من المرافق</string>
-  <string name="companion_app_permission_description">إذن لفرض حماية التوقيع للتطبيقات المصاحبة.</string>
-  <string name="companion_app_title">التطبيق المصاحب</string>
-  <string name="companion_app_not_installed">غير مثبت</string>
-  <string name="companion_app_version_x">الإصدار %s</string>
   <string name="search_provider_title">موفر البحث</string>
   <string name="search_provider_google">جوجل</string>
   <string name="search_provider_bing">Bing</string>
@@ -94,12 +90,31 @@
   <string name="home_action_app_drawer">فتح درج التطبيق</string>
   <string name="home_action_app_search">فتح البحث عن التطبيق</string>
   <string name="home_action_overview">أدخل على النظرة العامة</string>
+  <string name="bottom_search_category">شريط البحث السفلي</string>
   <string name="top_search_category">شريط البحث</string>
+  <string name="color_category">الألوان</string>
+  <string name="sizes_category">الأحجام</string>
+  <string name="visibility_category">الشفافية</string>
+  <string name="icons_category">الأيقونات</string>
   <string name="gestures_category">الإيماءات</string>
+  <string name="actions_category">الاجراءت</string>
+  <string name="one_finger_down_title">مرر للأسفل بأصبع واحد</string>
+  <string name="two_finger_down_title">مرر للأسفل بأصبعين</string>
+  <string name="shortcuts_title">الاختصارات</string>
+  <string name="shortcut_widgets_title">الأدوات</string>
+  <string name="shortcut_uninstall_title">إلغاء التثبيت</string>
+  <string name="shortcut_edit_title">تحرير</string>
   <string name="reset_category">إعادة تعيين</string>
   <string name="reset_app_names_title">اعادة تعيين اسماء التطبيقات</string>
   <string name="reset_app_names_summary">الى الافتراضي</string>
   <string name="reset_app_names_description">سيتم اعادة تعيين اسماء جميع التطبيقات الى اسمائها الافتراضية.</string>
   <string name="reset_app_visibility_title">إعادة تعيين رؤية التطبيق</string>
   <string name="reset_app_visibility_summary">الى الافتراضي</string>
+  <string name="reset_app_visibility_title">إعادة تعيين رؤية التطبيق</string>
+  <string name="reset_app_visibility_summary">الى الافتراضي</string>
+  <string name="date_format_title">تنسيق التاريخ</string>
+  <string name="date_format_normal_name">مُتوسّطة</string>
+  <!-- At a glance style -->
+  <string name="date_style_spacing_normal">مُتوسّطة</string>
+  <!-- Show icon count on badge -->
 </resources>

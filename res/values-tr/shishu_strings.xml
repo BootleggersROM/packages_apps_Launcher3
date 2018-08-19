@@ -61,12 +61,6 @@
   <string name="shishu_preferencecat_pixel">Pikselle İlgili Özellikler</string>
   <string name="shishu_preferencecat_features">Özel özellikler</string>
   <string name="shishu_preferencecat_misc">Çeşitli</string>
-  <!-- PreferenceCategories Titles -->
-  <string name="companion_app_permission_label">Yalın arkadaş izni</string>
-  <string name="companion_app_permission_description">Tamamlayıcı uygulamalar için imza korumasını zorunlu kılma izni.</string>
-  <string name="companion_app_title">Tamamlayıcı uygulama</string>
-  <string name="companion_app_not_installed">Yüklü değil</string>
-  <string name="companion_app_version_x">sürüm %s</string>
   <string name="search_provider_title">Arama sağlayıcısı</string>
   <string name="search_provider_google">Google</string>
   <string name="search_provider_bing">Bing</string>
@@ -157,4 +151,30 @@
   <string name="reset_app_icons_title">Uygulama simgelerini sıfırla</string>
   <string name="reset_app_icons_summary">Sistem varsayılanına</string>
   <string name="reset_app_icons_description">Bu tüm uygulama simgelerini sistem varsayılanlarına sıfırlar.</string>
+  <string name="reset_app_visibility_title">Uygulama görünürlüğünü sıfırla</string>
+  <string name="reset_app_visibility_summary">Varsayılan</string>
+  <string name="date_format_title">Tarih biçimi</string>
+  <string name="date_format_long_name">Uzun</string>
+  <string name="date_format_normal_name">Normal</string>
+  <string name="date_format_short_name">Kısa</string>
+  <string name="date_format_daydate_long_name">Gün (sayı ile)</string>
+  <string name="date_format_daydate_short_name">Gün (kısa sayı ile)</string>
+  <string name="date_format_dayonly_name">Sadece bugün</string>
+  <string name="show_page_indicator_title">Sayfa göstergesini göster</string>
+  <string name="show_page_indicator_summary">Yatay çizgileri kullanır</string>
+  <!-- At a glance style -->
+  <string name="date_style_font">Tarih yazı tipi</string>
+  <string name="date_style_font_systembold">Sistem kalın</string>
+  <string name="date_style_font_systemitalic">Sistem italik</string>
+  <string name="date_style_font_system">Sistem varsayılanı</string>
+  <string name="date_style_font_systemlight">Sistem açık</string>
+  <string name="date_style_transform_title">Tarihte büyük harf göster</string>
+  <string name="date_style_transform_summary">Büyük/küçük harfle tüm tarihi bir bakışta dönüştürün</string>
+  <string name="date_style_spacing">Tarih aralığı</string>
+  <string name="date_style_spacing_normal">Normal</string>
+  <string name="date_style_spacing_barely">Neredeyse farkedilir</string>
+  <string name="date_style_spacing_ott">Üst üzerinde</string>
+  <!-- Show icon count on badge -->
+  <string name="show_badge_count_title">Rozetde sayı göster</string>
+  <string name="show_badge_count_summary">Bildirim rozeti üzerinde bildirim sayısı gösterir </string>
 </resources>

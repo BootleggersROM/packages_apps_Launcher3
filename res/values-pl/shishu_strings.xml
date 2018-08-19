@@ -60,13 +60,7 @@
   <string name="shishu_preferencecat_icons">Ikony związane</string>
   <string name="shishu_preferencecat_pixel">Funkcje związane z Pixel</string>
   <string name="shishu_preferencecat_features">Specjalne funkcje</string>
-  <string name="shishu_preferencecat_misc">Inne</string>
-  <!-- PreferenceCategories Titles -->
-  <string name="companion_app_permission_label">Lean Companion Permissions</string>
-  <string name="companion_app_permission_description">Zezwolenie na wymuszenie ochrony podpisu dla aplikacji towarzyszących.</string>
-  <string name="companion_app_title">Aplikacja towarzysząca</string>
-  <string name="companion_app_not_installed">Niezainstalowane</string>
-  <string name="companion_app_version_x">wersja %s</string>
+  <string name="shishu_preferencecat_misc">Różne</string>
   <string name="search_provider_title">Dostawcy wyszukiwania</string>
   <string name="search_provider_google">Google</string>
   <string name="search_provider_bing">Bing</string>
@@ -157,4 +151,12 @@
   <string name="reset_app_icons_title">Zresetuj nazwy aplikacji</string>
   <string name="reset_app_icons_summary">Użyj ustawienia domyślnego</string>
   <string name="reset_app_icons_description">To spowoduje zresetowanie wszystkich ikon aplikacji do ustawień domyślnych.</string>
+  <string name="reset_app_visibility_title">Resetuj widoczność aplikacji</string>
+  <string name="reset_app_visibility_summary">Domyślnie</string>
+  <string name="date_format_title">Format daty</string>
+  <string name="date_format_normal_name">Normalny</string>
+  <!-- At a glance style -->
+  <string name="date_style_font_system">Domyślny systemowy</string>
+  <string name="date_style_spacing_normal">Normalny</string>
+  <!-- Show icon count on badge -->
 </resources>

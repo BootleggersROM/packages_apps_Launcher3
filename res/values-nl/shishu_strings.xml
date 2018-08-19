@@ -3,5 +3,6 @@
 <resources>
   <string name="num_default">Standaard</string>
   <!-- Our custom preference -->
-  <!-- PreferenceCategories Titles -->
+  <!-- At a glance style -->
+  <!-- Show icon count on badge -->
 </resources>

@@ -5,7 +5,10 @@
   <!-- Our custom preference -->
   <string name="shishu_preferencecat_ui">界面配置</string>
   <string name="shishu_preferencecat_misc">其他設定</string>
-  <!-- PreferenceCategories Titles -->
   <string name="gestures_category">手勢</string>
   <string name="reset_category">重置</string>
+  <string name="date_format_normal_name">正常</string>
+  <!-- At a glance style -->
+  <string name="date_style_spacing_normal">正常</string>
+  <!-- Show icon count on badge -->
 </resources>

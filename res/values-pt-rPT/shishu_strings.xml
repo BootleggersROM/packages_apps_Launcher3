@@ -4,6 +4,7 @@
   <string name="num_default">Predefinição </string>
   <!-- Our custom preference -->
   <string name="shishu_preferencecat_misc">Diversos</string>
-  <!-- PreferenceCategories Titles -->
   <string name="gestures_category">Gestos</string>
+  <!-- At a glance style -->
+  <!-- Show icon count on badge -->
 </resources>

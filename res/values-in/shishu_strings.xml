@@ -24,9 +24,9 @@
   <string name="icon_size_average">Rata-rata (default)</string>
   <string name="icon_size_large">Besar (+10%)</string>
   <!-- Our custom preference -->
+  <string name="shishu_preferencecat_ui">Antarmuka</string>
   <string name="shishu_preferencecat_features">Fitur khusus</string>
   <string name="shishu_preferencecat_misc">Lain-lain</string>
-  <!-- PreferenceCategories Titles -->
   <string name="search_provider_google">Google</string>
   <string name="search_provider_bing">Bing</string>
   <string name="search_provider_duckduckgo">DuckDuckGo</string>
@@ -36,4 +36,10 @@
   <string name="hide_app_label_title">Sembunyikan nama aplikasi</string>
   <string name="home_action_quick_search">Pencarian cepat</string>
   <string name="gestures_category">Isyarat</string>
+  <string name="reset_category">Setel ulang</string>
+  <string name="date_format_title">Format tanggal</string>
+  <string name="date_format_normal_name">Normal</string>
+  <!-- At a glance style -->
+  <string name="date_style_spacing_normal">Normal</string>
+  <!-- Show icon count on badge -->
 </resources>

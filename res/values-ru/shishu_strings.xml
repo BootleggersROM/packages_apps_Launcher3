@@ -59,12 +59,6 @@
   <string name="shishu_preferencecat_pixel">Pixel-функции</string>
   <string name="shishu_preferencecat_features">Особые функции</string>
   <string name="shishu_preferencecat_misc">Прочие настройки</string>
-  <!-- PreferenceCategories Titles -->
-  <string name="companion_app_permission_label">Разрешение Lean Companion</string>
-  <string name="companion_app_permission_description">Разрешение для обеспечения защиты подписи для схожих приложений.</string>
-  <string name="companion_app_title">Дополнительное приложение</string>
-  <string name="companion_app_not_installed">Не установлен</string>
-  <string name="companion_app_version_x">версия %s</string>
   <string name="search_provider_title">Приложение поиска</string>
   <string name="search_provider_google">Google</string>
   <string name="search_provider_bing">Bing</string>
@@ -94,12 +88,34 @@
   <string name="home_action_app_drawer">Открыть редактор приложения</string>
   <string name="home_action_app_search">Открыть поиск приложений</string>
   <string name="home_action_overview">Обзор</string>
+  <string name="gestures_and_actions">Жесты и действия</string>
   <string name="top_search_category">Показывать строку поиска</string>
   <string name="gestures_category">Жесты</string>
+  <string name="actions_category">Действия</string>
+  <string name="one_finger_down_title">Провести по экрану вниз одним пальцем</string>
+  <string name="two_finger_down_title">Провести по экрану вниз двумя пальцами</string>
+  <string name="shortcuts_title">Горячие клавиши</string>
+  <string name="shortcut_edit_title">Редактировать</string>
+  <string name="search_apps_caret_title">Поиск приложений</string>
+  <string name="available_icon_packs">Доступные наборы иконок</string>
+  <string name="custom_app_filter_hint">Поиск иконок приложений</string>
+  <string name="icon_pack_loading">Загрузка набора иконок</string>
+  <string name="applying_icon">Применить иконки</string>
+  <string name="clear_custom_icon">Удалить пользовательские иконки</string>
+  <string name="custom_icon_cleared">Пользовательские иконки удалены!</string>
+  <string name="edit_apps_summary">Видимость приложений, иконки</string>
+  <string name="gestures_and_actions_summary">Провести по экрану, двойное нажатие, и. т. д</string>
   <string name="reset_category">Сброс</string>
   <string name="reset_app_names_title">Сбросить имена приложений</string>
   <string name="reset_app_names_summary">По умолчанию</string>
   <string name="reset_app_names_description">Это приведет к сбросу имён всех приложений.</string>
   <string name="reset_app_visibility_title">Сбросить видимость приложений</string>
   <string name="reset_app_visibility_summary">По умолчанию</string>
+  <string name="reset_app_visibility_title">Сбросить видимость приложений</string>
+  <string name="reset_app_visibility_summary">По умолчанию</string>
+  <string name="date_format_title">Формат даты</string>
+  <string name="date_format_normal_name">По умолчанию</string>
+  <!-- At a glance style -->
+  <string name="date_style_spacing_normal">По умолчанию</string>
+  <!-- Show icon count on badge -->
 </resources>

@@ -61,12 +61,6 @@
   <string name="shishu_preferencecat_pixel">Funzionalità relative a pixel</string>
   <string name="shishu_preferencecat_features">Caratteristiche speciali</string>
   <string name="shishu_preferencecat_misc">Varie</string>
-  <!-- PreferenceCategories Titles -->
-  <string name="companion_app_permission_label">Permesso Lean Companion</string>
-  <string name="companion_app_permission_description">Autorizzazione ad applicare la protezione della firma per le app companion.</string>
-  <string name="companion_app_title">Companion app</string>
-  <string name="companion_app_not_installed">Non installato</string>
-  <string name="companion_app_version_x">versione %s</string>
   <string name="search_provider_title">Provider di ricerca</string>
   <string name="search_provider_google">Google</string>
   <string name="search_provider_bing">Bing</string>
@@ -97,8 +91,8 @@
   <string name="home_action_app_search">Apri ricerca app</string>
   <string name="home_action_overview">Entra nella panoramica</string>
   <string name="double_tap_to_secure_lock_title">Blocco sicuro</string>
-  <string name="double_tap_to_secure_lock_summary">Quando si fa un doppio tap per bloccare il dispositivo, disabilita l\'autenticazione biometrica</string>
-  <string name="gestures_and_actions">Azioni &amp; Gesture</string>
+  <string name="double_tap_to_secure_lock_summary">Quando si fa un doppio tocco per bloccare il dispositivo, disabilita l\'autenticazione biometrica</string>
+  <string name="gestures_and_actions">Azioni &amp; Gesti</string>
   <string name="bottom_search_category">Barra di ricerca in basso</string>
   <string name="top_search_category">App barra di ricerca</string>
   <string name="color_category">Colori</string>
@@ -110,7 +104,7 @@
   <string name="one_finger_down_title">Scorri verso il basso con un dito</string>
   <string name="one_finger_down_summary">Per le notifiche</string>
   <string name="two_finger_down_title">Scorri verso il basso con due dita</string>
-  <string name="two_finger_down_summary">Per le Impostazioni Rapide</string>
+  <string name="two_finger_down_summary">Per le impostazioni rapide</string>
   <string name="black_colors_title">Colori neri</string>
   <string name="black_colors_summary">Usa colori neri per il tema scuro</string>
   <string name="show_caret_title">Mostra dettagli</string>
@@ -140,11 +134,11 @@
   <string name="custom_icon_cleared">Icona personalizzata cancellata!</string>
   <string name="system_default">Default di sistema</string>
   <string name="at_a_glance_summary">Meteo, eventi calendario, etc</string>
-  <string name="feed_summary">Feed Google con uno swipe</string>
-  <string name="search_summary">App e Google search</string>
+  <string name="feed_summary">Scorri per Google Feed</string>
+  <string name="search_summary">App e ricerca Google</string>
   <string name="look_and_feel_summary">Tema, dimensioni griglia</string>
   <string name="edit_apps_summary">Visibilità app, icone</string>
-  <string name="gestures_and_actions_summary">Swipe, doppio tocco, etc</string>
+  <string name="gestures_and_actions_summary">Scorri, doppio tocco, etc</string>
   <string name="shortcuts_summary">Visibilità scorciatoia app</string>
   <string name="other_summary">Impostazioni generali</string>
   <string name="reset_category">Ripristino</string>
@@ -157,4 +151,16 @@
   <string name="reset_app_icons_title">Resetta le icone app</string>
   <string name="reset_app_icons_summary">A quelle predefinite di sistema</string>
   <string name="reset_app_icons_description">Questo resetterà tutte le icone app in quelle predefinite.</string>
+  <string name="reset_app_visibility_title">Reimposta la visibilità delle app</string>
+  <string name="reset_app_visibility_summary">Per impostazione predefinita</string>
+  <string name="date_format_title">Formato data</string>
+  <string name="date_format_long_name">Lungo</string>
+  <string name="date_format_normal_name">Normale</string>
+  <string name="date_format_short_name">Breve</string>
+  <string name="date_format_daydate_long_name">Data (con numero)</string>
+  <string name="date_format_daydate_short_name">Data (breve con numero)</string>
+  <!-- At a glance style -->
+  <string name="date_style_font_system">Default di sistema</string>
+  <string name="date_style_spacing_normal">Normale</string>
+  <!-- Show icon count on badge -->
 </resources>
