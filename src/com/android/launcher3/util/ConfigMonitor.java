@@ -36,6 +36,7 @@ import com.android.launcher3.Utilities;
 import java.util.function.Consumer;
 
 import static com.android.launcher3.IconPackProvider.PREF_ICON_PACK;
+import static com.android.launcher3.icons.BaseIconFactory.KEY_PREF_LEGACY_ICON_MASK;
 
 /**
  * {@link BroadcastReceiver} which watches configuration changes and
@@ -126,7 +127,7 @@ public class ConfigMonitor extends BroadcastReceiver implements DisplayListener,
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        if (PREF_ICON_PACK.equals(key)) {
+        if (PREF_ICON_PACK.equals(key) || KEY_PREF_LEGACY_ICON_MASK.equals(key)) {
             notifyChange();
         }
     }
