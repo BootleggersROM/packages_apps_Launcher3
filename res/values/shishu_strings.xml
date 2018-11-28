@@ -99,4 +99,8 @@
     <string name="date_format_daydate_short" translatable="false">EEEd</string>
     <string name="date_format_dayonly" translatable="false">EEEE</string>
 
+    <!-- At a glance uppercase -->
+    <string name="date_style_transform_title">Show uppercase on date</string>
+    <string name="date_style_transform_summary">Transform all the date/at a glance with uppercased text</string>
+
 </resources>
