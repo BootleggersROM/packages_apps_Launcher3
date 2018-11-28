@@ -183,6 +183,7 @@ public class QuickSpaceView extends FrameLayout implements AnimatorUpdateListene
         for (TextView view : views) {
             if (view != null) {
                 view.setAllCaps(Utilities.isDateStyleUppercase(getContext()));
+                view.setLetterSpacing(Utilities.getDateStyleTextSpacing(getContext()));
             }
         }
     }
