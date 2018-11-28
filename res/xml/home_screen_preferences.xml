@@ -15,6 +15,16 @@
         android:defaultValue="true"
         android:persistent="true"/>
 
+    <ListPreference
+        android:key="pref_date_format"
+        android:title="@string/date_format_title"
+        android:summary="%s"
+        android:entries="@array/date_format_names"
+        android:entryValues="@array/date_format_values"
+        android:persistent="true"
+        android:defaultValue="@string/date_format_normal"
+        android:dependency="pref_show_quickspace" />
+
     <SwitchPreference
         android:key="pref_grid_options"
         android:title="Enable grid options"
