@@ -36,6 +36,24 @@
         android:title="@string/date_style_font" />
 
     <SwitchPreference
+        android:dependency="pref_show_quickspace"
+        android:key="pref_date_transform"
+        android:summary="@string/date_style_transform_summary"
+        android:title="@string/date_style_transform_title"
+        android:defaultValue="false"
+        android:persistent="true" />
+
+    <ListPreference
+        android:dependency="pref_show_quickspace"
+        android:entries="@array/date_style_spacing_names"
+        android:entryValues="@array/date_style_spacing_values"
+        android:key="pref_date_spacing"
+        android:defaultValue="normal"
+        android:persistent="true"
+        android:summary="%s"
+        android:title="@string/date_style_spacing" />
+
+    <SwitchPreference
         android:key="pref_grid_options"
         android:title="Enable grid options"
         android:defaultValue="false"
