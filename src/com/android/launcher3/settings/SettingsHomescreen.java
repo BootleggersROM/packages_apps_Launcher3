@@ -39,6 +39,7 @@ import com.android.launcher3.graphics.GridOptionsProvider;
 import com.android.launcher3.uioverrides.plugins.PluginManagerWrapper;
 import com.android.launcher3.util.SecureSettingsObserver;
 
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragment;
@@ -155,6 +156,17 @@ public class SettingsHomescreen extends Activity
                     screen.removePreference(preference);
                 }
             }
+
+            ListPreference dateFormat = (ListPreference) findPreference(Utilities.DATE_FORMAT_KEY);
+            dateFormat.setSummary(dateFormat.getEntry());
+            dateFormat.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+                    int index = dateFormat.findIndexOfValue((String) newValue);
+                    dateFormat.setSummary(dateFormat.getEntries()[index]);
+                    LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                    return true;
+                }
+            });
         }
 
         @Override

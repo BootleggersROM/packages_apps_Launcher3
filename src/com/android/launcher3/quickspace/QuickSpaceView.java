@@ -139,7 +139,7 @@ public class QuickSpaceView extends FrameLayout implements AnimatorUpdateListene
         mClockView.setVisibility(View.VISIBLE);
         mClockView.setOnClickListener(hasGoogleCalendar ? mActionReceiver.getCalendarAction() : null);
         if (forced) {
-            mClockView.reloadDateFormat(true);
+            mClockView.reloadDateFormat();
         }
         mTitleSeparator.setVisibility(mWeatherAvailable ? View.VISIBLE : View.GONE);
     }
@@ -260,4 +260,5 @@ public class QuickSpaceView extends FrameLayout implements AnimatorUpdateListene
     public void setPadding(int n, int n2, int n3, int n4) {
         super.setPadding(0, 0, 0, 0);
     }
+
 }
