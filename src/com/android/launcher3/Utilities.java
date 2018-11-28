@@ -148,6 +148,7 @@ public final class Utilities {
     public static final String SEARCH_PACKAGE = "com.google.android.googlequicksearchbox";
 
     public static final String DATE_FORMAT_KEY = "pref_date_format";
+    public static final String DATE_STYLE_FONT = "pref_date_font";
 
     public static boolean IS_RUNNING_IN_TEST_HARNESS =
                     ActivityManager.isRunningInTestHarness();
@@ -168,6 +169,10 @@ public final class Utilities {
 
     public static String getDateFormat(Context context) {
         return getPrefs(context).getString(DATE_FORMAT_KEY, context.getString(R.string.date_format_normal));
+    }
+
+    public static String getDateStyleFont(Context context) {
+        return getPrefs(context).getString(DATE_STYLE_FONT, "google");
     }
 
     public static String formatDateTime(Context context, long timeInMillis) {
@@ -202,6 +207,7 @@ public final class Utilities {
             Log.e(TAG, "Error formatting At A Glance date", t);
             return DateUtils.formatDateTime(context, timeInMillis, DateUtils.FORMAT_SHOW_WEEKDAY | DateUtils.FORMAT_SHOW_DATE | DateUtils.FORMAT_ABBREV_MONTH);
         }
+
     }
 
     /**

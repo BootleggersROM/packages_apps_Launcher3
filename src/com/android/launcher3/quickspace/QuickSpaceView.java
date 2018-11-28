@@ -181,7 +181,24 @@ public class QuickSpaceView extends FrameLayout implements AnimatorUpdateListene
     }
 
     private void setTypeface(TextView... views) {
-        Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "fonts/GoogleSans-Regular.ttf");
+        Typeface tf;
+        switch (Utilities.getDateStyleFont(getContext())) {
+            case "system":
+                tf = Typeface.create("sans-serif-medium", Typeface.NORMAL);
+                break;
+            case "system-headline":
+                tf = Typeface.create(getContext().getString(R.string.date_style_headline_font), Typeface.NORMAL);
+                break;
+            case "system-body":
+                tf = Typeface.create(getContext().getString(R.string.date_style_body_font), Typeface.NORMAL);
+                break;
+             case "google":
+                tf = Typeface.createFromAsset(getContext().getAssets(), "fonts/GoogleSans-Regular.ttf");
+                break;
+             default:
+                tf = Typeface.create("sans-serif-medium", Typeface.NORMAL);
+                break;
+        }
         for (TextView view : views) {
             if (view != null) {
                 view.setTypeface(tf);

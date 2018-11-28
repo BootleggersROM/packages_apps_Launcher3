@@ -25,6 +25,16 @@
         android:defaultValue="@string/date_format_normal"
         android:dependency="pref_show_quickspace" />
 
+    <ListPreference
+        android:dependency="pref_show_quickspace"
+        android:entries="@array/date_style_font_names"
+        android:entryValues="@array/date_style_font_values"
+        android:defaultValue="google"
+        android:key="pref_date_font"
+        android:persistent="true"
+        android:summary="%s"
+        android:title="@string/date_style_font" />
+
     <SwitchPreference
         android:key="pref_grid_options"
         android:title="Enable grid options"
