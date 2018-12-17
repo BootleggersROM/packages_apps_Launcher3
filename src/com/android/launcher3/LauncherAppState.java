@@ -59,6 +59,7 @@ public class LauncherAppState {
     private HomeKeyWatcher mHomeKeyListener = null;
     private boolean mNeedsRestart;
     private boolean mIsSearchAppAvailable;
+    private boolean mIsCalendarAppAvailable;
 
     public static LauncherAppState getInstance(final Context context) {
         return INSTANCE.get(context);
@@ -82,6 +83,7 @@ public class LauncherAppState {
         mContext = context;
 
         setSearchAppAvailable(BootlegUtils.isPackageInstalled(context, Utilities.SEARCH_PACKAGE));
+        setCalendarAppAvailable(BootlegUtils.isPackageInstalled(context, "com.google.android.calendar"));
 
         mInvariantDeviceProfile = InvariantDeviceProfile.INSTANCE.get(mContext);
         mIconCache = new IconCache(mContext, mInvariantDeviceProfile);
@@ -226,4 +228,11 @@ public class LauncherAppState {
         return mIsSearchAppAvailable;
     }
 
+    public void setCalendarAppAvailable(boolean available) {
+        mIsCalendarAppAvailable = available;
+    }
+
+    public boolean isCalendarAppAvailable() {
+        return mIsCalendarAppAvailable;
+    }
 }
