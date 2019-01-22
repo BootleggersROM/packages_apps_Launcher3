@@ -30,6 +30,18 @@ LOCAL_CERTIFICATE := platform
 include $(BUILD_PREBUILT)
 
 #
+# Prebuilt Luna Launcher shared system
+#
+include $(CLEAR_VARS)
+LOCAL_MODULE := libLunaShared
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_SRC_FILES := libs/libLunaShared.jar
+LOCAL_UNINSTALLABLE_MODULE := true
+LOCAL_SDK_VERSION := 27
+include $(BUILD_PREBUILT)
+
+#
 # Build rule for Launcher3 dependencies lib.
 #
 include $(CLEAR_VARS)
@@ -69,6 +81,8 @@ include $(CLEAR_VARS)
 LOCAL_USE_AAPT2 := true
 LOCAL_MODULE_TAGS := optional
 
+LOCAL_STATIC_JAVA_LIBRARIES := \
+    libLunaShared
 LOCAL_STATIC_ANDROID_LIBRARIES := Launcher3CommonDepsLib
 LOCAL_SRC_FILES := \
     $(call all-java-files-under, src) \
@@ -101,6 +115,8 @@ include $(BUILD_PACKAGE)
 include $(CLEAR_VARS)
 LOCAL_USE_AAPT2 := true
 LOCAL_MODULE_TAGS := optional
+LOCAL_STATIC_JAVA_LIBRARIES := \
+    libLunaShared
 LOCAL_STATIC_ANDROID_LIBRARIES := Launcher3CommonDepsLib
 
 LOCAL_SRC_FILES := \
@@ -142,7 +158,8 @@ LOCAL_AAPT2_ONLY := true
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
-    libSharedSystemUI
+    libSharedSystemUI \
+    libLunaShared
 LOCAL_STATIC_ANDROID_LIBRARIES := Launcher3CommonDepsLib
 
 LOCAL_SRC_FILES := \
@@ -209,7 +226,8 @@ LOCAL_USE_AAPT2 := true
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
-    libSharedSystemUI
+    libSharedSystemUI \
+    libLunaShared
 LOCAL_STATIC_ANDROID_LIBRARIES := Launcher3CommonDepsLib
 
 LOCAL_SRC_FILES := \
