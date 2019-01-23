@@ -235,5 +235,12 @@
             android:writePermission="android.permission.WRITE_SECURE_SETTINGS"
             android:exported="true"
             android:enabled="false" />
+
+        <!-- Hide and Lock -->
+        <activity
+            android:name=".security.hidelock.HideLockAppsActivity"
+            android:label="@string/hidelock_apps_manager_name"
+            android:theme="@android:style/Theme.DeviceDefault.Settings"
+            android:autoRemoveFromRecents="true" />
     </application>
 </manifest>
