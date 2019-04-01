@@ -368,6 +368,7 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
 
         setupViews();
         mPopupDataProvider = new PopupDataProvider(this);
+        LauncherNotifications.getInstance().addListener(mPopupDataProvider);
 
         mRotationHelper = new RotationHelper(this);
         mAppTransitionManager = LauncherAppTransitionManager.newInstance(this);
@@ -864,7 +865,7 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
             mLauncherCallbacks.onStart();
         }
         mAppWidgetHost.setListenIfResumed(true);
-        NotificationListener.setNotificationsChangedListener(mPopupDataProvider);
+        NotificationListener.setNotificationsChangedListener(LauncherNotifications.getInstance());
         UiFactory.onStart(this);
     }
 
