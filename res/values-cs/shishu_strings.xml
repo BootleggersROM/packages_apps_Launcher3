@@ -72,13 +72,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Hidden apps -->
     <string name="hide_app">Skrýt aplikace</string>
     <string name="hide_app_sum">Skrýt aplikace v seznamu aplikací</string>
+    <string name="hidden_apps_loading">Načítání\u2026</string>
     <string name="hidden_app">Všechny aplikace</string>
     <string name="hide_selected">Skrýt vybrané aplikace</string>
     <string name="more">Více</string>
     <string name="reset_hidden_apps">Resetovat vše</string>
     <string name="reset_hidden_apps_done">Skryté aplikace jsou nyní k dispozici</string>
+    <string name="hide_app_info_hidden">Skryté aplikace a jejich widgety se nezobrazují v seznamu aplikací</string>
     <!-- Protected apps -->
+    <string name="hide_protect_app">Skrýt a chránit aplikace</string>
+    <string name="hide_protect_app_sum">Skrýt a chránit aplikace v seznamu aplikací</string>
+    <string name="protect_apps_auth_manager">Odemkněte pro nastavení skrytí a ochrany aplikací</string>
+    <string name="protect_app_auth_open_app">Povolte otevření %1$s</string>
+    <string name="protect_app_no_lock_error">Pro omezení přístupu aplikace prosím nastavte bezpečnou zamykací obrazovku</string>
     <string name="protect_app_help">Nápověda</string>
+    <string name="protect_app_info_protected">Chráněné aplikace vyžadují pro spuštění ze spouštěče ověření</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Popisky aplikací</string>
     <string name="desktop_show_label_summary">Zobrazit popisky aplikací na domovské obrazovce</string>
@@ -156,6 +164,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="search_bar_hint_summary">Na vyhledávacím panelu zobrazit malý text, který vám pomůže s tím, co můžete dělat</string>
     <!-- Icon edit -->
     <string name="edit_drop_target_label">Upravit</string>
+    <string name="edit_hint">Název ikony</string>
     <string name="reset_icon">Resetovat</string>
+    <string name="all_icons">Všechny ikony</string>
+    <string name="similar_icons">Podobné ikony</string>
     <string name="ok">Ok</string>
+    <string name="icon_label">Popisek</string>
+    <string name="loading">Načítám, vyčkejte prosím</string>
+    <string name="icon_chooser">Výběr ikony</string>
+    <string name="icon_search">Vyhledávání ikon</string>
 </resources>

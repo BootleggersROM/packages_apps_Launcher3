@@ -78,6 +78,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="reset_hidden_apps">Restablecer todo</string>
     <string name="reset_hidden_apps_done">Aplicaciones ocultas están disponibles ahora</string>
     <!-- Protected apps -->
+    <string name="protect_app_help">Ayuda</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Etiqueta de aplicaciones</string>
     <string name="desktop_show_label_summary">Mostrar nombres de aplicaciones en la pantalla de inicio</string>
@@ -156,4 +157,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon edit -->
     <string name="edit_drop_target_label">Editar</string>
     <string name="reset_icon">Reestablecer</string>
+    <string name="ok">Aceptar</string>
 </resources>

@@ -72,13 +72,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Hidden apps -->
     <string name="hide_app">隐藏应用</string>
     <string name="hide_app_sum">从应用抽屉隐藏应用</string>
+    <string name="hidden_apps_loading">加载中\u2026</string>
     <string name="hidden_app">所有应用程序</string>
     <string name="hide_selected">隐藏所选应用</string>
     <string name="more">更多</string>
     <string name="reset_hidden_apps">重置所有</string>
     <string name="reset_hidden_apps_done">隐藏的应用程序现在可用</string>
+    <string name="hide_app_info_hidden">从抽屉中隐藏应用和其他小部件</string>
     <!-- Protected apps -->
+    <string name="hide_protect_app">隐藏和保护应用</string>
+    <string name="hide_protect_app_sum">在应用抽屉中隐藏应用</string>
+    <string name="protect_apps_auth_manager">解锁以管理隐藏和受保护的应用</string>
+    <string name="protect_app_auth_open_app">验证以开启 %1$s</string>
+    <string name="protect_app_no_lock_error">请设置一个安全锁屏密码以限制应用访问</string>
     <string name="protect_app_help">帮助</string>
+    <string name="protect_app_info_protected">需要经过认证才能从启动器打开受保护的应用</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">应用程序标签</string>
     <string name="desktop_show_label_summary">在主屏幕上显示应用程序的标签</string>
@@ -156,6 +164,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="search_bar_hint_summary">在搜索栏显示小文本</string>
     <!-- Icon edit -->
     <string name="edit_drop_target_label">编辑</string>
+    <string name="edit_hint">图标名称</string>
     <string name="reset_icon">重置</string>
+    <string name="all_icons">所有图标</string>
+    <string name="similar_icons">类似的图标</string>
     <string name="ok">确定</string>
+    <string name="icon_label">标签</string>
+    <string name="loading">正在加载，请稍候</string>
+    <string name="icon_chooser">图标选择器</string>
+    <string name="icon_search">搜索图标</string>
 </resources>

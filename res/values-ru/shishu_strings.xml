@@ -72,13 +72,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Hidden apps -->
     <string name="hide_app">Скрыть приложения</string>
     <string name="hide_app_sum">Выбрать приложения, которые не будут отображаться в меню приложений</string>
+    <string name="hidden_apps_loading">Загрузка\u2026</string>
     <string name="hidden_app">Все приложения</string>
     <string name="hide_selected">Скрыть выбранное(ые) приложение(я)</string>
     <string name="more">Еще</string>
     <string name="reset_hidden_apps">Сбросить всё</string>
     <string name="reset_hidden_apps_done">Скрытые приложения снова доступны</string>
+    <string name="hide_app_info_hidden">Скрытые приложения и их виджеты скрыты из меню</string>
     <!-- Protected apps -->
+    <string name="hide_protect_app">Скрыть и защитить приложения</string>
+    <string name="hide_protect_app_sum">Скрыть и защитить приложения из меню приложений</string>
+    <string name="protect_apps_auth_manager">Разблокируйте, для управления скрытыми и защищенными приложениями</string>
+    <string name="protect_app_auth_open_app">Авторизуйтесь, для открытия %1$s</string>
+    <string name="protect_app_no_lock_error">Пожалуйста, установите блокировку экрана для ограничения доступа к приложениям</string>
     <string name="protect_app_help">Помощь</string>
+    <string name="protect_app_info_protected">Для открытия защищенных приложений из лаунчера требуется аутентификация</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Подписи приложений</string>
     <string name="desktop_show_label_summary">Показать названия приложений на домашнем экране</string>
@@ -156,6 +164,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="search_bar_hint_summary">Показать небольшой текст в строке поиска о том, что вы можете сделать</string>
     <!-- Icon edit -->
     <string name="edit_drop_target_label">Редактировать</string>
+    <string name="edit_hint">Название иконки</string>
     <string name="reset_icon">Сброс</string>
+    <string name="all_icons">Все иконки</string>
+    <string name="similar_icons">Похожие иконки</string>
     <string name="ok">Ок</string>
+    <string name="icon_label">Метка</string>
+    <string name="loading">Загрузка, пожалуйста подождите</string>
+    <string name="icon_chooser">Выбор иконки</string>
+    <string name="icon_search">Найти иконку</string>
 </resources>

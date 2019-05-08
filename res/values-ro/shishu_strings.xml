@@ -17,41 +17,157 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
+    <string name="settings_title">Configurări</string>
     <!-- Categories -->
+    <string name="home_category_title">Ecranul de Acasă</string>
+    <string name="home_category_summary">Setează panoul Google Now și mai multe</string>
+    <string name="icons_category_title">Pictograme</string>
+    <string name="icons_category_summary">Setează forma pictogramelor, dimensiunea și mai multe</string>
+    <string name="app_drawer_category_title">Sertar Aplicație</string>
+    <string name="app_drawer_category_summary">Personalizează-ți sertarul aplicației</string>
     <string name="misc_category_title">Diverse</string>
+    <string name="misc_category_summary">Alte opțiuni</string>
     <!-- Sub categories -->
+    <string name="home_grid_title">Aspectul grilei</string>
+    <string name="icon_layout_title">Aspectul pictogramei</string>
+    <string name="home_overall_title">Aspectul ecranului de pornire</string>
+    <string name="home_quickspace_title">Pe scurt</string>
+    <string name="home_hotseat_title">Punct</string>
+    <string name="app_overall_title">Lista aplicaților</string>
+    <string name="misc_recents_title">Recente</string>
     <string name="misc_gestures_title">Gesturi</string>
     <!-- Icon packs -->
+    <string name="icon_pack">Pachet de pictograme</string>
+    <string name="icon_pack_summary">Schimbă aspectul pictogramelor aplicațiilor</string>
     <string name="icon_pack_none">Implicit</string>
     <!-- Icon shape -->
+    <string name="icon_shape_override_label_custom">Forma pictogramei</string>
+    <string name="icon_shape_rounded_square">Rotunjite</string>
     <!-- Icon size -->
+    <string name="icon_size_title">Dimensiune Pictogramă</string>
+    <string name="icon_size_extra_small">Minuscul</string>
+    <string name="icon_size_small">Mic</string>
     <string name="icon_size_average">Implicit</string>
+    <string name="icon_size_large">Larg</string>
+    <string name="icon_size_extra_large">Extra larg</string>
     <!-- Gestures -->
+    <string name="allow_swipe_down_clearall_title">Curăță tot din lista aplicaților recente</string>
+    <string name="allow_swipe_down_clearall_desc">Glisează in jos în vizualizare recente pentru a elimina toate aplicațiile</string>
+    <string name="pref_homescreen_dt_gestures_title">Gest dublă atingere</string>
+    <string name="pref_homescreen_dt_gestures_summary">Selectează acțiunea gestului de dublă atingere pe panoul principal</string>
     <string name="pref_homescreen_dt_gestures_none">Nimic</string>
+    <string name="pref_homescreen_dt_gestures_sleep">Somn</string>
+    <string name="pref_homescreen_dt_gestures_torch">Lanternă</string>
+    <string name="pref_notifications_gesture_title">Gesturi notificări</string>
+    <string name="pref_notifications_gesture_summary">Glisează în jos pe panoul principal pentru a afișa panoul QS</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Afișează aplicația Google</string>
+    <string name="google_feed_summary">Spre stânga pe panoul principal</string>
     <!-- Grid -->
     <string name="num_default">Implicit</string>
+    <string name="number_of_columns_title">Numărul de coloane</string>
+    <string name="number_of_rows_title">Numărul de rânduri</string>
+    <string name="number_of_hotseat_title">Numărul iconițelor din dock</string>
+    <string name="state_loading">Se aplică\u2026</string>
     <!-- Hidden apps -->
+    <string name="hide_app">Ascunde aplicațiile</string>
+    <string name="hide_app_sum">Ascundeţi aplicații din lista aplicaţiilor</string>
+    <string name="hidden_apps_loading">Încărcare\u2026</string>
+    <string name="hidden_app">Toate aplicațiile</string>
+    <string name="hide_selected">Ascundeţi aplicaţiile selectate</string>
+    <string name="more">Mai multe</string>
+    <string name="reset_hidden_apps">Reinițializează toate</string>
+    <string name="reset_hidden_apps_done">Aplicațiile ascunse sunt acum disponibile</string>
+    <string name="hide_app_info_hidden">Aplicațiile ascunse și widget-urile lor sunt ascunse de la sertar</string>
     <!-- Protected apps -->
+    <string name="hide_protect_app">Ascunde și protejează aplicații</string>
+    <string name="hide_protect_app_sum">Ascundr și protejează aplicații de la app drawer</string>
+    <string name="protect_apps_auth_manager">Deblochează ca să gestionezi aplicațile ascunse și protejate</string>
+    <string name="protect_app_auth_open_app">Autentificați-vă pentru a deschide %1$s</string>
+    <string name="protect_app_no_lock_error">Vă rugăm să setați un ecran de blocare sigur ca să restricționați accesul aplicației</string>
+    <string name="protect_app_help">Ajutor</string>
+    <string name="protect_app_info_protected">Aplicațiile protejate necesită autentificare pentru a fi deschise din launcher</string>
     <!-- Show labels on icon -->
+    <string name="app_show_label_title">Etichetele aplicației</string>
+    <string name="desktop_show_label_summary">Arată etichetele aplicațiilor pe panoul principal</string>
+    <string name="allapps_show_label_summary">Afișează etichetele aplicațiilor în desfășurător</string>
+    <string name="allapps_long_labels_title">Etichete lungi pentru aplicații</string>
+    <string name="allapps_long_labels_summary">Permite aplicațiilor să afișeze etichete pe două rânduri</string>
     <!-- Show quickspace -->
+    <string name="show_quickspace_title">Arată pe scurt</string>
+    <string name="show_quickspace_summary">Arată în zona de sus a ecranului principal</string>
     <!-- QuickSpace -->
     <!-- QuickSpace: QuickEvent: Device Intro Event -->
+    <string name="quick_event_rom_intro_welcome">Bun venit la Bootleggers</string>
+    <string name="quick_event_rom_intro_learn">Apăsaţi aici pentru a vă distra!</string>
     <!-- QuickSpace: QuickEvent: Ambient Play -->
+    <string name="quick_event_ambient_now_playing">Se redă acum</string>
+    <string name="quick_event_ambient_song_artist">%1$s pe %2$s</string>
     <!-- QSB -->
+    <string name="label_search">Caută</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Afișați bara de căutare în zona de jos</string>
+    <string name="bottom_search_bar_summary">Afișează bara de căutare pe panoul principal</string>
     <!-- Search engine -->
+    <string name="search_provider_title">Motor de căutare</string>
     <!-- Predictions -->
+    <string name="suggestion_pref_screen_title">Sugestii</string>
+    <string name="suggestion_pref_screen_desc">Prezentare generală &amp; Listă cu toate aplicatiile</string>
+    <string name="app_suggestions_title">Arată sugestii ale aplicației</string>
+    <string name="app_suggestions_summary">În partea de sus a listei tuturor aplicaților tale</string>
+    <string name="title_disable_suggestions_prompt">Dezactivați sugestiile de aplicații?</string>
+    <string name="msg_disable_suggestions_prompt">"Sugestiile nu vor apărea la începutul listei de aplicații, iar datele despre utilizare folosite pentru a le crea vor fi șterse definitiv."</string>
+    <string name="label_turn_off_suggestions">OPREȘTE</string>
+    <string name="all_apps_label">Toate aplicațiile</string>
     <!-- Date format -->
+    <string name="date_format_title">Format dată</string>
+    <string name="date_format_long_name">Lung</string>
     <string name="date_format_normal_name">Normal</string>
+    <string name="date_format_short_name">Scurt</string>
+    <string name="date_format_daydate_long_name">Zi (cu număr)</string>
+    <string name="date_format_daydate_short_name">Zi (scurt cu număr)</string>
+    <string name="date_format_dayonly_name">Doar astăzi</string>
     <!-- At a glance style -->
+    <string name="date_style_font">Format dată</string>
+    <string name="date_style_font_systembold">System Bold</string>
+    <string name="date_style_font_systemitalic">System Italic</string>
+    <string name="date_style_font_system">Setări implicite de sistem</string>
+    <string name="date_style_font_systemlight">System Light (Lumină)</string>
     <!-- At a glance uppercase -->
+    <string name="date_style_transform_title">Arată o majusculă la dată</string>
+    <string name="date_style_transform_summary">Transformă toată data/pe scurt cu majuscule</string>
     <!-- At a glance font spacing -->
+    <string name="date_style_spacing">Spaţiere dată</string>
     <string name="date_style_spacing_normal">Normal</string>
+    <string name="date_style_spacing_barely">Nu prea vizibil</string>
+    <string name="date_style_spacing_ott">Peste partea de sus</string>
     <!-- Gradients on Workspace/Hotseat? -->
+    <string name="workspace_gradient_title">Arată gradient-ul în partea de sus</string>
+    <string name="workspace_gradient_summary">Activează o degradare ușoară din bara de stare</string>
+    <string name="hotseat_gradient_title">Arată degradarea în partea de jos</string>
+    <string name="hotseat_gradient_summary">Activează o degradare ușoară din bara de stare</string>
     <!-- Recents corned -->
+    <string name="custom_recents_corners_switch_title">Folosește colțuri rotunde recente personalizate</string>
+    <string name="custom_recents_corners_switch_summary">Dezactivată, se va folosi modul de afișare prevăzut de sistem/temă. Pentru a aplica noua opțiune navigați la ecranul principal după selectarea acesteia.</string>
+    <string name="custom_recents_corners_type_title">Rotunjiri recente personalizate</string>
     <string name="custom_recents_corners_type_default">Implicit</string>
+    <string name="custom_recents_corners_type_card">Pătrat rotunjit</string>
+    <string name="custom_recents_corners_type_op">Stil OP</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">Blocare desktop</string>
+    <string name="lock_desktop_summary">Preveniți ecranul principal din a fi modificat</string>
     <!-- Search bar hint -->
+    <string name="search_bar_hint">Apasă ca să cauți pe %s</string>
+    <string name="search_bar_hint_title">Arată indiciul text din bara de căutare</string>
+    <string name="search_bar_hint_summary">Arată un mic text pe bara de căutare, legat de ceea ce se poate face</string>
     <!-- Icon edit -->
+    <string name="edit_drop_target_label">Editează</string>
+    <string name="edit_hint">Nume Pictogramă</string>
+    <string name="reset_icon">Resetează</string>
+    <string name="all_icons">Toate pictogramele</string>
+    <string name="similar_icons">Pictograme similare</string>
+    <string name="icon_label">Etichetă</string>
+    <string name="loading">Se încarcă, aşteptaţi</string>
+    <string name="icon_chooser">Selector pictograme</string>
+    <string name="icon_search">Căutare pictograme</string>
 </resources>

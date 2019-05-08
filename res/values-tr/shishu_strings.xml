@@ -72,13 +72,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Hidden apps -->
     <string name="hide_app">Uygulamalar gizle</string>
     <string name="hide_app_sum">Uygulamaları uygulama çekmecesinde gizle</string>
+    <string name="hidden_apps_loading">Yükleniyor\u2026</string>
     <string name="hidden_app">Tüm uygulamalar</string>
     <string name="hide_selected">Seçilen uygulamaları gizle(s)</string>
     <string name="more">Daha fazla</string>
     <string name="reset_hidden_apps">Tümünü sıfırla</string>
     <string name="reset_hidden_apps_done">Gizli uygulamalar artık kullanılabilir</string>
+    <string name="hide_app_info_hidden">Gizli uygulamalar ve widgetler uygulama menüsünde görünmeyecek</string>
     <!-- Protected apps -->
+    <string name="hide_protect_app">Uygulamaları gizle ve koru</string>
+    <string name="hide_protect_app_sum">Uygulamaları uygulama çekmecesinden gizleme ve koruma</string>
+    <string name="protect_apps_auth_manager">Gizli ve korunan uygulamaları yönetmek için kilidi açın</string>
+    <string name="protect_app_auth_open_app">%1$s açmak için kimlik doğrula</string>
+    <string name="protect_app_no_lock_error">Lütfen uygulama erişimini kısıtlamak için güvenli bir kilit ekranı ayarlayın</string>
     <string name="protect_app_help">Yardım et</string>
+    <string name="protect_app_info_protected">Korunan uygulamaların başlatıcıdan açılması için kimlik doğrulama gerekir</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Uygulama etiketleri</string>
     <string name="desktop_show_label_summary">Ana ekranda uygulama etiketlerini göster</string>
@@ -156,6 +164,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="search_bar_hint_summary">Arama çubuğunda ne yapabileceğinizi gösteren küçük bir metin gösterin</string>
     <!-- Icon edit -->
     <string name="edit_drop_target_label">Düzenle</string>
+    <string name="edit_hint">Simge adı</string>
     <string name="reset_icon">Sıfırla</string>
+    <string name="all_icons">Tüm simgeler</string>
+    <string name="similar_icons">Benzer simgeler</string>
     <string name="ok">Tamam</string>
+    <string name="icon_label">Etiket</string>
+    <string name="loading">Yükleniyor, lütfen bekleyin</string>
+    <string name="icon_chooser">Simge seçici</string>
+    <string name="icon_search">Simgeler ara</string>
 </resources>

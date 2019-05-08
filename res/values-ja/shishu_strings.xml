@@ -72,13 +72,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Hidden apps -->
     <string name="hide_app">アプリを隠す</string>
     <string name="hide_app_sum">ドロワーからアプリを非表示にする</string>
+    <string name="hidden_apps_loading">読込中\u2026</string>
     <string name="hidden_app">全てのアプリ</string>
     <string name="hide_selected">選択したアプリを非表示</string>
     <string name="more">追加</string>
     <string name="reset_hidden_apps">全てリセット</string>
     <string name="reset_hidden_apps_done">非表示のアプリが利用可能になりました</string>
+    <string name="hide_app_info_hidden">非表示アプリとそのウィジェットはドロワーから非表示になります</string>
     <!-- Protected apps -->
+    <string name="hide_protect_app">アプリの非表示と保護</string>
+    <string name="hide_protect_app_sum">ドロワーからアプリを非表示にして保護する</string>
+    <string name="protect_apps_auth_manager">ロック解除して非表示と保護アプリを管理する</string>
+    <string name="protect_app_auth_open_app">認証して %1$s を開く</string>
+    <string name="protect_app_no_lock_error">アプリのアクセスを制限するためにロック画面の保護をセットアップして下さい</string>
     <string name="protect_app_help">ヘルプ</string>
+    <string name="protect_app_info_protected">保護アプリはランチャーから開くのに認証が必要です</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">アプリラベル</string>
     <string name="desktop_show_label_summary">ホーム画面でアプリのアイコンラベルを表示する</string>
@@ -93,7 +101,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="quick_event_rom_intro_welcome">Bootleggers へようこそ</string>
     <string name="quick_event_rom_intro_learn">ここをタップして楽しみましょう!</string>
     <!-- QuickSpace: QuickEvent: Ambient Play -->
-    <string name="quick_event_ambient_now_playing">再生中 </string>
+    <string name="quick_event_ambient_now_playing">Now Playing</string>
     <string name="quick_event_ambient_song_artist">%1$s - %2$s</string>
     <!-- QSB -->
     <string name="hotseat_qsb_preferences">設定</string>
@@ -156,6 +164,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="search_bar_hint_summary">何ができるかについて記した小さなテキストのヒントを検索バーに表示する</string>
     <!-- Icon edit -->
     <string name="edit_drop_target_label">編集</string>
+    <string name="edit_hint">アイコンの名前</string>
     <string name="reset_icon">リセット</string>
+    <string name="all_icons">全てのアイコン</string>
+    <string name="similar_icons">類似のアイコン</string>
     <string name="ok">OK</string>
+    <string name="icon_label">ラベル</string>
+    <string name="loading">読み込み中です。しばらくお待ち下さい...</string>
+    <string name="icon_chooser">アイコンの選択</string>
+    <string name="icon_search">アイコンを検索</string>
 </resources>
