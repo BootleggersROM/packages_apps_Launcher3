@@ -17,9 +17,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
+    <string name="settings_title">Налаштування</string>
     <!-- Categories -->
     <string name="home_category_title">Домашній екран</string>
     <string name="home_category_summary">Встановити панель Google Now і більше</string>
+    <string name="icons_category_title">Значки</string>
     <string name="icons_category_summary">Встановити форму іконок, розмір та багато іншого</string>
     <string name="app_drawer_category_title">Список додатків</string>
     <string name="app_drawer_category_summary">Налаштувати меню додатків</string>
@@ -29,6 +31,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="home_grid_title">Схема сітки</string>
     <string name="icon_layout_title">Схема Іконок</string>
     <string name="home_overall_title">Макет домашнього екрану</string>
+    <string name="home_quickspace_title">З одного погляду</string>
+    <string name="home_hotseat_title">Док-панель</string>
     <string name="app_overall_title">Список додатків</string>
     <string name="misc_recents_title">Нещодавні</string>
     <string name="misc_gestures_title">Жести</string>
@@ -38,7 +42,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icon_pack_none">За замовчанням</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Форма іконок</string>
+    <string name="icon_shape_rounded_square">Округлий квадрат</string>
     <!-- Icon size -->
+    <string name="icon_size_title">Розмір значків</string>
     <string name="icon_size_extra_small">Дрібний</string>
     <string name="icon_size_small">Малий</string>
     <string name="icon_size_average">За замовчанням</string>
@@ -51,6 +57,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_summary">Виберіть дію при подвійному натисканні на домашньому екрані</string>
     <string name="pref_homescreen_dt_gestures_none">Нічого</string>
     <string name="pref_homescreen_dt_gestures_sleep">Режим сну</string>
+    <string name="pref_homescreen_dt_gestures_torch">Ліхтарик</string>
     <string name="pref_notifications_gesture_title">Жести сповіщень</string>
     <string name="pref_notifications_gesture_summary">Свайпніть вниз на домашньому екрані, щоб відобразити панель сповіщень</string>
     <!-- Google Feed -->
@@ -63,6 +70,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="number_of_hotseat_title">Кількість значків на панелі</string>
     <string name="state_loading">Застосування\u2026</string>
     <!-- Hidden apps -->
+    <string name="hide_app">Приховати додатки</string>
     <string name="hide_app_sum">Приховати додатки з меню додатків</string>
     <string name="hidden_apps_loading">Завантаження\u2026</string>
     <string name="hidden_app">Усі додатки</string>
@@ -83,27 +91,86 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="app_show_label_title">Підписи додатків</string>
     <string name="desktop_show_label_summary">Показувати на домашньому екрані під додатками їх назви</string>
     <string name="allapps_show_label_summary">Показувати підписи додатків в меню додатків</string>
+    <string name="allapps_long_labels_title">Довгі ярлики додатків</string>
+    <string name="allapps_long_labels_summary">Дозволити додаткам відображати ярлики використовуючи дві лінії</string>
     <!-- Show quickspace -->
+    <string name="show_quickspace_title">Показувати \"At A Glance\"</string>
+    <string name="show_quickspace_summary">Відображати в верхній частині Домашнього екрану</string>
     <!-- QuickSpace -->
     <!-- QuickSpace: QuickEvent: Device Intro Event -->
     <string name="quick_event_rom_intro_welcome">Ласкаво просимо до Bootleggers</string>
+    <string name="quick_event_rom_intro_learn">Натисніть тут і веселися!</string>
     <!-- QuickSpace: QuickEvent: Ambient Play -->
+    <string name="quick_event_ambient_now_playing">Зараз грає</string>
     <string name="quick_event_ambient_song_artist">%1$s від %2$s</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">Налаштування</string>
+    <string name="label_search">Пошук</string>
+    <string name="label_voice_search">Голосовий пошук</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Показати панель пошуку внизу</string>
+    <string name="bottom_search_bar_summary">Відображати панель пошуку в Док-барі</string>
     <!-- Search engine -->
+    <string name="search_provider_title">Пошукова система панелі пошуку</string>
     <!-- Predictions -->
+    <string name="suggestion_pref_screen_title">Пропозиції</string>
+    <string name="suggestion_pref_screen_desc">Для огляду &amp; Список усіх програм</string>
+    <string name="app_suggestions_title">Показати пропозиції додатків</string>
+    <string name="app_suggestions_summary">У верхній частині списку всіх додатків</string>
+    <string name="title_disable_suggestions_prompt">Вимкнути пропозиції додатків?</string>
+    <string name="msg_disable_suggestions_prompt">"Пропозиції не відображатимуться у верхній частині списку додатків, а дані про використання, використані для їх створення, будуть остаточно видалені."</string>
+    <string name="label_turn_off_suggestions">ВИМКНУТИ</string>
     <string name="all_apps_label">Усі додатки</string>
     <!-- Date format -->
+    <string name="date_format_title">Формат дати</string>
+    <string name="date_format_long_name">Довгий</string>
     <string name="date_format_normal_name">Звичайний</string>
+    <string name="date_format_short_name">Короткий</string>
+    <string name="date_format_daydate_long_name">День (з номером)</string>
+    <string name="date_format_daydate_short_name">День (короткий з номером)</string>
+    <string name="date_format_dayonly_name">Тільки сьогодні</string>
     <!-- At a glance style -->
+    <string name="date_style_font">Шрифт дати</string>
+    <string name="date_style_font_systembold">Системний жирний</string>
+    <string name="date_style_font_systemitalic">Системний курсив</string>
+    <string name="date_style_font_system">Система за замовчуванням</string>
+    <string name="date_style_font_systemlight">Системний світлий</string>
     <!-- At a glance uppercase -->
+    <string name="date_style_transform_title">Показувати великі букви на дату</string>
+    <string name="date_style_transform_summary">Перетворити все дати /At A Glance в текст верхнього регістру</string>
     <!-- At a glance font spacing -->
+    <string name="date_style_spacing">Відстань між датами</string>
     <string name="date_style_spacing_normal">Звичайний</string>
+    <string name="date_style_spacing_barely">Ледь помітний</string>
+    <string name="date_style_spacing_ott">Поверх</string>
     <!-- Gradients on Workspace/Hotseat? -->
+    <string name="workspace_gradient_title">Показати градієнт зверху</string>
+    <string name="workspace_gradient_summary">Увімкнення тонкого градієнта з рядка стану</string>
+    <string name="hotseat_gradient_title">Показати градієнт знизу</string>
+    <string name="hotseat_gradient_summary">Увімкніть тонкий градієнт з домашнього екрану</string>
     <!-- Recents corned -->
+    <string name="custom_recents_corners_switch_title">Вокористовувати власні налаштування скруглення кутів</string>
+    <string name="custom_recents_corners_switch_summary">Якщо вимкнено, то використовуватиметься значення за замовчуванням від системи/теми. Щоб застосувати нове значення, перейдіть додому після вибору вашої опції.</string>
+    <string name="custom_recents_corners_type_title">Користувацьке заокруглення нещодавніх</string>
     <string name="custom_recents_corners_type_default">За замовчанням</string>
+    <string name="custom_recents_corners_type_card">Заокруглені вкладки</string>
+    <string name="custom_recents_corners_type_op">OP стиль</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">Блокування пристрою</string>
+    <string name="lock_desktop_summary">Заборонити зміни домашнього екрану</string>
     <!-- Search bar hint -->
+    <string name="search_bar_hint">Натисніть для пошуку в %s</string>
+    <string name="search_bar_hint_title">Показати підсказки в рядку пошуку</string>
+    <string name="search_bar_hint_summary">Показати невеликий текст на панелі пошуку, натякаючи на те, що ви можете зробити</string>
     <!-- Icon edit -->
+    <string name="edit_drop_target_label">Редагувати</string>
+    <string name="edit_hint">Назва значка</string>
+    <string name="reset_icon">Скинути</string>
+    <string name="all_icons">Всі значки</string>
+    <string name="similar_icons">Схожі значки</string>
+    <string name="ok">Гаразд</string>
+    <string name="icon_label">Позначка</string>
+    <string name="loading">Завантажується, зачекайте будь ласка</string>
+    <string name="icon_chooser">Вибір значка</string>
+    <string name="icon_search">Пошук значків</string>
 </resources>

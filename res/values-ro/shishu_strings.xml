@@ -85,7 +85,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="protect_apps_auth_manager">Deblochează ca să gestionezi aplicațile ascunse și protejate</string>
     <string name="protect_app_auth_open_app">Autentificați-vă pentru a deschide %1$s</string>
     <string name="protect_app_no_lock_error">Vă rugăm să setați un ecran de blocare sigur ca să restricționați accesul aplicației</string>
-    <string name="protect_app_help">Ajutor</string>
+    <string name="protect_app_help">Ajuda</string>
     <string name="protect_app_info_protected">Aplicațiile protejate necesită autentificare pentru a fi deschise din launcher</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Etichetele aplicației</string>
@@ -168,6 +168,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="reset_icon">Resetează</string>
     <string name="all_icons">Toate pictogramele</string>
     <string name="similar_icons">Pictograme similare</string>
+    <string name="ok">Ok</string>
     <string name="icon_label">Etichetă</string>
     <string name="loading">Se încarcă, aşteptaţi</string>
     <string name="icon_chooser">Selector pictograme</string>
