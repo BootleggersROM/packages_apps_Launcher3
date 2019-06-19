@@ -48,6 +48,7 @@ public class QuickEventsController {
     private int mEventSubIcon;
 
     private boolean mIsQuickEvent = false;
+    private boolean mRunning;
 
     // Device Intro
     private boolean mEventIntro = false;
@@ -70,17 +71,22 @@ public class QuickEventsController {
 
     public QuickEventsController(Context context) {
         mContext = context;
-        //context.registerReceiver(mAmbientReceiver, new IntentFilter(AmbientPlayHistoryManager.INTENT_SONG_MATCH.getAction()));
         initQuickEvents();
     }
 
     public void initQuickEvents() {
         mIsFirstTimeDone = Settings.System.getInt(mContext.getContentResolver(), SETTING_DEVICE_INTRO_COMPLETED, 0) != 0;
+        updateQuickEvents();
+    }
+
+    public void updateQuickEvents() {
         deviceIntroEvent();
         //ambientPlayEvent();
     }
 
     private void deviceIntroEvent() {
+        if (!mRunning) return;
+
         if (mIsFirstTimeDone || mEventIntroClicked) {
             mEventIntro = false;
             return;
@@ -161,5 +167,9 @@ public class QuickEventsController {
 
     public int getActionIcon() {
         return mEventSubIcon;
+    }
+
+    public void setQuickSpaceRunning(boolean newValue) {
+        mRunning = newValue;
     }
 }

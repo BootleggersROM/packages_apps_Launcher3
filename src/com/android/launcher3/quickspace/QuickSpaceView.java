@@ -100,6 +100,7 @@ public class QuickSpaceView extends FrameLayout implements AnimatorUpdateListene
 
     @Override
     public void onDataUpdated() {
+        mController.getEventController().setQuickSpaceRunning(true);
         mController.getEventController().initQuickEvents();
         if (mIsQuickEvent != mController.isQuickEvent()) {
             mIsQuickEvent = mController.isQuickEvent();
@@ -400,7 +401,14 @@ public class QuickSpaceView extends FrameLayout implements AnimatorUpdateListene
     }
 
     public void onPause() {
+    	mController.getEventController().setQuickSpaceRunning(false);
         mHandler.removeCallbacks(this);
+    }
+
+    public void onResume() {
+    	mController.getEventController().setQuickSpaceRunning(true);
+        mHandler.removeCallbacks(this);
+        mController.getEventController().updateQuickEvents();
     }
 
     public void run() {
