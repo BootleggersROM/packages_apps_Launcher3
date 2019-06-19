@@ -895,6 +895,10 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
 
         DiscoveryBounce.showForHomeIfNeeded(this);
 
+        if (mQuickSpace != null) {
+            mQuickSpace.onResume();
+        }
+
         if (mFeedIntegrationEnabled) {
             mClient.onResume();
         }
