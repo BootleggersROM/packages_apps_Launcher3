@@ -50,13 +50,12 @@ public class QuickEventsController {
     private boolean mIsQuickEvent = false;
 
     // Device Intro
-    /**private boolean mEventIntro = false;
+    private boolean mEventIntro = false;
     private boolean mEventIntroClicked = false;
-    private boolean mIsFirstTimeDone; **/
+    private boolean mIsFirstTimeDone; 
      /** Ambient Play
     private boolean mEventAmbientPlay = false;
     private long mLastAmbientInfo;
-gi
     private BroadcastReceiver mAmbientReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -76,12 +75,12 @@ gi
     }
 
     public void initQuickEvents() {
-        /**mIsFirstTimeDone = Settings.System.getInt(mContext.getContentResolver(), SETTING_DEVICE_INTRO_COMPLETED, 0) != 0;
+        mIsFirstTimeDone = Settings.System.getInt(mContext.getContentResolver(), SETTING_DEVICE_INTRO_COMPLETED, 0) != 0;
         deviceIntroEvent();
-        ambientPlayEvent();**/
+        //ambientPlayEvent();
     }
 
-    /**private void deviceIntroEvent() {
+    private void deviceIntroEvent() {
         if (mIsFirstTimeDone || mEventIntroClicked) {
             mEventIntro = false;
             return;
@@ -89,12 +88,12 @@ gi
         mIsQuickEvent = true;
         mEventIntro = true;
         mEventTitle = mContext.getResources().getString(R.string.quick_event_rom_intro_welcome);
-        mEventTitleSub = mContext.getResources().getString(R.string.quick_event_rom_intro_learn);
+        mEventTitleSub = mContext.getResources().getString(R.string.quick_event_rom_intro_info);
 
         mEventTitleSubAction = new OnClickListener() {
             @Override
             public void onClick(View view) {
-                final Intent intent = new Intent(Settings.ACTION_DEVICE_INTRODUCTION)
+                final Intent intent = new Intent(Intent.ACTION_MAIN).setClassName("com.android.settings","com.bootleggers.dumpster.fragments.BootlegWelcome")
                         .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
                 try {
                     Launcher.getLauncher(mContext).startActivitySafely(view, intent, null);
@@ -104,7 +103,7 @@ gi
                 mEventIntroClicked = true;
             }
         };
-    } **/
+    }
 
     /**public void ambientPlayEvent() {
         if (mEventAmbientPlay) {
