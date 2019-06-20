@@ -52,7 +52,6 @@ public class QuickEventsController {
 
     // Device Intro
     private boolean mEventIntro = false;
-    private boolean mEventIntroClicked = false;
     private boolean mIsFirstTimeDone; 
      /** Ambient Play
     private boolean mEventAmbientPlay = false;
@@ -82,7 +81,7 @@ public class QuickEventsController {
     }
 
     private void deviceIntroEvent() {
-        if (mIsFirstTimeDone || mEventIntroClicked) {
+        if (mIsFirstTimeDone) {
             mEventIntro = false;
             return;
         }
@@ -108,7 +107,6 @@ public class QuickEventsController {
                 } catch (ActivityNotFoundException ex) {
                 }
                 mIsQuickEvent = false;
-                mEventIntroClicked = true;
             }
         };
     }
