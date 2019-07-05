@@ -74,7 +74,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="hide_app_sum">Menyembunyikan aplikasi dari laci</string>
     <string name="hidden_apps_loading">Memuat\u2026</string>
     <string name="hidden_app">Semua aplikasi</string>
-    <string name="hide_selected">Menyembunyikan aplikasi yang dipilih</string>
+    <string name="hide_selected">Sembunyikan aplikasi yang dipilih</string>
     <string name="more">Lainnya</string>
     <string name="reset_hidden_apps">Setel ulang semua</string>
     <string name="reset_hidden_apps_done">Aplikasi yang tersembunyi sekarang tersedia</string>

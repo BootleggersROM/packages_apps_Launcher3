@@ -61,7 +61,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_notifications_gesture_title">通知ジェスチャー</string>
     <string name="pref_notifications_gesture_summary">ホーム画面で垂直に下スワイプしてクイック設定パネルを表示する</string>
     <!-- Google Feed -->
-    <string name="google_feed_title">Google アプリを表示する</string>
+    <string name="google_feed_title">Google アプリを表示</string>
     <string name="google_feed_summary">メインホーム画面の左側へ表示</string>
     <!-- Grid -->
     <string name="num_default">既定</string>
@@ -115,7 +115,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Predictions -->
     <string name="suggestion_pref_screen_title">候補</string>
     <string name="suggestion_pref_screen_desc">概要と全てのアプリ一覧</string>
-    <string name="app_suggestions_title">アプリの候補を表示する</string>
+    <string name="app_suggestions_title">アプリの候補を表示</string>
     <string name="app_suggestions_summary">全てのアプリリストの上部へ表示</string>
     <string name="title_disable_suggestions_prompt">アプリの候補を非表示にしますか?</string>
     <string name="msg_disable_suggestions_prompt">"アプリの候補がアプリリストの上部に表示されなくなり、アプリの候補の作成に使用される利用データが完全に消去されます。"</string>
@@ -131,10 +131,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="date_format_dayonly_name">本日のみ</string>
     <!-- At a glance style -->
     <string name="date_style_font">日付のフォント</string>
-    <string name="date_style_font_systembold">System bold</string>
-    <string name="date_style_font_systemitalic">System italic</string>
+    <string name="date_style_font_systembold">システム 太字</string>
+    <string name="date_style_font_systemitalic">システム イタリック</string>
     <string name="date_style_font_system">システムの既定</string>
-    <string name="date_style_font_systemlight">System light</string>
+    <string name="date_style_font_systemlight">システム ライト</string>
     <!-- At a glance uppercase -->
     <string name="date_style_transform_title">日付に大文字を表示</string>
     <string name="date_style_transform_summary">全ての日付と At A Glance を大文字テキストに変換する</string>
