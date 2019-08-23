@@ -15,6 +15,14 @@
         android:defaultValue="true"
         android:persistent="true"/>
 
+    <SwitchPreference
+        android:key="pref_show_alt_quickspace"
+        android:dependency="pref_show_quickspace"
+        android:title="@string/quickspace_shishufied_style_title"
+        android:summary="@string/quickspace_shishufied_style_summary"
+        android:defaultValue="false"
+        android:persistent="true"/>
+
     <ListPreference
         android:key="pref_date_format"
         android:title="@string/date_format_title"

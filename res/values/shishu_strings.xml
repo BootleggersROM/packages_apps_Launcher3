@@ -168,4 +168,8 @@
     <string name="date_style_spacing_aesthetic" translatable="false">A e s t h e t i c</string>
     <string name="date_style_spacing_ott">Over the top</string>
 
+    <!-- Quickspace alternative view -->
+    <string name="quickspace_shishufied_style_title">Use an alternative style</string>
+    <string name="quickspace_shishufied_style_summary">Use a different style for At a Glance, more minimalistic</string>
+
 </resources>

@@ -186,6 +186,15 @@ public class SettingsHomescreen extends Activity
                     return true;
                 }
             });
+
+            SwitchPreference quickspaceShishufied = (SwitchPreference) findPreference(Utilities.KEY_SHOW_ALT_QUICKSPACE);
+            quickspaceShishufied.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+                    LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                    return true;
+                }
+            });
+
         }
 
         @Override

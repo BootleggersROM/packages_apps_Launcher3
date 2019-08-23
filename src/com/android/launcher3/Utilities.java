@@ -151,6 +151,7 @@ public final class Utilities {
     public static final String DATE_STYLE_FONT = "pref_date_font";
     public static final String DATE_STYLE_TRANSFORM = "pref_date_transform";
     public static final String DATE_STYLE_SPACING = "pref_date_spacing";
+    public static final String KEY_SHOW_ALT_QUICKSPACE = "pref_show_alt_quickspace";
 
     public static boolean IS_RUNNING_IN_TEST_HARNESS =
                     ActivityManager.isRunningInTestHarness();
@@ -179,6 +180,10 @@ public final class Utilities {
 
     public static boolean isDateStyleUppercase(Context context) {
         return getPrefs(context).getBoolean(DATE_STYLE_TRANSFORM, false);
+    }
+
+    public static boolean useAlternativeQuickspaceUI(Context context) {
+        return getPrefs(context).getBoolean(KEY_SHOW_ALT_QUICKSPACE, false);
     }
 
     public static float getDateStyleTextSpacing(Context context) {
