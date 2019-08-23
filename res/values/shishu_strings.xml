@@ -251,4 +251,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icon_chooser">Icon chooser</string>
     <string name="icon_search">Search for icons</string>
 
+    <!-- Quickspace alternative view -->
+    <string name="quickspace_shishufied_style_title">Use an alternative style</string>
+    <string name="quickspace_shishufied_style_summary">Use a different style for At a Glance, more minimalistic</string>
+
 </resources>

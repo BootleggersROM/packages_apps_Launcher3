@@ -163,6 +163,7 @@ public final class Utilities {
     public static final String PREF_CUSTOM_RECENTS_ROUND_TYPE = "pref_custom_recents_corner_type";
     public static final String PREF_ALLAPPS_LONG_LABELS = "pref_allapps_long_labels";
     public static final String LOCK_DESKTOP_KEY = "pref_lock_desktop";
+    public static final String KEY_SHOW_ALT_QUICKSPACE = "pref_show_alt_quickspace";
 
     public static boolean isDesktopLocked(Context context) {
         return getPrefs(context).getBoolean(LOCK_DESKTOP_KEY, false);
@@ -293,6 +294,10 @@ public final class Utilities {
 
     public static boolean isDateStyleUppercase(Context context) {
         return getPrefs(context).getBoolean(DATE_STYLE_TRANSFORM, false);
+    }
+
+    public static boolean useAlternativeQuickspaceUI(Context context) {
+        return getPrefs(context).getBoolean(KEY_SHOW_ALT_QUICKSPACE, false);
     }
 
     public static float getDateStyleTextSpacing(Context context) {
