@@ -164,6 +164,7 @@ public final class Utilities {
     public static final String PREF_ALLAPPS_LONG_LABELS = "pref_allapps_long_labels";
     public static final String LOCK_DESKTOP_KEY = "pref_lock_desktop";
     public static final String KEY_SHOW_ALT_QUICKSPACE = "pref_show_alt_quickspace";
+    public static final String KEY_SHOW_QUICKSPACE_NOWPLAYING = "pref_quickspace_np";
 
     public static boolean isDesktopLocked(Context context) {
         return getPrefs(context).getBoolean(LOCK_DESKTOP_KEY, false);
@@ -298,6 +299,10 @@ public final class Utilities {
 
     public static boolean useAlternativeQuickspaceUI(Context context) {
         return getPrefs(context).getBoolean(KEY_SHOW_ALT_QUICKSPACE, false);
+    }
+
+    public static boolean isQuickspaceNowPlaying(Context context) {
+        return getPrefs(context).getBoolean(KEY_SHOW_QUICKSPACE_NOWPLAYING, false);
     }
 
     public static float getDateStyleTextSpacing(Context context) {
