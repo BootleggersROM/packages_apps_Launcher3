@@ -195,6 +195,13 @@ public class SettingsHomescreen extends Activity
                 }
             });
 
+            SwitchPreference quickspaceNowPlaying = (SwitchPreference) findPreference(Utilities.KEY_SHOW_QUICKSPACE_NOWPLAYING);
+            quickspaceNowPlaying.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+                    LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                    return true;
+                }
+            });
         }
 
         @Override
