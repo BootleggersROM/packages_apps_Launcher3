@@ -117,6 +117,7 @@ public class QuickEventsController {
         mEventIntro = true;
         mImportantQuickEvent = true;
         mEventTitle = mContext.getResources().getString(R.string.quick_event_rom_intro_welcome);
+        mEventSubIcon = R.drawable.ic_quickspace_btlg;
         int mRandomLuck = getLuckyNumber(10);
         String endingWelcome;
         if (mRandomLuck == 7) {
