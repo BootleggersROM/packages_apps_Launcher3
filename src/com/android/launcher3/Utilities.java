@@ -153,6 +153,7 @@ public final class Utilities {
     public static final String DATE_STYLE_SPACING = "pref_date_spacing";
     public static final String KEY_SHOW_ALT_QUICKSPACE = "pref_show_alt_quickspace";
     public static final String KEY_SHOW_QUICKSPACE_NOWPLAYING = "pref_quickspace_np";
+    public static final String KEY_SHOW_QUICKSPACE_PSONALITY = "pref_quickspace_psonality";
 
     public static boolean IS_RUNNING_IN_TEST_HARNESS =
                     ActivityManager.isRunningInTestHarness();
@@ -189,6 +190,10 @@ public final class Utilities {
 
     public static boolean isQuickspaceNowPlaying(Context context) {
         return getPrefs(context).getBoolean(KEY_SHOW_QUICKSPACE_NOWPLAYING, false);
+    }
+
+    public static boolean isQuickspacePersonalityEnabled(Context context) {
+        return getPrefs(context).getBoolean(KEY_SHOW_QUICKSPACE_PSONALITY, true);
     }
 
     public static float getDateStyleTextSpacing(Context context) {
