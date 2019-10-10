@@ -209,6 +209,14 @@
             android:autoRemoveFromRecents="true"
             android:parentActivityName="com.android.launcher3.SettingsActivity" />
 
+        <!-- About Launcher -->
+        <activity
+            android:name="com.android.launcher3.settings.SettingsAbout"
+            android:label="@string/about_shishu_title"
+            android:theme="@android:style/Theme.DeviceDefault.Settings"
+            android:autoRemoveFromRecents="true"
+            android:parentActivityName="com.android.launcher3.SettingsActivity" />
+
         <provider
             android:name="com.android.launcher3.testing.TestInformationProvider"
             android:authorities="${packageName}.TestInfo"
