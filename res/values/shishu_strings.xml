@@ -22,6 +22,16 @@
     <!-- Application name -->
     <string name="app_name">Shishu 家 Launcher</string>
 
+    <!-- About info -->
+    <string name="about_shishu_title" translatable="false">@string/app_name</string>
+    <string name="about_shishu_summary">by Bootleggers ROM</string>
+    <string name="about_based_on_title">Based on AOSP Launcher3</string>
+    <string name="about_based_on_summary">by the Android Open Source Project</string>
+    <string name="about_thanks_cat">Special thanks</string>
+    <string name="about">About</string>
+    <string name="about_summary">Info about the launcher</string>
+    <string name="about_app_version">Version</string>
+
     <!-- General -->
     <string name="settings_title">Settings</string>
 
