@@ -209,6 +209,9 @@ public class SettingsActivity extends Activity
 
         @Override
         public void onDestroy() {
+            // if we don't press the home button but the back button to close Settings,
+            // then we must force a restart because the home button watcher wouldn't trigger it
+            LauncherAppState.getInstanceNoCreate().checkIfRestartNeeded();
             super.onDestroy();
         }
     }
