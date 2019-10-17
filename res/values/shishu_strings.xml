@@ -62,4 +62,9 @@
     <!-- Swipe down to clear recents -->
     <string name="allow_swipe_down_clearall_title">Clear all on swipe down from recents view</string>
     <string name="allow_swipe_down_clearall_desc">Doesn\'t works if P navbar gestures are enable</string>
+
+    <!-- Icon packs -->
+    <string name="iconPackPackageDefault" translatable="false">""</string>
+    <string name="icon_pack">Icon pack</string>
+    <string name="icon_pack_summary">Select a custom icon pack</string>
 </resources>
