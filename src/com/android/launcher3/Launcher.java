@@ -41,7 +41,6 @@ import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.annotation.TargetApi;
 import android.app.ActivityOptions;
-import android.app.KeyguardManager;
 import android.appwidget.AppWidgetHostView;
 import android.appwidget.AppWidgetManager;
 import android.content.ActivityNotFoundException;
@@ -304,12 +303,6 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
 
     private DeviceProfile mStableDeviceProfile;
     private RotationMode mRotationMode = RotationMode.NORMAL;
-
-    // Hide and lock apps
-    private static final int REQUEST_AUTH_CODE = 93;
-    private View mAuthView;
-    private ItemInfo mAuthInfo;
-    private String mAuthContainer;
 
     // Feed integration
     private static final String SYSTEM_THEME = "system_theme";
@@ -741,13 +734,6 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
             }
         };
 
-        if (requestCode == REQUEST_AUTH_CODE) {
-            if (resultCode == RESULT_OK) {
-                startActivitySafely(mAuthView, requestArgs.getPendingIntent(), mAuthInfo, mAuthContainer);
-            }
-            return;
-        }
-
         if (requestCode == REQUEST_BIND_APPWIDGET) {
             // This is called only if the user did not previously have permissions to bind widgets
             final int appWidgetId = data != null ?
@@ -1093,27 +1079,9 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
 
     public void startActivitySafelyAuth(View v, Intent intent, ItemInfo item,
             String sourceContainer) {
-        KeyguardManager manager = Build.VERSION.SDK_INT >= Build.VERSION_CODES.M ?
-                getSystemService(KeyguardManager.class) :
-                (KeyguardManager) getSystemService(Context.KEYGUARD_SERVICE);
-        if (manager == null) {
-            throw new NullPointerException("No KeyguardManager found!");
-        }
-
-        String title = getString(R.string.hidelock_apps_manager_name);
-        String message = getString(R.string.hidelock_apps_auth_open_app, item.title);
-        Intent kmIntent = manager.createConfirmDeviceCredentialIntent(title, message);
-
-        if (kmIntent != null) {
-            mAuthView = v;
-            mAuthInfo = item;
-            mAuthContainer = sourceContainer;
-            setWaitingForResult(PendingRequestArgs.forIntent(REQUEST_AUTH_CODE, intent, item));
-            startActivityForResult(kmIntent, REQUEST_AUTH_CODE);
-            return;
-        }
-
-        startActivitySafely(v, intent, item, sourceContainer);
+        Utilities.showAuthScreen(this, getString(R.string.hidelock_apps_manager_name), () -> {
+            startActivitySafely(v, intent, item, sourceContainer);
+        });
     }
 
     public interface LauncherOverlay {
