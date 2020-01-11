@@ -59,6 +59,8 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.animation.Interpolator;
 
+import static com.android.launcher3.util.Executors.MODEL_EXECUTOR;
+
 import com.android.launcher3.LauncherModel;
 import com.android.launcher3.compat.LauncherAppsCompat;
 import com.android.launcher3.compat.ShortcutConfigActivityInfo;
@@ -657,7 +659,7 @@ public final class Utilities {
     }
 
     public static void restart(final Context context) {
-        new LooperExecutor(LauncherModel.getWorkerLooper()).execute(() -> {
+        new LooperExecutor(MODEL_EXECUTOR.getLooper()).execute(() -> {
             try {
                 Thread.sleep(WAIT_BEFORE_RESTART);
             } catch (Exception ignored) {
