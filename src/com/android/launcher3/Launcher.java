@@ -111,7 +111,6 @@ import com.android.launcher3.notification.NotificationListener;
 import com.android.launcher3.popup.PopupContainerWithArrow;
 import com.android.launcher3.popup.PopupDataProvider;
 import com.android.launcher3.settings.SettingsHomescreen;
-import com.android.launcher3.shadespace.ShadespaceView;
 import com.android.launcher3.shortcuts.DeepShortcutManager;
 import com.android.launcher3.states.InternalStateHandler;
 import com.android.launcher3.states.RotationHelper;
@@ -304,8 +303,6 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
     private final Bundle mUiInformation = new Bundle();
     LauncherClient mClient;
 
-    private ShadespaceView mShadespace;
-
     public LauncherClient getClient() {
         return mClient;
     }
@@ -403,7 +400,6 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         mUiInformation.putInt("system_ui_visibility", getWindow().getDecorView().getSystemUiVisibility());
         WallpaperColorInfo instance = WallpaperColorInfo.getInstance(this);
         onExtractedColorsChanged(instance);
-        mShadespace = findViewById(R.id.search_container_workspace);
 
         setContentView(mLauncherView);
         getRootView().dispatchInsets();
@@ -994,7 +990,6 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
 
         mHandler.removeCallbacks(mHandleDeferredResume);
         Utilities.postAsyncCallback(mHandler, mHandleDeferredResume);
-        if (mShadespace != null) mShadespace.onResume();
 
         if (!mOnResumeCallbacks.isEmpty()) {
             final ArrayList<OnResumeCallback> resumeCallbacks = new ArrayList<>(mOnResumeCallbacks);
@@ -1026,7 +1021,6 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         mDragController.cancelDrag();
         mDragController.resetLastGestureUpTime();
         mDropTargetBar.animateToVisibility(false);
-        if (mShadespace != null) mShadespace.onPause();
 
         if (mFeedIntegrationEnabled) {
             mClient.onPause();
@@ -2047,11 +2041,11 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
     @Override
     public void bindScreens(IntArray orderedScreenIds) {
         // Make sure the first screen is always at the start.
-        if (Utilities.showShadeGlance(this) &&
+        if (Utilities.showQSB(this) &&
                 orderedScreenIds.indexOf(Workspace.FIRST_SCREEN_ID) != 0) {
             orderedScreenIds.removeValue(Workspace.FIRST_SCREEN_ID);
             orderedScreenIds.add(0, Workspace.FIRST_SCREEN_ID);
-        } else if (!Utilities.showShadeGlance(this) && orderedScreenIds.isEmpty()) {
+        } else if (!Utilities.showQSB(this) && orderedScreenIds.isEmpty()) {
             // If there are no screens, we need to have an empty screen
             mWorkspace.addExtraEmptyScreen();
         }
@@ -2067,7 +2061,7 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         int count = orderedScreenIds.size();
         for (int i = 0; i < count; i++) {
             int screenId = orderedScreenIds.get(i);
-            if (!Utilities.showShadeGlance(this) || screenId != Workspace.FIRST_SCREEN_ID) {
+            if (!Utilities.showQSB(this) || screenId != Workspace.FIRST_SCREEN_ID) {
                 // No need to bind the first screen, as its always bound.
                 mWorkspace.insertNewWorkspaceScreenBeforeEmptyScreen(screenId);
             }
