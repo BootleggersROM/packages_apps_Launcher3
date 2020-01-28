@@ -15,6 +15,34 @@
         android:defaultValue="true"
         android:persistent="true"/>
 
+    <ListPreference
+        android:key="pref_date_format"
+        android:title="@string/date_format_title"
+        android:summary="%s"
+        android:entries="@array/date_format_names"
+        android:entryValues="@array/date_format_values"
+        android:persistent="true"
+        android:defaultValue="@string/date_format_normal"
+        android:dependency="pref_show_quickspace" />
+
+    <SwitchPreference
+        android:dependency="pref_show_quickspace"
+        android:key="pref_date_transform"
+        android:summary="@string/date_style_transform_summary"
+        android:title="@string/date_style_transform_title"
+        android:defaultValue="false"
+        android:persistent="true" />
+
+    <ListPreference
+        android:dependency="pref_show_quickspace"
+        android:entries="@array/date_style_spacing_names"
+        android:entryValues="@array/date_style_spacing_values"
+        android:key="pref_date_spacing"
+        android:defaultValue="normal"
+        android:persistent="true"
+        android:summary="%s"
+        android:title="@string/date_style_spacing" />
+
     <SwitchPreference
         android:key="pref_grid_options"
         android:title="Enable grid options"

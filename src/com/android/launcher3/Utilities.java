@@ -46,6 +46,8 @@ import android.graphics.RectF;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.InsetDrawable;
+import android.icu.text.DateFormat;
+import android.icu.text.DisplayContext;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.DeadObjectException;
@@ -54,6 +56,7 @@ import android.os.Message;
 import android.os.PowerManager;
 import android.os.TransactionTooLargeException;
 import android.provider.Settings;
+import android.text.format.DateUtils;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.TextUtils;
@@ -83,6 +86,7 @@ import com.android.launcher3.util.LooperExecutor;
 import com.android.launcher3.util.PackageManagerHelper;
 import com.android.launcher3.views.Transposable;
 import com.android.launcher3.widget.PendingAddShortcutInfo;
+import com.android.launcher3.R;
 
 import java.io.Closeable;
 import java.io.IOException;
@@ -172,6 +176,10 @@ public final class Utilities {
             CORE_POOL_SIZE, MAXIMUM_POOL_SIZE, KEEP_ALIVE,
             TimeUnit.SECONDS, new LinkedBlockingQueue<>());
 
+    public static final String DATE_FORMAT_KEY = "pref_date_format";
+    public static final String DATE_STYLE_TRANSFORM = "pref_date_transform";
+    public static final String DATE_STYLE_SPACING = "pref_date_spacing";
+
     public static boolean IS_RUNNING_IN_TEST_HARNESS =
                     ActivityManager.isRunningInTestHarness();
 
@@ -188,6 +196,76 @@ public final class Utilities {
                 PackageManagerHelper.getStyleWallpapersIntent(context), 0);
         return ri != null;
     }
+
+    public static String getDateFormat(Context context) {
+        return getPrefs(context).getString(DATE_FORMAT_KEY, context.getString(R.string.date_format_normal));
+    }
+
+    public static boolean isDateStyleUppercase(Context context) {
+        return getPrefs(context).getBoolean(DATE_STYLE_TRANSFORM, false);
+    }
+
+    public static float getDateStyleTextSpacing(Context context) {
+        String modifier = getPrefs(context).getString(DATE_STYLE_SPACING, "normal");
+        return translateSpacing(modifier);
+    }
+
+     private static float translateSpacing(String spacingamount) {
+        float amountsp;
+        switch (spacingamount) {
+            case "normal":
+                amountsp = 0F;
+                break;
+            case "barely":
+                amountsp = 0.07F;
+                break;
+            case "aesthetic":
+                amountsp = 0.12F;
+                break;
+            case "overthetop":
+                amountsp = 0.20F;
+                break;
+            default:
+                amountsp = 0F;
+                break;
+        }
+        return amountsp;
+    }
+
+    public static String formatDateTime(Context context, long timeInMillis) {
+        try {
+            String format = getDateFormat(context);
+            String formattedDate;
+            if (Utilities.ATLEAST_OREO) {
+                DateFormat dateFormat = DateFormat.getInstanceForSkeleton(format, Locale.getDefault());
+                dateFormat.setContext(DisplayContext.CAPITALIZATION_FOR_STANDALONE);
+                formattedDate = dateFormat.format(timeInMillis);
+            } else {
+                int flags;
+                if (format.equals(context.getString(R.string.date_format_long))) {
+                    flags = DateUtils.FORMAT_SHOW_WEEKDAY | DateUtils.FORMAT_SHOW_DATE;
+                } else if (format.equals(context.getString(R.string.date_format_normal))) {
+                    flags = DateUtils.FORMAT_SHOW_WEEKDAY | DateUtils.FORMAT_SHOW_DATE | DateUtils.FORMAT_ABBREV_MONTH;
+                } else if (format.equals(context.getString(R.string.date_format_short))) {
+                    flags = DateUtils.FORMAT_SHOW_WEEKDAY | DateUtils.FORMAT_SHOW_DATE | DateUtils.FORMAT_ABBREV_MONTH | DateUtils.FORMAT_ABBREV_WEEKDAY;
+                } else if (format.equals(context.getString(R.string.date_format_dayonly))) {
+                    flags = DateUtils.FORMAT_SHOW_WEEKDAY;
+                } else if (format.equals(context.getString(R.string.date_format_daydate_short))) {
+                    flags = DateUtils.FORMAT_SHOW_WEEKDAY | DateUtils.FORMAT_SHOW_DATE | DateUtils.FORMAT_ABBREV_WEEKDAY;
+                } else if (format.equals(context.getString(R.string.date_format_daydate_long))) {
+                    flags = DateUtils.FORMAT_SHOW_WEEKDAY | DateUtils.FORMAT_SHOW_DATE;
+                } else {
+                    flags = DateUtils.FORMAT_SHOW_WEEKDAY | DateUtils.FORMAT_SHOW_DATE | DateUtils.FORMAT_ABBREV_MONTH;
+                }
+                 formattedDate = DateUtils.formatDateTime(context, timeInMillis, flags);
+            }
+            return formattedDate;
+        } catch (Throwable t) {
+            Log.e(TAG, "Error formatting At A Glance date", t);
+            return DateUtils.formatDateTime(context, timeInMillis, DateUtils.FORMAT_SHOW_WEEKDAY | DateUtils.FORMAT_SHOW_DATE | DateUtils.FORMAT_ABBREV_MONTH);
+        }
+    }
+
 
     /**
      * Given a coordinate relative to the descendant, find the coordinate in a parent view's

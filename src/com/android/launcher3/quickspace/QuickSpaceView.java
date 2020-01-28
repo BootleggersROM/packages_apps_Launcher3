@@ -28,7 +28,6 @@ import android.graphics.Bitmap;
 import android.graphics.Paint.FontMetrics;
 import android.graphics.Rect;
 import android.graphics.RectF;
-import android.graphics.Typeface;
 import android.net.Uri.Builder;
 import android.os.Handler;
 import android.os.Process;
@@ -140,7 +139,7 @@ public class QuickSpaceView extends FrameLayout implements AnimatorUpdateListene
         mClockView.setVisibility(View.VISIBLE);
         mClockView.setOnClickListener(hasGoogleCalendar ? mActionReceiver.getCalendarAction() : null);
         if (forced) {
-            mClockView.reloadDateFormat(true);
+            mClockView.reloadDateFormat();
         }
         mTitleSeparator.setVisibility(mWeatherAvailable ? View.VISIBLE : View.GONE);
     }
@@ -181,10 +180,10 @@ public class QuickSpaceView extends FrameLayout implements AnimatorUpdateListene
     }
 
     private void setTypeface(TextView... views) {
-        Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "fonts/GoogleSans-Regular.ttf");
         for (TextView view : views) {
             if (view != null) {
-                view.setTypeface(tf);
+                view.setAllCaps(Utilities.isDateStyleUppercase(getContext()));
+                view.setLetterSpacing(Utilities.getDateStyleTextSpacing(getContext()));
             }
         }
     }
@@ -263,4 +262,5 @@ public class QuickSpaceView extends FrameLayout implements AnimatorUpdateListene
     public void setPadding(int n, int n2, int n3, int n4) {
         super.setPadding(0, 0, 0, 0);
     }
+
 }

@@ -84,4 +84,30 @@
     <string name="quick_event_ambient_now_playing">Now Playing</string>
     <string name="quick_event_ambient_song_artist">%1$s by %2$s</string>
 
+    <!-- QuickSpace Date format -->
+    <string name="date_format_title">Date format</string>
+    <string name="date_format_long_name">Long</string>
+    <string name="date_format_normal_name">Normal</string>
+    <string name="date_format_short_name">Short</string>
+    <string name="date_format_daydate_long_name">Day (with number)</string>
+    <string name="date_format_daydate_short_name">Day (short with number)</string>
+    <string name="date_format_dayonly_name">Just today</string>
+    <string name="date_format_long" translatable="false">EEEE, MMMM d</string>
+    <string name="date_format_normal" translatable="false">EEEE, MMM d</string>
+    <string name="date_format_short" translatable="false">EEE, MMM d</string>
+    <string name="date_format_daydate_long" translatable="false">EEEEd</string>
+    <string name="date_format_daydate_short" translatable="false">EEEd</string>
+    <string name="date_format_dayonly" translatable="false">EEEE</string>
+
+    <!-- At a glance uppercase -->
+    <string name="date_style_transform_title">Show uppercase on date</string>
+    <string name="date_style_transform_summary">Transform all the date/at a glance with uppercased text</string>
+
+    <!-- At a glance font spacing -->
+    <string name="date_style_spacing">Date spacing</string>
+    <string name="date_style_spacing_normal">Normal</string>
+    <string name="date_style_spacing_barely">Barely noticeable</string>
+    <string name="date_style_spacing_aesthetic" translatable="false">A e s t h e t i c</string>
+    <string name="date_style_spacing_ott">Over the top</string>
+
 </resources>
