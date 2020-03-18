@@ -23,4 +23,7 @@
     <!-- Quickspace -->
     <item type="id" name="reserved_container_workspace" />
 
+    <!-- Custom icon pack as default. Can be empty -->
+    <string name="config_defaultIconPackPackage" translatable="false"></string>
+
 </resources>
