@@ -228,9 +228,7 @@ public class SettingsHomescreen extends Activity
         protected boolean initPreference(Preference preference) {
             switch (preference.getKey()) {
                 case GRID_OPTIONS_PREFERENCE_KEY:
-                    return Utilities.isDevelopersOptionsEnabled(getContext()) &&
-                            Utilities.IS_DEBUG_DEVICE &&
-                            Utilities.existsStyleWallpapers(getContext());
+                    return Utilities.existsStyleWallpapers(getContext());
                 case KEY_FEED_INTEGRATION:
                     return LauncherAppState.getInstanceNoCreate().isSearchAppAvailable();
                 case Utilities.DATE_FORMAT_KEY:
