@@ -68,6 +68,8 @@ public class HideLockAppsActivity extends Activity implements
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
+        setTitle(this.getString(Utilities.isDeviceSecured(this) ?
+            R.string.hidelock_apps_manager_name : R.string.hide_apps_manager_name));
         setContentView(R.layout.activity_hidden_apps);
         mRecyclerView = findViewById(R.id.hidden_apps_list);
         mLoadingView = findViewById(R.id.hidden_apps_loading);
@@ -148,7 +150,8 @@ public class HideLockAppsActivity extends Activity implements
                 .apply();
 
         new AlertDialog.Builder(this)
-                .setView(R.layout.dialog_hidelock_welcome)
+                .setView(Utilities.isDeviceSecured(this) ?
+                    R.layout.dialog_hidelock_welcome : R.layout.dialog_hide_welcome)
                 .setPositiveButton(android.R.string.ok, null)
                 .show();
     }

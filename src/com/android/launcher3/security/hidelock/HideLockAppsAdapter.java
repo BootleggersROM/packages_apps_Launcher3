@@ -30,6 +30,7 @@ import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.launcher3.R;
+import com.android.launcher3.Utilities;
 import com.android.launcher3.security.hidelock.db.HideLockComponent;
 
 import java.util.ArrayList;
@@ -37,6 +38,7 @@ import java.util.List;
 
 class HideLockAppsAdapter extends RecyclerView.Adapter<HideLockAppsAdapter.ViewHolder> {
     private List<HideLockComponent> mList = new ArrayList<>();
+    private boolean mDeviceSecured;
     private Listener mListener;
 
     HideLockAppsAdapter(Listener listener) {
@@ -52,6 +54,8 @@ class HideLockAppsAdapter extends RecyclerView.Adapter<HideLockAppsAdapter.ViewH
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int type) {
+        //Workaround, nasty approach
+        mDeviceSecured = Utilities.isDeviceSecured(parent.getContext());
         return new ViewHolder(LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.item_hidden_app, parent, false));
     }
@@ -93,8 +97,12 @@ class HideLockAppsAdapter extends RecyclerView.Adapter<HideLockAppsAdapter.ViewH
 
             mHiddenView.setImageResource(component.isHidden() ?
                     R.drawable.ic_hidden_locked : R.drawable.ic_hidden_unlocked);
-            mProtectedView.setImageResource(component.isProtected() ?
+            if (mDeviceSecured) {
+                mProtectedView.setImageResource(component.isProtected() ?
                     R.drawable.ic_protected_locked : R.drawable.ic_protected_unlocked);
+            } else {
+                mProtectedView.setVisibility(View.GONE);
+            }
 
             mHiddenView.setOnClickListener(v -> {
                 component.invertVisibility();
@@ -118,27 +126,29 @@ class HideLockAppsAdapter extends RecyclerView.Adapter<HideLockAppsAdapter.ViewH
                 }
             });
 
-            mProtectedView.setOnClickListener(v -> {
-                component.invertProtection();
+            if (mDeviceSecured) {
+                mProtectedView.setOnClickListener(v -> {
+                    component.invertProtection();
 
-                mProtectedView.setImageResource(component.isProtected() ?
-                        R.drawable.avd_protected_lock : R.drawable.avd_protected_unlock);
-                AnimatedVectorDrawable avd = (AnimatedVectorDrawable) mProtectedView.getDrawable();
+                    mProtectedView.setImageResource(component.isProtected() ?
+                            R.drawable.avd_protected_lock : R.drawable.avd_protected_unlock);
+                    AnimatedVectorDrawable avd = (AnimatedVectorDrawable) mProtectedView.getDrawable();
 
-                int position = getAdapterPosition();
-                if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) {
-                    avd.registerAnimationCallback(new Animatable2.AnimationCallback() {
-                        @Override
-                        public void onAnimationEnd(Drawable drawable) {
-                            updateProtectedList(position, component);
-                        }
-                    });
-                    avd.start();
-                } else {
-                    avd.start();
-                    updateProtectedList(position, component);
-                }
-            });
+                    int position = getAdapterPosition();
+                    if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) {
+                        avd.registerAnimationCallback(new Animatable2.AnimationCallback() {
+                            @Override
+                            public void onAnimationEnd(Drawable drawable) {
+                                updateProtectedList(position, component);
+                            }
+                        });
+                        avd.start();
+                    } else {
+                        avd.start();
+                        updateProtectedList(position, component);
+                    }
+                });
+            }
         }
 
         private void updateHiddenList(int position, HideLockComponent component) {

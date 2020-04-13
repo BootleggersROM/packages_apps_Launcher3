@@ -759,6 +759,13 @@ public final class Utilities {
         return getPrefs(context).getBoolean(SHOW_HOTSEAT_GRADIENT, true);
     }
 
+    public static boolean isDeviceSecured(Context context) {
+        KeyguardManager manager = Build.VERSION.SDK_INT >= Build.VERSION_CODES.M ?
+                context.getSystemService(KeyguardManager.class) :
+                (KeyguardManager) context.getSystemService(Context.KEYGUARD_SERVICE);
+        return manager.isKeyguardSecure();
+    }
+
     public static void restart(final Context context) {
         new LooperExecutor(MODEL_EXECUTOR.getLooper()).execute(() -> {
             try {
