@@ -291,6 +291,7 @@ public class SettingsHomescreen extends Activity
 
         @Override
         public void onDestroy() {
+            LauncherAppState.getInstanceNoCreate().checkIfRestartNeeded();
             super.onDestroy();
         }
     }
