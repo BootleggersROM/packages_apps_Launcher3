@@ -60,6 +60,7 @@
                 android:padding="1.5dip"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
+                android:tint="?android:attr/colorControlNormal"
                 app:maxHeight="52.5dp"
                 app:maxWidth="52.5dp" />
 
