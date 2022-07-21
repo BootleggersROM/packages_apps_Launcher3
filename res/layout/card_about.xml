@@ -32,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:textColor="@color/op_control_text_color_primary" />
 
             <TextView
@@ -44,7 +44,7 @@
                 android:layout_alignLeft="@android:id/title"
                 android:layout_marginTop="2.0dip"
                 android:maxLines="4"
-                android:textSize="12.5sp"
+                android:textSize="14sp"
                 android:textColor="@color/op_control_text_color_secondary" />
         </RelativeLayout>
 
