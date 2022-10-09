@@ -225,8 +225,10 @@ public abstract class BaseActivityInterface<STATE_TYPE extends BaseState<STATE_T
         } else {
             int taskMargin = dp.overviewTaskMarginPx;
             calculateTaskSizeInternal(context, dp,
-                    dp.overviewTaskThumbnailTopMarginPx,
-                    dp.getOverviewActionsClaimedSpace(),
+                    dp.overviewTaskThumbnailTopMarginPx
+                    + res.getDimensionPixelSize(R.dimen.overview_task_extra_top_margin),
+                    dp.getOverviewActionsClaimedSpace()
+                    + res.getDimensionPixelSize(R.dimen.overview_task_extra_bottom_margin),
                     res.getDimensionPixelSize(R.dimen.overview_minimum_next_prev_size) + taskMargin,
                     maxScale,
                     Gravity.CENTER,
