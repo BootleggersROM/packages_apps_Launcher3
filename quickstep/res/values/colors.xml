@@ -76,4 +76,5 @@
 
     <color name="all_set_page_background">#FFFFFFFF</color>
 
+    <color name="mid_clear_all_background_color">@*android:color/system_neutral2_0</color>
 </resources>
