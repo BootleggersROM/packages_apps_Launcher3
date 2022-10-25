@@ -1191,7 +1191,8 @@ public class DeviceProfile {
             // Push icons to the side
             int requiredWidth = getHotseatRequiredWidth();
             int hotseatWidth = Math.min(requiredWidth, availableWidthPx - hotseatBarEndOffset);
-            int sideSpacing = (availableWidthPx - hotseatWidth) / 2;
+            int sideSpacing = isTablet ? (availableWidthPx - hotseatWidth) / 2
+                    : (availableWidthPx - hotseatWidth) / 2;
 
             hotseatBarPadding.set(sideSpacing, hotseatBarTopPadding, sideSpacing,
                     hotseatBarBottomPadding);
@@ -1236,7 +1237,7 @@ public class DeviceProfile {
     }
 
     private int getAdditionalQsbSpace() {
-        return isQsbInline ? hotseatQsbWidth + hotseatBorderSpace : 0;
+        return isTablet && isQsbInline ? hotseatQsbWidth + hotseatBorderSpace : 0;
     }
 
     /**
