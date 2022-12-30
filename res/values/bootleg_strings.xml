@@ -154,5 +154,5 @@
     <string name="recents_meminfo_title">Memory info</string>
 
     <!-- QSB -->
-    <string name="qsb_search_hint">Search your phone and more</string>
+    <string name="qsb_search_hint">Search your phone</string>
 </resources>
