@@ -116,17 +116,14 @@ public class MemInfoView extends TextView {
     public void updateVerticalMargin(NavigationMode mode) {
         LayoutParams lp = (LayoutParams)getLayoutParams();
         int bottomMargin;
-        int topMargin;
 
         if (mode == THREE_BUTTONS)
             bottomMargin = mDp.memInfoMarginThreeButtonPx;
         else
             bottomMargin = mDp.memInfoMarginGesturePx;
 
-        topMargin = mDp.memInfoMarginTop;
-
-        lp.setMargins(lp.leftMargin, topMargin, lp.rightMargin, bottomMargin);
-        lp.gravity = Gravity.CENTER_HORIZONTAL | Gravity.TOP;
+        lp.setMargins(lp.leftMargin, lp.topMargin, lp.rightMargin, bottomMargin);
+        lp.gravity = Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM;
     }
 
     private String unitConvert(long valueMiB, boolean alignToGB) {
