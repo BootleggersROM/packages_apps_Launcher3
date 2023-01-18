@@ -17,7 +17,7 @@ package {
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
-min_launcher3_sdk_version = "26"
+min_launcher3_sdk_version = "29"
 
 android_library {
     name: "launcher-aosp-tapl",
