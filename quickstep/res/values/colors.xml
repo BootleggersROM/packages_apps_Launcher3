@@ -78,7 +78,4 @@
 
     <!-- Recents overview -->
     <color name="recents_filter_icon">#333333</color>
-    
-    <color name="mid_clear_all_background_color">@*android:color/system_neutral2_0</color>
-
 </resources>

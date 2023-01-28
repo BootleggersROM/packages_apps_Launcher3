@@ -23,6 +23,4 @@
     <color name="mock_webpage_url_bar_item">#3c4043</color>
 
     <color name="all_set_page_background">#FF000000</color>
-
-    <color name="mid_clear_all_background_color">@*android:color/system_neutral2_900</color>
 </resources>
