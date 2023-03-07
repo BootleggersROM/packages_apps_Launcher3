@@ -52,9 +52,9 @@
         android:summary="@string/background_blur_summary"
         android:persistent="true"
         android:max="225"
-        android:min="85"
+        android:min="0"
         settings:units="px"
-        android:defaultValue="85" />
+        android:defaultValue="65" />
 
     <androidx.preference.PreferenceScreen
         android:key="pref_developer_options"
