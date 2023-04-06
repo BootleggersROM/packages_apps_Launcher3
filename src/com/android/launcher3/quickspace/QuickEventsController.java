@@ -267,11 +267,12 @@ public class QuickEventsController {
                 break;
 
             default:
-                if (getLuckyNumber(13) == 7) {
+                if (Utilities.isQuickspacePersonalityEnabled(mContext) && getLuckyNumber(13) == 7) {
                     psaLength = mPSARandomStr.length - 1;
                     mEventTitleSub = mPSARandomStr[getLuckyNumber(0, psaLength)];
                     mIsQuickEvent = true;
                 } else {
+                    mEventTitleSub = null;
                     mIsQuickEvent = false;
                 }
                 break;
@@ -327,7 +328,7 @@ public class QuickEventsController {
     }
 
     public boolean isNowPlaying() {
-        return mPlayingActive;
+        return mPlayingActive && Utilities.isQuickspaceNowPlaying(mContext);
     }
 
     public void onPause() {
