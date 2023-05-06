@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">Setelan beranda</string>
+    <string name="home_category_title">Layar Beranda</string>
+    <string name="home_category_summary">Atur panel Google Now dan lainnya</string>
+    <string name="icons_category_title">Ikon</string>
+    <string name="icons_category_summary">Atur ukuran ikon dan lainnya</string>
+    <string name="app_drawer_category_title">Laci aplikasi</string>
+    <string name="app_drawer_category_summary">Kustomisasi laci aplikasi Anda</string>
+    <string name="recents_category_title">Baru-baru ini</string>
+    <string name="recents_category_summary">Ubah layar ikhtisar</string>
+    <string name="misc_category_title">Lain-lain</string>
+    <string name="misc_category_summary">Opsi lainnya</string>
+    <string name="general_category_title">Umum</string>
+    <string name="interface_category_title">Antarmuka</string>
+    <string name="quickspace_category_title">QuickSpace</string>
+    <string name="search_bar_category_title">Bilah pencarian</string>
+    <string name="actions_category_title">Tindakan cepat</string>
+    <string name="dev_options_title">Opsi Pengembang</string>
+    <string name="dev_options_summary">Mengaktifkan fitur tersembunyi dengan risiko Anda</string>
+    <string name="settings_lock_layout_title">Kunci tata letak</string>
+    <string name="settings_lock_layout_summary_on">Ikon dan widget tidak dapat ditambahkan, dihapus dan dipindahkan pada layar beranda</string>
+    <string name="settings_lock_layout_summary_off">Ikon dan widget dapat ditambahkan, dihapus dan dipindahkan pada layar beranda</string>
+    <string name="settings_edit_widgets_error">Hal ini tidak mungkin untuk menambahkan widget ke layar beranda</string>
+    <string name="desktop_show_labels">Label ikon di desktop</string>
+    <string name="drawer_show_labels">Label ikon di laci</string>
+    <string name="title_show_google_app">Geser untuk mengakses aplikasi Google</string>
+    <string name="msg_minus_one_on_left">Saat Anda menggeser ke kanan dari layar beranda</string>
+    <string name="msg_minus_one_on_right">Saat Anda menggeser ke kiri dari layar beranda</string>
+    <string name="pref_sleep_gesture_title">Ketuk ganda untuk tidur</string>
+    <string name="pref_sleep_gesture_summary">Ketuk dua kali pada ruang kosong untuk mematikan layar</string>
+    <string name="pause">Jeda</string>
+    <string name="pause_apps_dialog_title">Jeda %1$s?</string>
+    <string name="pause_apps_dialog_message">Notifikasi untuk %1$s akan dijeda</string>
+    <string name="paused_apps_dialog_title">Aplikasi dijeda</string>
+    <string name="paused_apps_dialog_message">%1$s langsung dijeda dari peluncur</string>
+    <string name="paused_apps_drop_target_label">Jeda aplikasi</string>
+    <string name="custom_seekbar_value">Nilai: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">secara bawaan</string>
+    <string name="custom_seekbar_default_value_to_set">Nilai bawaan: <xliff:g id="v">%s</xliff:g>\nTekan lama untuk menerapkan</string>
+    <string name="custom_seekbar_default_value_is_set">Nilai bawaan telah diterapkan</string>
+    <string name="icon_size_title">Ukuran ikon</string>
+    <string name="font_size_title">Ukuran font</string>
+    <string name="icon_max_lines_title">Garis maksimum untuk nama aplikasi</string>
+    <string name="label_search">Cari</string>
+    <string name="label_lens">Google Lens</string>
+    <string name="label_voice_search">Pencarian suara</string>
+    <string name="dock_music_search_title">Pencarian musik</string>
+    <string name="dock_music_search_summary">Mulai pencarian musik dengan menekan ikon mikrofon</string>
+    <string name="dock_search_title">Bilah pencarian Google</string>
+    <string name="dock_search_summary">Bilah pencarian di dok bawah</string>
+    <string name="dock_theme_title">Ikon bertema</string>
+    <string name="dock_theme_summary">Gunakan ikon bertema untuk bilah pencarian</string>
+    <string name="search_radius_title">Radius sudut</string>
+    <string name="hotseat_bg_title">Latar belakang hotseat</string>
+    <string name="hotseat_bg_summary">Tambahkan latar belakang tembus pandang di dok aplikasi</string>
+    <string name="allow_wallpaper_scrolling">Menggulir wallpaper</string>
+    <string name="allow_wallpaper_scrolling_summary">Efek pengguliran wallpaper untuk beberapa layar</string>
+    <string name="allow_wallpaper_zooming">Pembesaran wallpaper</string>
+    <string name="allow_wallpaper_zooming_summary">Perbesar atau perkecil wallpaper saat menggunakan laci atau aplikasi terbaru</string>
+    <string name="show_statusbar_title">Tampilkan bilah status</string>
+    <string name="show_top_shadow">Bayangan atas</string>
+    <string name="row_height_title">Tinggi baris</string>
+    <string name="background_blur_title">Kedalaman blur latar belakang</string>
+    <string name="background_blur_summary">Setel tingkat kedalaman blur untuk baru-baru ini dan laci aplikasi</string>
+    <string name="show_quickspace_title">Sekilas</string>
+    <string name="show_quickspace_summary">Tampilkan di bagian atas layar beranda Anda</string>
+    <string name="quickspace_grt_morning">Selamat pagi.</string>
+    <string name="quickspace_grt_evening">Selamat malam.</string>
+    <string name="quickspace_grt_afternoon">Selamat siang.</string>
+    <string name="quickspace_grt_night">Selamat malam.</string>
+    <string name="quickspace_grt_midnight">Tengah malam yang khidmat.</string>
+    <string name="quickspace_grt_general">Hari yang indah.</string>
+    <string name="quickspace_ext_one">Hari ini</string>
+    <string name="quickspace_ext_two">Pukul</string>
+    <string name="quickspace_ext_three">Pukul</string>
+    <string name="qe_now_playing_unknown_artist">Artis tidak diketahui</string>
+    <string name="qe_now_playing_ext_one">Sedang memutar</string>
+    <string name="qe_now_playing_by">Oleh</string>
+    <string name="quickspace_now_playing_title">Sedang diputar</string>
+    <string name="quickspace_now_playing_summary">Tampilkan lagu yang Anda putar</string>
+    <string name="quickspace_alternate_style_title">Gaya diperpanjang</string>
+    <string name="quickspace_alternate_style_summary">Beralih ke gaya diperpanjang</string>
+    <string name="quickspace_psa_title">Pesan random</string>
+    <string name="quickspace_psa_summary">Jadikan temanmu lebih hidup dengan pesan random</string>
+    <string-array name="quickspace_psa_morning">
+        <item>Jalan-jalan kecil sepertinya menyenangkan.</item>
+        <item>Sikat gigimu dengan penuh perhatian.</item>
+        <item>Mulailah harimu terhidrasi!</item>
+        <item>Berolahragalah!</item>
+        <item>Regangkan semuanya!</item>
+        <item>Mulailah harimu dengan positif.</item>
+        <item>Pagi yang menyenangkan!</item>
+        <item>Selalu periksa level baterai perangkat!</item>
+        <item>Jangan lupa siapkan sarapan.</item>
+        <item>Pastikan periksa cuaca, untuk berjaga-jaga.</item>
+        <item>Jangan lupa untuk memeriksa catatanmu!</item>
+        <item>Selalu periksa email/pesanmu.</item>
+        <item>Periksa jadwalmu jika ada.</item>
+        <item>Semoga beruntung hari ini!</item>
+        <item>Awali hari dengan sarapan bukan angan-angan.</item>
+        <item>Mulailah harimu dengan minuman panas apa pun.</item>
+        <item>Jangan lupakan proteinnya.</item>
+        <item>Telur membuat sarapan sederhana dan bergizi.</item>
+        <item>Nikmati sarapanmu.</item>
+    </string-array>
+    <string-array name="quickspace_psa_noon">
+        <item>Jangan lupa untuk tetap terhidrasi!</item>
+        <item>Ingatlah untuk makan makanan ringan.</item>
+        <item>Sinar UV lebih berbahaya di sore hari.</item>
+        <item>Sekarang sudah sore.</item>
+        <item>Selalu periksa level baterai perangkat!</item>
+        <item>Ingatlah untuk memeriksa email/pesanmu.</item>
+        <item>Silakan periksa daftar tugasmu jika kamu memilikinya.</item>
+        <item>Jangan lupa siapkan makan malammu.</item>
+        <item>Nikmati harimu.</item>
+        <item>Tunggu sebentar! Hari hampir selesai!</item>
+        <item>Bersenang-senanglah.</item>
+    </string-array>
+    <string-array name="quickspace_psa_early_evening">
+        <item>Selalu tetap terhidrasi!</item>
+        <item>Tidur 8 jam adalah suatu keharusan.</item>
+        <item>Sekarang sudah sore.</item>
+        <item>Ingatlah untuk mengisi penuh baterai sebelum kamu tidur.</item>
+        <item>Ingatlah untuk memeriksa email/pesanmu.</item>
+        <item>Silakan periksa daftar tugasmu jika kamu memilikinya.</item>
+        <item>Ingatlah untuk makan malam.</item>
+        <item>Selalu periksa lampu dan soketnya.</item>
+        <item>Nikmati malam.</item>
+        <item>Cuy! Beri dirimu istirahat!</item>
+        <item>Santai dan istirahatlah.</item>
+    </string-array>
+    <string-array name="quickspace_psa_evening">
+        <item>Jangan minum terlalu banyak air sebelum tidur.</item>
+        <item>Sekarang sudah sore.</item>
+        <item>Cobalah untuk menghindari pengisian semalaman jika memungkinkan.</item>
+        <item>Ingatlah untuk memeriksa email/pesanmu.</item>
+        <item>Silakan periksa daftar tugasmu jika kamu memilikinya.</item>
+        <item>Ingatlah untuk makan malam.</item>
+        <item>Tidur 8 jam adalah suatu keharusan.</item>
+        <item>Nikmati malam.</item>
+        <item>Lugaw adalah resep yang enak untuk makan malam.</item>
+        <item>Nikmati tidurmu.</item>
+    </string-array>
+    <string-array name="quickspace_psa_midnight">
+        <item>Kurang tidur buruk bagi kesehatan kamu.</item>
+        <item>Jangan lupa untuk tetap terhidrasi.</item>
+        <item>Menjadi kurang tidur dapat merusak produksi melatonin.</item>
+        <item>Sekarang tengah malam.</item>
+        <item>Tidur larut malam tidak sehat.</item>
+        <item>Kamu perlu tidur sekarang.</item>
+        <item>Jangan lupa untuk tidur/menyiapkan sarapan.</item>
+        <item>Nikmati tengah malam.</item>
+        <item>Kekurangan tidur memengaruhi jam tubuhmu.</item>
+        <item>Tolong jaga dirimu.</item>
+    </string-array>
+    <string-array name="quickspace_psa_random">
+        <item>Ada easter egg yang disembunyikan di ROM ini.</item>
+        <item>Coba periksa pengaturan cuaca.</item>
+        <item>Cobalah untuk menghindari sinar UV selama siang hari.</item>
+        <item>Selalu Terhidrasi!</item>
+        <item>Pringles sebenarnya bukan keripik kentang...</item>
+        <item>Tertawa dapat meningkatkan aliran darah.</item>
+        <item>Kopi mengandung antioksidan.</item>
+        <item>Saus tomat pernah dijual sebagai obat.</item>
+        <item>Permen kapas ditemukan oleh seorang dokter gigi.</item>
+        <item>Jangan melewatkan waktu makan kamu!</item>
+        <item>Ingatlah untuk memeriksa level baterai perangkat!</item>
+        <item>Periksa email/pesanmu.</item>
+        <item>Periksa daftar tugasmu jika kamu memilikinya.</item>
+        <item>Kamu dapat menonaktifkan quickspace melalui setelan beranda.</item>
+        <item>Jangan lupa ngopi bang!</item>
+        <item>Saatnya membeli beras!</item>
+        <item>Waktunya makan siang!</item>
+        <item>Kalamay terbuat dari beras ketan.</item>
+        <item>Semua nasi putih mulai coklat.</item>
+        <item>Hai, capek ya?</item>
+        <item>Selalu bawa air agar tetap terhidrasi.</item>
+        <item>Jangan pilih Puan Maharani di pilpres 2024..</item>
+        <item>Nikmati harimu!</item>
+    </string-array>
+    <string name="suggestion_pref_screen_title">Saran</string>
+    <string name="suggestion_pref_screen_desc">Untuk semua aplikasi &amp; saran layar beranda</string>
+    <string name="quick_event_ambient_weather_title">Kondisi cuaca</string>
+    <string name="quick_event_ambient_weather_summary">Tampilkan kondisi cuaca dan suhu saat ini</string>
+    <string name="quick_event_ambient_weather_enabled_info">Membutuhkan layanan cuaca untuk diaktifkan</string>
+    <string name="background_opacity_title">Opasitas latar belakang</string>
+    <string name="recents_screenshot_title">Tangkapan layar</string>
+    <string name="recents_clear_all_title">Hapus semua</string>
+    <string name="recents_lens_title">Lens</string>
+    <string name="pref_themed_icons_title">Ikon bertema</string>
+    <string name="pref_themed_icons_summary">Ikuti ikon bertema yang digunakan di layar beranda</string>
+    <string name="app_info_source">Sumber</string>
+    <string name="app_info_source_system">Sistem</string>
+    <string name="app_info_last_update">Pembaruan terakhir</string>
+    <string name="app_info_version">Versi</string>
+    <string name="app_info_more">Lainnya</string>
+    <string name="icon_pack_title">Paket ikon</string>
+    <string name="icon_pack_default_label">Standar</string>
+    <string name="icon_pack_add">Instal lebih banyak</string>
+    <string name="icon_pack_no_market">Tidak ada toko aplikasi yang tersedia</string>
+    <string name="recent_task_option_kill_app">Hentikan</string>
+    <string name="recents_app_killed">Aplikasi dihentikan</string>
+    <string name="meminfo_text">%1$s Tersedia | %2$s Total</string>
+    <string name="recents_meminfo_title">Info memori</string>
+    <string name="drawer_search_title">Bilah pencarian aplikasi</string>
+    <string name="drawer_search_summary">Bilah pencarian di atas laci aplikasi</string>
+    <string name="pref_restart_title">Memulai Ulang</string>
+    <string name="pref_restart_summary">Mulai ulang peluncur secara manual untuk menerapkan setelan yang tertunda</string>
+    <string name="laboratory_parallel_space_title">Ruang paralel</string>
+    <string name="laboratory_parallel_space_summary">Izinkan menjalankan beberapa hal dari aplikasi yang sama secara paralel</string>
+    <string name="recents_shake_clear_all_title">Goyang ponsel untuk menghapus semua tugas</string>
+</resources>

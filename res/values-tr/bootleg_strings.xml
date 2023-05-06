@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">Ana ekran ayarları</string>
+    <string name="home_category_title">Ana ekran</string>
+    <string name="home_category_summary">Google now paneli ve daha fazlasını ayarla</string>
+    <string name="icons_category_title">Simgeler</string>
+    <string name="icons_category_summary">Simge boyutunu ve daha fazlasını ayarlayın</string>
+    <string name="app_drawer_category_title">Uygulama çekmecesi</string>
+    <string name="app_drawer_category_summary">Uygulama çekmecenizi özelleştirin</string>
+    <string name="recents_category_title">Son uygulamalar</string>
+    <string name="recents_category_summary">Son uygulamalar ekranını yenileyin</string>
+    <string name="misc_category_title">Çeşitli</string>
+    <string name="misc_category_summary">Diğer seçenekler</string>
+    <string name="general_category_title">Genel</string>
+    <string name="interface_category_title">Arayüz</string>
+    <string name="quickspace_category_title">Hızlı alan</string>
+    <string name="search_bar_category_title">Arama çubuğu</string>
+    <string name="actions_category_title">Hızlı eylemler</string>
+    <string name="dev_options_title">Geliştirici seçenekleri</string>
+    <string name="dev_options_summary">Bazı gizli özellikleri kendi sorumluluğunuzda etkinleştirin</string>
+    <string name="settings_lock_layout_title">Düzeni kilitle</string>
+    <string name="settings_lock_layout_summary_on">Simgeleri ve widget\'lar ana ekrandan eklenemez, kaldırılamaz ve taşınamaz</string>
+    <string name="settings_lock_layout_summary_off">Simgeler ve widget\'lar ana ekrana eklenebilir, kaldırılabilir ve taşınabilir</string>
+    <string name="settings_edit_widgets_error">Ana ekrana widget eklemek mümkün değildir</string>
+    <string name="desktop_show_labels">Ana ekranda simge etiketleri</string>
+    <string name="drawer_show_labels">Çekmecede simge etiketleri</string>
+    <string name="title_show_google_app">Google uygulamasına erişmek için kaydırın</string>
+    <string name="msg_minus_one_on_left">Ana ekrandan sağa kaydırdığınızda</string>
+    <string name="msg_minus_one_on_right">Ana ekrandan sola kaydırdığınızda</string>
+    <string name="pref_sleep_gesture_title">Çift dokunuşla uyutma</string>
+    <string name="pref_sleep_gesture_summary">Ekranı kapatmak için boş bir yere çift dokunun</string>
+    <string name="pause">Duraklat</string>
+    <string name="pause_apps_dialog_title">Duraklat %1$s?</string>
+    <string name="pause_apps_dialog_message">%1$s için bildirimler duraklatılacak</string>
+    <string name="paused_apps_dialog_title">Uygulama duraklatıldı</string>
+    <string name="paused_apps_dialog_message">%1$s doğrudan başlatıcıdan duraklatıldı</string>
+    <string name="paused_apps_drop_target_label">Uygulamayı duraklat</string>
+    <string name="custom_seekbar_value">Değer: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">varsayılan</string>
+    <string name="custom_seekbar_default_value_to_set">Varsayılan değer: <xliff:g id="v">%s</xliff:g>\nAyarlamak için uzun dokunun</string>
+    <string name="custom_seekbar_default_value_is_set">Varsayılan değer ayarlandı</string>
+    <string name="icon_size_title">Simge boyutu</string>
+    <string name="font_size_title">Yazı tipi boyutu</string>
+    <string name="icon_max_lines_title">Uygulama adı için maksimum satır sayısı</string>
+    <string name="label_search">Ara</string>
+    <string name="label_lens">Google Lens</string>
+    <string name="label_voice_search">Sesli arama</string>
+    <string name="dock_music_search_title">Müzik ara</string>
+    <string name="dock_music_search_summary">Mikrofon simgesine basarak müzik aramayı başlatın</string>
+    <string name="dock_search_title">Google arama çubuğu</string>
+    <string name="dock_search_summary">Alt kısımda arama çubuğu</string>
+    <string name="dock_theme_title">Temalı simgeler</string>
+    <string name="dock_theme_summary">Arama çubuğunda temalı simgeler kullan</string>
+    <string name="search_radius_title">Köşe yarıçapı</string>
+    <string name="hotseat_bg_title">Hotseat arka planı</string>
+    <string name="hotseat_bg_summary">Uygulama yuvasına yarı şeffaf bir arka plan ekleyin</string>
+    <string name="allow_wallpaper_scrolling">Duvar kağıdı kaydırma</string>
+    <string name="allow_wallpaper_scrolling_summary">Birden çok ekran için duvar kağıdı kaydırma efekti</string>
+    <string name="allow_wallpaper_zooming">Duvar kağıdı yakınlaştırma</string>
+    <string name="allow_wallpaper_zooming_summary">Çekmeceyi veya son uygulamaları kullanırken duvar kağıdını yakınlaştırın veya uzaklaştırın</string>
+    <string name="show_statusbar_title">Durum çubuğunu göster</string>
+    <string name="show_top_shadow">Üst gölge</string>
+    <string name="row_height_title">Satır yüksekliği</string>
+    <string name="background_blur_title">Arka plan bulanıklık derinliği</string>
+    <string name="background_blur_summary">Son uygulamalar ve uygulama çekmecesi için bulanıklık derinliği seviyesini ayarlayın</string>
+    <string name="show_quickspace_title">Bir bakışta</string>
+    <string name="show_quickspace_summary">Ana ekranınızın üst kısmında göster</string>
+    <string name="quickspace_grt_morning">Günaydın.</string>
+    <string name="quickspace_grt_evening">İyi akşamlar.</string>
+    <string name="quickspace_grt_afternoon">Tünaydın.</string>
+    <string name="quickspace_grt_night">İyi geceler.</string>
+    <string name="quickspace_grt_midnight">Ciddi gece yarısı.</string>
+    <string name="quickspace_grt_general">İyi günler.</string>
+    <string name="quickspace_ext_one">Bugün</string>
+    <string name="quickspace_ext_two">Saat</string>
+    <string name="quickspace_ext_three">Saat</string>
+    <string name="qe_now_playing_unknown_artist">Bilinmeyen sanatçı</string>
+    <string name="qe_now_playing_ext_one">Şu an çalan</string>
+    <string name="qe_now_playing_by">Tarafından</string>
+    <string name="quickspace_now_playing_title">Şimdi oynatılıyor</string>
+    <string name="quickspace_now_playing_summary">Çalmakta olduğunuz şarkıyı gösterin</string>
+    <string name="quickspace_alternate_style_title">Genişletilmiş stil</string>
+    <string name="quickspace_alternate_style_summary">Genişletilmiş stile geçin</string>
+    <string name="quickspace_psa_title">Rastgele mesajlar</string>
+    <string name="quickspace_psa_summary">Rastgele mesajlarla arkadaşlığınızı daha canlı hale getirin</string>
+    <string-array name="quickspace_psa_morning">
+        <item>Biraz yürüyüş iyi geliyor.</item>
+        <item>Dişlerinizi dikkatli bir şekilde fırçalayın.</item>
+        <item>Güne sulu başlayın!</item>
+        <item>Biraz egzersiz yap!</item>
+        <item>İşleri uzatın!</item>
+        <item>Güne pozitif başlayın.</item>
+        <item>Güzel bir sabah!</item>
+        <item>Her zaman cihazın pil seviyelerini kontrol edin!</item>
+        <item>Kahvaltı hazırlamayı unutmayın.</item>
+        <item>Her ihtimale karşı hava durumunu kontrol edin.</item>
+        <item>Notlarınızı kontrol etmeyi unutmayın!</item>
+        <item>Her zaman e-postanızı/mesajlarınızı kontrol edin.</item>
+        <item>Programınız varsa kontrol edin.</item>
+        <item>Bugün iyi şanslar!</item>
+        <item>Anahtarın değiştirilmesi, takılan yanıtları düzeltebilir.</item>
+        <item>Güne herhangi bir sıcak içecekle başlayın.</item>
+        <item>Protein almayı unutma.</item>
+        <item>Yumurtalar basit, besleyici bir kahvaltı yapar.</item>
+        <item>Kahvaltının tadını çıkar.</item>
+    </string-array>
+    <string-array name="quickspace_psa_noon">
+        <item>Sulu kalmayı unutmayın!</item>
+        <item>Biraz atıştırmalık yemeyi unutma.</item>
+        <item>UV ışınları öğleden sonra daha zararlıdır.</item>
+        <item>Şu an öğleden sonra.</item>
+        <item>Her zaman cihazın pil seviyelerini kontrol edin!</item>
+        <item>E-postanızı/mesajlarınızı kontrol etmeyi unutmayın.</item>
+        <item>Lütfen yapılacaklar listeniz varsa kontrol edin.</item>
+        <item>Akşam yemeğinizi hazırlamayı unutmayın.</item>
+        <item>Günün tadını çıkarın.</item>
+        <item>Hatta beklemek! Gün neredeyse bitti!</item>
+        <item>Biraz eğlen.</item>
+    </string-array>
+    <string-array name="quickspace_psa_early_evening">
+        <item>Her zaman sulu kalın!</item>
+        <item>8 saat uyku şarttır.</item>
+        <item>Şu anda akşam.</item>
+        <item>Uyumadan önce beni tamamen şarj etmeyi unutma.</item>
+        <item>E-postanızı/mesajlarınızı kontrol etmeyi unutmayın.</item>
+        <item>Lütfen yapılacaklar listeniz varsa kontrol edin.</item>
+        <item>Akşam yemeği yemeyi unutma.</item>
+        <item>Her zaman ışıkları ve prizleri kontrol edin.</item>
+        <item>Gecenin tadını çıkart.</item>
+        <item>Selam! Kendini biraz dinlendir!</item>
+        <item>Rahatlayın ve biraz dinlenin.</item>
+    </string-array>
+    <string-array name="quickspace_psa_evening">
+        <item>Uyumadan önce çok fazla su içmeyin.</item>
+        <item>Şu anda akşam.</item>
+        <item>Mümkünse gece şarj etmekten kaçının.</item>
+        <item>E-postanızı/mesajlarınızı kontrol etmeyi unutmayın.</item>
+        <item>Lütfen yapılacaklar listeniz varsa kontrol edin.</item>
+        <item>Akşam yemeği yemeyi unutma.</item>
+        <item>8 saat uyku şarttır.</item>
+        <item>Gecenin tadını çıkart.</item>
+        <item>Lugaw akşam yemeği için güzel bir tarif.</item>
+        <item>Uykunuzun tadını çıkarın.</item>
+    </string-array>
+    <string-array name="quickspace_psa_midnight">
+        <item>Uyku eksikliği sağlığınız için kötüdür.</item>
+        <item>Sulu kalmayı unutmayın.</item>
+        <item>Uyku eksikliği melatonin üretimini bozabilir.</item>
+        <item>Şu anda gece yarısı.</item>
+        <item>Geç uyumak sağlıklı değildir.</item>
+        <item>Şimdi uyuman gerek.</item>
+        <item>Uyumayı/kahvaltınızı hazırlamayı unutmayın.</item>
+        <item>Gece yarısının tadını çıkarın.</item>
+        <item>Uyku eksikliği vücut saatinizi etkiler.</item>
+        <item>Kendinize dikkat edin.</item>
+    </string-array>
+    <string-array name="quickspace_psa_random">
+        <item>Bu ROM\'da gizlenmiş paskalya yumurtaları var.</item>
+        <item>Hava durumu ayarlarını kontrol etmeyi deneyin.</item>
+        <item>Öğle saatlerinde UV ışınlarından kaçınmaya çalışın.</item>
+        <item>Susuz Kalma!</item>
+        <item>Pringles aslında patates cipsi değil..</item>
+        <item>Gülmek kan akışını artırabilir.</item>
+        <item>Kahve antioksidanlar içerir.</item>
+        <item>Ketçap bir zamanlar ilaç olarak satılıyordu.</item>
+        <item>Pamuk şekeri bir diş hekimi icat etti.</item>
+        <item>Öğününüzü atlamayın!</item>
+        <item>Cihazın pil seviyelerini kontrol etmeyi unutmayın!</item>
+        <item>E-postanızı/mesajlarınızı kontrol edin.</item>
+        <item>Yapılacaklar listeniz varsa kontrol edin.</item>
+        <item>Hızlı alanı ana ekran ayarlarından devre dışı bırakabilirsiniz.</item>
+        <item>Git al onları!</item>
+        <item>Biraz pirinç alma zamanı!</item>
+        <item>Öğle yemeği vakti!</item>
+        <item>Kalamay yapışkan pirinçten yapılır.</item>
+        <item>Tüm beyaz pirinç kahverengi başlar.</item>
+        <item>Soda ister misin?</item>
+        <item>Sulu kalmak için daima su getirin.</item>
+        <item>Uzay kavrulmuş biftek gibi kokuyor..</item>
+        <item>Günün tadını çıkarın!</item>
+    </string-array>
+    <string name="suggestion_pref_screen_title">Öneriler</string>
+    <string name="suggestion_pref_screen_desc">Tüm uygulamalar &amp; Ana ekran önerileri için</string>
+    <string name="quick_event_ambient_weather_title">Hava durumu</string>
+    <string name="quick_event_ambient_weather_summary">Mevcut hava durumunu ve sıcaklığı göster</string>
+    <string name="quick_event_ambient_weather_enabled_info">Hava durumu hizmetinin etkinleştirilmesi gerekir</string>
+    <string name="background_opacity_title">Arka plan şeffaflığı</string>
+    <string name="recents_screenshot_title">Ekran görüntüsü</string>
+    <string name="recents_clear_all_title">Tümünü temizle</string>
+    <string name="recents_lens_title">Lens</string>
+    <string name="pref_themed_icons_title">Temalı simgeler</string>
+    <string name="pref_themed_icons_summary">Ana ekranda kullanılan temalı simgeleri takip edin</string>
+    <string name="app_info_source">Kaynak</string>
+    <string name="app_info_source_system">Sistem</string>
+    <string name="app_info_last_update">Son güncelleme</string>
+    <string name="app_info_version">Sürüm</string>
+    <string name="app_info_more">Daha fazla</string>
+    <string name="icon_pack_title">Simge paketi</string>
+    <string name="icon_pack_default_label">Varsayılan</string>
+    <string name="icon_pack_add">Daha fazla yükle</string>
+    <string name="icon_pack_no_market">Kullanılabilir uygulama mağazası yok</string>
+    <string name="recent_task_option_kill_app">Durdur</string>
+    <string name="recents_app_killed">Uygulama durduruldu</string>
+    <string name="meminfo_text">%1$s Kullanılabilir | %2$s Toplam</string>
+    <string name="recents_meminfo_title">Bellek bilgisi</string>
+    <string name="drawer_search_title">Uygulama arama çubuğu</string>
+    <string name="drawer_search_summary">Uygulama sayfasının üstündeki arama çubuğu</string>
+    <string name="pref_restart_title">Yeniden başlat</string>
+    <string name="pref_restart_summary">Bekleyen ayarları uygulamak için başlatıcıyı manuel olarak yeniden başlatın</string>
+    <string name="laboratory_parallel_space_title">Paralel alan</string>
+    <string name="laboratory_parallel_space_summary">Aynı uygulamanın birden çok örneğini paralel olarak çalıştırmaya izin ver</string>
+    <string name="recents_shake_clear_all_title">Tümünü temizlemek için cihazı sallayın</string>
+</resources>

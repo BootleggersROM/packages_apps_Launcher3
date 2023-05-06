@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="misc_category_title">Διάφορα</string>
+    <string name="interface_category_title">Διεπαφή</string>
+    <string name="pause">Παύση</string>
+    <string name="icon_size_title">Μέγεθος εικονιδίου</string>
+    <string name="label_search">Αναζήτηση</string>
+    <string name="dock_search_title">Γραμμή αναζήτησης Google</string>
+    <string name="hotseat_bg_title">Hotseat φόντο</string>
+    <string name="show_quickspace_title">Με μια ματιά</string>
+    <string name="recents_screenshot_title">Στιγμιότυπο οθόνης</string>
+    <string name="icon_pack_default_label">Προεπιλογή</string>
+    <string name="drawer_search_title">Γραμμή αναζήτησης εφαρμογών</string>
+    <string name="pref_restart_title">Επανεκκίνηση</string>
+</resources>

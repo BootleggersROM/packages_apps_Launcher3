@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="home_category_title">ホーム画面</string>
+    <string name="home_category_summary">Google Now パネルやその他の設定</string>
+    <string name="icons_category_title">アイコン</string>
+    <string name="app_drawer_category_title">アプリドロワー</string>
+    <string name="app_drawer_category_summary">アプリドロワーを編集</string>
+    <string name="recents_category_title">アプリ履歴</string>
+    <string name="misc_category_title">その他</string>
+    <string name="misc_category_summary">その他のオプション</string>
+    <string name="general_category_title">一般</string>
+    <string name="interface_category_title">インターフェース</string>
+    <string name="pref_sleep_gesture_title">ダブルタップでスリープ</string>
+    <string name="pause">一時停止</string>
+    <string name="icon_size_title">アイコンの大きさ</string>
+    <string name="label_search">検索</string>
+    <string name="label_voice_search">音声検索</string>
+    <string name="dock_search_title">Google 検索バー</string>
+    <string name="hotseat_bg_title">ドックの背景</string>
+    <string name="show_quickspace_title">At A Glance</string>
+    <string name="quickspace_now_playing_title">Now Playing</string>
+    <string name="suggestion_pref_screen_title">候補</string>
+    <string name="recents_screenshot_title">スクリーンショット</string>
+    <string name="app_info_source_system">システム</string>
+    <string name="app_info_version">バージョン</string>
+    <string name="app_info_more">追加</string>
+    <string name="icon_pack_title">アイコンパック</string>
+    <string name="icon_pack_default_label">既定</string>
+    <string name="drawer_search_title">アプリ検索バー</string>
+    <string name="pref_restart_title">再起動</string>
+</resources>

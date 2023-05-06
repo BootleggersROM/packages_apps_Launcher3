@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="home_category_title">Schermata Home</string>
+    <string name="home_category_summary">Imposta pannello Google now e altro</string>
+    <string name="icons_category_title">Icone</string>
+    <string name="app_drawer_category_title">App drawer</string>
+    <string name="app_drawer_category_summary">Personalizza il drawer</string>
+    <string name="recents_category_title">Recenti</string>
+    <string name="misc_category_title">Varie</string>
+    <string name="misc_category_summary">Altre opzioni</string>
+    <string name="general_category_title">Generale</string>
+    <string name="interface_category_title">Interfaccia</string>
+    <string name="pref_sleep_gesture_title">Doppio tocco per spegnere lo schermo</string>
+    <string name="pause">Pausa</string>
+    <string name="icon_size_title">Grandezza icona</string>
+    <string name="label_search">Ricerca</string>
+    <string name="label_voice_search">Ricerca vocale</string>
+    <string name="dock_search_title">Barra di ricerca google</string>
+    <string name="hotseat_bg_title">Sfondo dock</string>
+    <string name="show_quickspace_title">In un colpo d\'occhio</string>
+    <string name="quickspace_now_playing_title">In riproduzione</string>
+    <string name="suggestion_pref_screen_title">Suggerimenti</string>
+    <string name="recents_screenshot_title">Screenshot</string>
+    <string name="app_info_source_system">Sistema</string>
+    <string name="app_info_version">Versione</string>
+    <string name="app_info_more">Altro</string>
+    <string name="icon_pack_title">Pacchetto icone</string>
+    <string name="icon_pack_default_label">Predefinito</string>
+    <string name="drawer_search_title">App barra di ricerca</string>
+    <string name="pref_restart_title">Riavvio</string>
+</resources>
