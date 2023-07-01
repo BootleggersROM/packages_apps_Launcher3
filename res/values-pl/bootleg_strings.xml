@@ -11,32 +11,214 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">Ustawienia ekranu głównego</string>
     <string name="home_category_title">Ekran główny</string>
     <string name="home_category_summary">Ustaw panel Google Now i więcej</string>
     <string name="icons_category_title">Ikony</string>
+    <string name="icons_category_summary">Ustaw rozmiar ikon i więcej</string>
     <string name="app_drawer_category_title">Szuflada aplikacji</string>
     <string name="app_drawer_category_summary">Spersonalizuj szufladę aplikacji</string>
     <string name="recents_category_title">Ostatnie aplikacje</string>
+    <string name="recents_category_summary">Personalizuj ekran podglądu ostatnich aplikacji</string>
     <string name="misc_category_title">Różne</string>
     <string name="misc_category_summary">Pozostałe opcje</string>
     <string name="general_category_title">Ogólne</string>
     <string name="interface_category_title">Interfejs</string>
+    <string name="quickspace_category_title">Szybka przestrzeń</string>
+    <string name="search_bar_category_title">Pasek wyszukiwania</string>
+    <string name="actions_category_title">Szybkie działania</string>
+    <string name="dev_options_title">Ustawienia programisty</string>
+    <string name="dev_options_summary">Włącz ukryte funkcje na własne ryzyko</string>
+    <string name="settings_lock_layout_title">Zablokuj układ</string>
+    <string name="settings_lock_layout_summary_on">Ikon i widżetów nie można dodawać, usuwać i przenosić na ekranie głównym</string>
+    <string name="settings_lock_layout_summary_off">Ikony i widżety można dodawać, usuwać i przenosić na ekranie głównym</string>
+    <string name="settings_edit_widgets_error">Nie można dodać widżetów do ekranu głównego</string>
+    <string name="desktop_show_labels">Etykiety ikon na pulpicie</string>
+    <string name="drawer_show_labels">Etykiety ikon na liście aplikacji</string>
+    <string name="title_show_google_app">Przesuń, aby uzyskać dostęp do aplikacji Google</string>
+    <string name="msg_minus_one_on_left">Gdy przesuniesz w prawo od ekranu głównego</string>
+    <string name="msg_minus_one_on_right">Kiedy przesuniesz w prawo od ekranu głównego</string>
     <string name="pref_sleep_gesture_title">Dwukrotnie dotknij, aby uśpić</string>
+    <string name="pref_sleep_gesture_summary">Dotknij dwukrotnie w puste miejsce, aby wyłączyć ekran</string>
     <string name="pause">Wstrzymaj</string>
+    <string name="pause_apps_dialog_title">Wstrzymać %1$s?</string>
+    <string name="pause_apps_dialog_message">Powiadomienia dla %1$s zostaną wstrzymane</string>
+    <string name="paused_apps_dialog_title">Aplikacja wstrzymana</string>
+    <string name="paused_apps_dialog_message">Aplikacja %1$s została wstrzymana z ekranu głównego</string>
+    <string name="paused_apps_drop_target_label">Wstrzymaj aplikację</string>
+    <string name="custom_seekbar_value">Wartość: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">domyślnie</string>
+    <string name="custom_seekbar_default_value_to_set">Domyślna wartość: <xliff:g id="v">%s</xliff:g>\nPrzytrzymaj, aby ustawić</string>
+    <string name="custom_seekbar_default_value_is_set">Wartość domyślna jest ustawiona</string>
     <string name="icon_size_title">Rozmiar ikon</string>
+    <string name="font_size_title">Rozmiar czcionki</string>
+    <string name="icon_max_lines_title">Maksymalna ilość linii dla etykiety aplikacji</string>
     <string name="label_search">Szukaj</string>
+    <string name="label_lens">Obiektyw Google</string>
     <string name="label_voice_search">Wyszukiwanie głosowe</string>
+    <string name="dock_music_search_title">Wyszukiwanie muzyki</string>
+    <string name="dock_music_search_summary">Rozpocznij wyszukiwanie muzyki po naciśnięciu ikony mikrofonu</string>
     <string name="dock_search_title">Wyszukiwarka Google</string>
+    <string name="dock_search_summary">Pasek wyszukiwania w dolnym doku</string>
+    <string name="dock_theme_title">Ikony tematyczne</string>
+    <string name="dock_theme_summary">Użyj ikon tematycznych dla paska wyszukiwania</string>
+    <string name="search_radius_title">Zaokrąglenie rogów</string>
     <string name="hotseat_bg_title">Tło widżetu</string>
+    <string name="hotseat_bg_summary">Dodaje przezroczyste tło dla doka</string>
+    <string name="allow_wallpaper_scrolling">Przewijane tapety</string>
+    <string name="allow_wallpaper_scrolling_summary">Efekt przewijania tapety dla wielu ekranów</string>
+    <string name="allow_wallpaper_zooming">Powiększanie tapety</string>
+    <string name="allow_wallpaper_zooming_summary">Powiększ lub pomniejsz tapetę podczas używania listy aplikacji lub widoku ostatnio używanych aplikacji</string>
+    <string name="show_statusbar_title">Pokaż pasek stanu</string>
+    <string name="show_top_shadow">Górny cień</string>
+    <string name="row_height_title">Wysokość wiersza</string>
+    <string name="background_blur_title">Głębia rozmycia tła</string>
+    <string name="background_blur_summary">Ustaw poziom głębokości rozmycia dla ostatnich aplikacji i szufladki aplikacji</string>
     <string name="show_quickspace_title">Na pierwszy rzut oka</string>
+    <string name="show_quickspace_summary">Pokaż u góry ekranu głównego</string>
+    <string name="quickspace_grt_morning">Dzień dobry.</string>
+    <string name="quickspace_grt_evening">Dobry wieczór.</string>
+    <string name="quickspace_grt_afternoon">Dzień dobry.</string>
+    <string name="quickspace_grt_night">Dobranoc.</string>
+    <string name="quickspace_grt_midnight">Szczęśliwej północy.</string>
+    <string name="quickspace_grt_general">Dobry dzień.</string>
+    <string name="quickspace_ext_one">Dzisiaj jest</string>
+    <string name="quickspace_ext_two">To jest</string>
+    <string name="quickspace_ext_three">To jest</string>
+    <string name="qe_now_playing_unknown_artist">Nieznany wykonawca</string>
+    <string name="qe_now_playing_ext_one">Obecnie odtwarzane</string>
+    <string name="qe_now_playing_by">Przez</string>
     <string name="quickspace_now_playing_title">Teraz odtwarzane</string>
+    <string name="quickspace_now_playing_summary">Pokaż odtwarzany utwór</string>
+    <string name="quickspace_alternate_style_title">Rozszerzony styl</string>
+    <string name="quickspace_alternate_style_summary">Przełącz na rozszerzony styl</string>
+    <string name="quickspace_psa_title">Losowe wiadomości</string>
+    <string name="quickspace_psa_summary">Uczyń swojego towarzysza bardziej żywym dzięki losowym wiadomościom</string>
+    <string-array name="quickspace_psa_morning">
+        <item>Mały spacer wydaje się przyjemny.</item>
+        <item>Uważnie myj zęby.</item>
+        <item>Rozpocznij swój dzień od nawodnienia!</item>
+        <item>Poćwicz trochę!</item>
+        <item>Rozciągnij się!</item>
+        <item>Zacznij dzień z uśmiechem.</item>
+        <item>Jest ładny poranek!</item>
+        <item>Zawsze sprawdzaj poziom baterii urządzenia!</item>
+        <item>Nie zapomnij przygotować śniadania.</item>
+        <item>Sprawdź pogodę, dla pewności.</item>
+        <item>Nie zapomnij sprawdzić swoich notatek!</item>
+        <item>Zawsze sprawdzaj swój e-mail/wiadomości.</item>
+        <item>Sprawdź swój harmonogram, jeśli go posiadasz.</item>
+        <item>Powodzenia dzisiaj!</item>
+        <item>Przełącznik może naprawić zatkane odpowiedzi.</item>
+        <item>Zacznij swój dzień od każdego gorącego napoju.</item>
+        <item>Nie zapomnij o białku.</item>
+        <item>Jajka tworzą proste, odżywcze śniadanie.</item>
+        <item>Miłego śniadania.</item>
+    </string-array>
+    <string-array name="quickspace_psa_noon">
+        <item>Nie zapomnij się nawadniać!</item>
+        <item>Pamiętaj, by zjeść trochę przekąsek.</item>
+        <item>Promienie UV są bardziej szkodliwe po południu.</item>
+        <item>Teraz jest popołudnie.</item>
+        <item>Zawsze sprawdzaj poziom baterii urządzenia!</item>
+        <item>Pamiętaj, aby sprawdzić swój e-mail/wiadomości.</item>
+        <item>Sprawdź swoją listę rzeczy do zrobienia, jeśli masz taką listę.</item>
+        <item>Nie zapomnij przygotować obiadu.</item>
+        <item>Ciesz się swoim dniem.</item>
+        <item>Zaczekaj! Dzień prawie się skończył!</item>
+        <item>Baw się dobrze.</item>
+    </string-array>
+    <string-array name="quickspace_psa_early_evening">
+        <item>Zawsze się nawadniaj!</item>
+        <item>8 godzin snu to konieczność.</item>
+        <item>Teraz jest popołudnie.</item>
+        <item>Pamiętaj o pełnym naładowaniu przed snem.</item>
+        <item>Pamiętaj, aby sprawdzić swój e-mail/wiadomości.</item>
+        <item>Sprawdź swoją listę rzeczy do zrobienia, jeśli masz taką listę.</item>
+        <item>Pamiętaj o zjedzeniu obiadu.</item>
+        <item>Zawsze sprawdź światła i gniazdka.</item>
+        <item>Ciesz się nocą.</item>
+        <item>Cześć! Daj sobie trochę odpoczynku!</item>
+        <item>Relaksuj się i odpocznij.</item>
+    </string-array>
+    <string-array name="quickspace_psa_evening">
+        <item>Nie pij zbyt dużej ilości wody przed snem.</item>
+        <item>Teraz jest popołudnie.</item>
+        <item>Spróbuj uniknąć nocnego ładowania, jeśli to możliwe.</item>
+        <item>Pamiętaj, aby sprawdzić swój e-mail/wiadomości.</item>
+        <item>Sprawdź swoją listę rzeczy do zrobienia, jeśli masz taką listę.</item>
+        <item>Pamiętaj o zjedzeniu obiadu.</item>
+        <item>8 godzin snu to konieczność.</item>
+        <item>Ciesz się nocą.</item>
+        <item>Lugaw to ładny przepis na obiad.</item>
+        <item>Dobranoc.</item>
+    </string-array>
+    <string-array name="quickspace_psa_midnight">
+        <item>Niedobór snu jest szkodliwy dla zdrowia.</item>
+        <item>Nie zapomnij się nawadniać.</item>
+        <item>Deficyt snu może zakłócić produkcję melatoniny.</item>
+        <item>Teraz jest północ.</item>
+        <item>Późne kładzenie się spać nie jest zdrowe.</item>
+        <item>Musisz iść spać.</item>
+        <item>Nie zapomnij spać/przygotować śniadania.</item>
+        <item>Ciesz się północą.</item>
+        <item>Niedobór snu wpływa na zegar biologiczny.</item>
+        <item>Uważaj na siebie.</item>
+    </string-array>
+    <string-array name="quickspace_psa_random">
+        <item>W tym ROMie ukryte są easter eggi.</item>
+        <item>Spróbuj sprawdzić ustawienia pogody.</item>
+        <item>Staraj się unikać promieni UV podczas południa.</item>
+        <item>Dbaj o nawodnienie!</item>
+        <item>Pringles nie są w rzeczywistości chipsami...</item>
+        <item>Śmianie się może zwiększyć przepływ krwi.</item>
+        <item>Kawa zawiera przeciwutleniacze.</item>
+        <item>Ketchup był kiedyś sprzedawany jako lek.</item>
+        <item>Wata cukrowa została wymyślona przez dentystę.</item>
+        <item>Nie zapomnij o posiłku!</item>
+        <item>Pamiętaj, aby sprawdzić poziom baterii urządzenia!</item>
+        <item>Zawsze sprawdzaj swój e-mail/wiadomości.</item>
+        <item>Sprawdź swoją listę rzeczy do zrobienia, jeśli masz taką listę.</item>
+        <item>Możesz wyłączyć szybką przestrzeń za pomocą ustawień ekranu głównego.</item>
+        <item>Bierz ich!</item>
+        <item>Czas kupić ryż!</item>
+        <item>Czas na lunch!</item>
+        <item>Kalamay jest zrobiony z ryżu klejącego.</item>
+        <item>Każdy biały ryż na początku jest brązowy.</item>
+        <item>Chcesz trochę wody?</item>
+        <item>Zawsze bierz ze sobą wodę, by być nawodnionym.</item>
+        <item>Kosmos pachnie jak smażony stek..</item>
+        <item>Miłego dnia!</item>
+    </string-array>
     <string name="suggestion_pref_screen_title">Sugestie</string>
+    <string name="suggestion_pref_screen_desc">Dla wszystkich aplikacji &amp; sugestie ekranu głównego</string>
+    <string name="quick_event_ambient_weather_title">Warunki pogodowe</string>
+    <string name="quick_event_ambient_weather_summary">Pokaż bieżące warunki pogodowe i temperaturę</string>
+    <string name="quick_event_ambient_weather_enabled_info">Wymaga włączenia usługi pogodowej</string>
+    <string name="background_opacity_title">Przezroczystość tła</string>
     <string name="recents_screenshot_title">Zrzut ekranu</string>
+    <string name="recents_clear_all_title">Wyczyść wszystko</string>
+    <string name="recents_lens_title">Obiektyw</string>
+    <string name="pref_themed_icons_title">Ikony tematyczne</string>
+    <string name="pref_themed_icons_summary">Zgodnie z ikonami motywu na ekranie głównym</string>
+    <string name="app_info_source">Źródło</string>
     <string name="app_info_source_system">System</string>
+    <string name="app_info_last_update">Ostatnia aktualizacja</string>
     <string name="app_info_version">Wersja</string>
     <string name="app_info_more">Więcej</string>
     <string name="icon_pack_title">Paczka ikon</string>
     <string name="icon_pack_default_label">Domyślny</string>
+    <string name="icon_pack_add">Zainstaluj więcej</string>
+    <string name="icon_pack_no_market">Brak dostępnego sklepu aplikacji</string>
+    <string name="recent_task_option_kill_app">Zabij</string>
+    <string name="recents_app_killed">Aplikacja została zabita</string>
+    <string name="meminfo_text">%1$s Dostępne | %2$s Łącznie</string>
+    <string name="recents_meminfo_title">Informacja o pamięci</string>
     <string name="drawer_search_title">Pokaż pasek wyszukiwania</string>
+    <string name="drawer_search_summary">Pasek wyszukiwania na górze listy aplikacji</string>
     <string name="pref_restart_title">Uruchom ponownie</string>
+    <string name="pref_restart_summary">Uruchom ponownie launcher ręcznie, aby zastosować wszystkie oczekujące ustawienia</string>
+    <string name="laboratory_parallel_space_title">Przestrzeń równoległa</string>
+    <string name="laboratory_parallel_space_summary">Zezwalaj na uruchamianie wielu instancji tej samej aplikacji równolegle</string>
+    <string name="recents_shake_clear_all_title">Potrząśnij telefonem, aby wyczyścić wszystkie zadania</string>
 </resources>

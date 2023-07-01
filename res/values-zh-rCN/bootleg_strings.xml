@@ -83,6 +83,8 @@
     <string name="quickspace_grt_midnight">庄严的午夜。</string>
     <string name="quickspace_grt_general">您好</string>
     <string name="quickspace_ext_one">今天是</string>
+    <string name="quickspace_ext_two">It\'s</string>
+    <string name="quickspace_ext_three">It\'s</string>
     <string name="qe_now_playing_unknown_artist">未知艺人</string>
     <string name="qe_now_playing_ext_one">当前正在播放</string>
     <string name="qe_now_playing_by">作者</string>

@@ -79,29 +79,77 @@
     <string name="quickspace_grt_morning">Bom dia.</string>
     <string name="quickspace_grt_evening">Boa tarde.</string>
     <string name="quickspace_grt_afternoon">Boa tarde.</string>
+    <string name="quickspace_grt_night">Boa noite.</string>
+    <string name="quickspace_grt_midnight">Solene meia-noite.</string>
+    <string name="quickspace_grt_general">Bom dia.</string>
+    <string name="quickspace_ext_one">Hoje é</string>
+    <string name="quickspace_ext_two">São</string>
+    <string name="quickspace_ext_three">São</string>
+    <string name="qe_now_playing_unknown_artist">Artista desconhecido</string>
+    <string name="qe_now_playing_ext_one">Ouvindo agora</string>
+    <string name="qe_now_playing_by">Por</string>
     <string name="quickspace_now_playing_title">Em reprodução</string>
+    <string name="quickspace_now_playing_summary">Mostrar a música que você está tocando</string>
+    <string name="quickspace_alternate_style_title">Estilo estendido</string>
+    <string name="quickspace_alternate_style_summary">Mudar para estilo estendido</string>
+    <string name="quickspace_psa_title">Mensagens aleatórias</string>
+    <string name="quickspace_psa_summary">Frases e mensagens aleatórias para animar seu dia</string>
+    <string-array name="quickspace_psa_morning">
+        <item>Uma pequena caminhada parece legal.</item>
+        <item>Escove os dentes de forma mental.</item>
+        <item>Inicie o seu dia hidratado!</item>
+        <item>Faça algum exercício!</item>
+        <item>Alongue as coisas!</item>
+        <item>Comece seu dia com positividade.</item>
+        <item>Uma bela manhã!</item>
+        <item>Lembre-se de verificar os níveis de bateria do dispositivo!</item>
+        <item>Não se esqueça de preparar o café da manhã.</item>
+        <item>Verifique o clima antes de sair</item>
+        <item>Não se esqueça de verificar suas anotações!</item>
+        <item>Sempre verifique seus e-mails/mensagens.</item>
+        <item>Verifique sua programação se tiver uma.</item>
+        <item>Boa sorte, tigrão!</item>
+        <item>Alternar o interruptor pode corrigir respostas encalhadas.</item>
+        <item>Começa o dia com qualquer bebida quente.</item>
+        <item>Não se esqueça de proteínas.</item>
+        <item>Ovos fazem um café da manhã simples e nutritivo.</item>
+        <item>Aproveite seu café da manhã.</item>
+    </string-array>
+    <string-array name="quickspace_psa_noon">
+        <item>Não se esqueça de ficar hidratado!</item>
+        <item>Lembre-se de comer alguns lanches.</item>
+        <item>Os raios UV são mais nocivos à tarde.</item>
+        <item>É tarde agora mesmo.</item>
+        <item>Lembre-se de verificar os níveis de bateria do dispositivo!</item>
+        <item>Lembre-se de verificar seus e-mails/mensagens.</item>
+        <item>Por favor, verifique sua lista de tarefas se tiver uma.</item>
+        <item>Não se esqueça de preparar o seu jantar.</item>
+        <item>Aproveite seu dia.</item>
+        <item>Espera aí! O dia está quase pronto!</item>
+        <item>Divirta-se um pouco.</item>
+    </string-array>
     <string-array name="quickspace_psa_early_evening">
-        <item>Always stay hydrated!</item>
-        <item>8 hours of sleep is a must.</item>
-        <item>It is evening right now.</item>
-        <item>Remember to full charge me before you sleep.</item>
-        <item>Remember to check your email/messages.</item>
-        <item>Please check your to-do list if you have one.</item>
-        <item>Remember to eat dinner.</item>
-        <item>Always check the lights and sockets.</item>
-        <item>Enjoy the night.</item>
-        <item>Hey there! Give yourself some rest!</item>
+        <item>Sempre fique hidratado!</item>
+        <item>8 horas de sono é indispensável.</item>
+        <item>Agora é noite.</item>
+        <item>Lembre-se de me carregar completamente antes de dormir.</item>
+        <item>Lembre-se de verificar seus e-mails/mensagens.</item>
+        <item>Por favor, verifique sua lista de tarefas se tiver uma.</item>
+        <item>Lembre-se de jantar.</item>
+        <item>Sempre verifique as luzes e os sockets.</item>
+        <item>Aproveite a noite.</item>
+        <item>Ei! Descanse um pouco!</item>
         <item>Relaxe e descanse um pouco.</item>
     </string-array>
     <string-array name="quickspace_psa_evening">
         <item>Não tome muita água antes de dormir.</item>
-        <item>It is evening right now.</item>
+        <item>Agora é noite.</item>
         <item>Tente evitar o carregamento durante a noite se possível.</item>
-        <item>Remember to check your email/messages.</item>
-        <item>Please check your to-do list if you have one.</item>
-        <item>Remember to eat dinner.</item>
-        <item>8 hours of sleep is a must.</item>
-        <item>Enjoy the night.</item>
+        <item>Lembre-se de verificar seus e-mails/mensagens.</item>
+        <item>Por favor, verifique sua lista de tarefas se tiver uma.</item>
+        <item>Lembre-se de jantar.</item>
+        <item>8 horas de sono é indispensável.</item>
+        <item>Aproveite a noite.</item>
         <item>Lugaw é uma boa receita para o jantar.</item>
         <item>Aproveite seu sono.</item>
     </string-array>
@@ -162,6 +210,15 @@
     <string name="icon_pack_default_label">Padrão</string>
     <string name="icon_pack_add">Instalar mais</string>
     <string name="icon_pack_no_market">Não há uma loja de aplicativos disponível</string>
+    <string name="recent_task_option_kill_app">Encerrar</string>
+    <string name="recents_app_killed">Aplicativo encerrado</string>
+    <string name="meminfo_text">%1$s Disponível | %2$s Total</string>
+    <string name="recents_meminfo_title">Informações da memória</string>
     <string name="drawer_search_title">Barra de pesquisa de aplicativos</string>
+    <string name="drawer_search_summary">Barra de pesquisa na parte superior da gaveta de aplicativos</string>
     <string name="pref_restart_title">Reiniciar</string>
+    <string name="pref_restart_summary">Reinicie o launcher manualmente para aplicar qualquer configuração pendente</string>
+    <string name="laboratory_parallel_space_title">Espaço Paralelo</string>
+    <string name="laboratory_parallel_space_summary">Permite a execução de várias instâncias do mesmo aplicativo em paralelo</string>
+    <string name="recents_shake_clear_all_title">Agite o telefone para limpar todas as tarefas</string>
 </resources>

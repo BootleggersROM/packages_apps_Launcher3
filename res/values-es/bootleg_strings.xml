@@ -76,15 +76,149 @@
     <string name="background_blur_summary">Establecer nivel de desenfoque para recientes y cajón de aplicaciones</string>
     <string name="show_quickspace_title">De un vistazo</string>
     <string name="show_quickspace_summary">Mostrar en la parte superior de la pantalla de inicio</string>
+    <string name="quickspace_grt_morning">Buenos días.</string>
+    <string name="quickspace_grt_evening">Buenas tardes.</string>
+    <string name="quickspace_grt_afternoon">Buenas noches.</string>
+    <string name="quickspace_grt_night">Buenas noches.</string>
+    <string name="quickspace_grt_midnight">Solemne medianoche.</string>
+    <string name="quickspace_grt_general">Buen día.</string>
+    <string name="quickspace_ext_one">Hoy es</string>
+    <string name="quickspace_ext_two">Es</string>
+    <string name="quickspace_ext_three">Es</string>
+    <string name="qe_now_playing_unknown_artist">Artista Desconocido</string>
+    <string name="qe_now_playing_ext_one">Reproduciendo actualmente</string>
+    <string name="qe_now_playing_by">Por</string>
     <string name="quickspace_now_playing_title">Reproduciendo</string>
+    <string name="quickspace_now_playing_summary">Muestra la canción que estás reproduciendo</string>
+    <string name="quickspace_alternate_style_title">Estilo extendido</string>
+    <string name="quickspace_alternate_style_summary">Cambiar al estilo extendido</string>
+    <string name="quickspace_psa_title">Mensajes aleatorios</string>
+    <string name="quickspace_psa_summary">Hazte mejor compañía con mensajes aleatorios</string>
+    <string-array name="quickspace_psa_morning">
+        <item>Un paseíto parece buena idea.</item>
+        <item>Lávate bien los dientes.</item>
+        <item>¡Empieza tu día hidratado!</item>
+        <item>¡Haz un poco de ejercicio!</item>
+        <item>¡Pon orden en tus asuntos!</item>
+        <item>Comienza tu día en positivo.</item>
+        <item>¡Es una buena mañana!</item>
+        <item>¡Comprueba siempre el nivel de batería del dispositivo!</item>
+        <item>No olvide preparar el desayuno.</item>
+        <item>Mira el clima, por si acaso.</item>
+        <item>¡No olvides revisar tus notas!</item>
+        <item>Comprueba siempre tus emails/mensajes.</item>
+        <item>Comprueba tu horario, si lo tienes.</item>
+        <item>¡Buena suerte hoy!</item>
+        <item>Cambiar el chip puede solucionar temas atascados.</item>
+        <item>Comience el día con cualquier bebida caliente.</item>
+        <item>No te olvides de la proteína.</item>
+        <item>Los huevos son sencillos pero nutritivos.</item>
+        <item>Disfrute de su desayuno.</item>
+    </string-array>
+    <string-array name="quickspace_psa_noon">
+        <item>¡No olvides hidratarte!</item>
+        <item>Recuerda comer algunos snacks.</item>
+        <item>Los rayos UV son más dañinos por la tarde.</item>
+        <item>Es la tarde en este momento.</item>
+        <item>¡Comprueba siempre el nivel de batería del dispositivo!</item>
+        <item>Recuerda revisar tu correo electrónico/mensajes.</item>
+        <item>Comprueba tu lista de tareas, si tienes una.</item>
+        <item>No olvide preparar el desayuno.</item>
+        <item>Disfruta tu día.</item>
+        <item>¡Aguanta, al día ya le queda poco!</item>
+        <item>Diviértete.</item>
+    </string-array>
+    <string-array name="quickspace_psa_early_evening">
+        <item>¡Manténgase siempre hidratado!</item>
+        <item>8 horas de sueño es lo mínimo.</item>
+        <item>Es la noche en este momento.</item>
+        <item>Recuerda cargarme por completo antes de dormir.</item>
+        <item>Recuerda revisar tu correo electrónico/mensajes.</item>
+        <item>Comprueba tu lista de tareas, si tienes una.</item>
+        <item>Recuerda comer la cena.</item>
+        <item>Compruebe siempre las luces y los enchufes.</item>
+        <item>Disfrute de la noche.</item>
+        <item>¡Hola! ¡Date un descanso!</item>
+        <item>Relájate y descansa un poco.</item>
+    </string-array>
+    <string-array name="quickspace_psa_evening">
+        <item>No beba demasiado agua antes de dormir.</item>
+        <item>Es la noche en este momento.</item>
+        <item>Intenta evitar dejarlo cargando toda la noche.</item>
+        <item>Recuerda revisar tu correo electrónico/mensajes.</item>
+        <item>Comprueba tu lista de tareas, si tienes una.</item>
+        <item>Recuerda comer la cena.</item>
+        <item>8 horas de sueño es lo mínimo.</item>
+        <item>Disfrute de la noche.</item>
+        <item>Lugaw es una buena receta para cenar.</item>
+        <item>Disfruta de tu sueño.</item>
+    </string-array>
+    <string-array name="quickspace_psa_midnight">
+        <item>No dormir bien es malo para la salud.</item>
+        <item>No olvide mantenerse hidratado.</item>
+        <item>El déficit de sueño puede romper la producción de melatonina.</item>
+        <item>Es medianoche ahora mismo.</item>
+        <item>Dormir tarde no es saludable.</item>
+        <item>Necesitas dormir ahora.</item>
+        <item>No olvides dormir/preparar tu desayuno.</item>
+        <item>Disfrute de la medianoche.</item>
+        <item>La deficiencia del sueño afecta el reloj corporal.</item>
+        <item>Por favor, cuida de ti mismo.</item>
+    </string-array>
+    <string-array name="quickspace_psa_random">
+        <item>Hay huevos de Pascua ocultos en esta ROM.</item>
+        <item>Prueba a comprobar los ajustes del clima.</item>
+        <item>Trate de evitar rayos UV durante el mediodía.</item>
+        <item>¡Mantente hidratado!</item>
+        <item>Las Pringles no son patatas fritas de verdad..</item>
+        <item>La risa puede aumentar el flujo sanguíneo.</item>
+        <item>El café contiene antioxidantes.</item>
+        <item>El ketchup se vendió una vez como medicina.</item>
+        <item>Algodón dulce fue inventado por un dentista.</item>
+        <item>¡No te saltes la comida!</item>
+        <item>¡Comprueba siempre el nivel de batería del dispositivo!</item>
+        <item>Revisa tu correo electrónico/mensajes.</item>
+        <item>Comprueba tu lista de tareas, si tienes una.</item>
+        <item>Puedes desactivar el quickspace en ajustes del launcher.</item>
+        <item>¡A por ellos!</item>
+        <item>¡Hora de comprar algo de arroz!</item>
+        <item>¡Hora del almuerzo!</item>
+        <item>Kalamay está hecho de arroz glutinoso.</item>
+        <item>Todo arroz blanco comenzó siendo marrón.</item>
+        <item>¿Quieres un poco de gaseosa?</item>
+        <item>Lleve siempre agua para mantenerte hidratado.</item>
+        <item>El espacio huele a chuleta a la plancha..</item>
+        <item>¡Disfruta de tu día!</item>
+    </string-array>
     <string name="suggestion_pref_screen_title">Sugerencias</string>
+    <string name="suggestion_pref_screen_desc">Sugerencias para todas las aplicaciones &amp; pantalla de inicio</string>
+    <string name="quick_event_ambient_weather_title">Condiciones meteorológicas</string>
+    <string name="quick_event_ambient_weather_summary">Muestra la temperatura y condiciones meteorológicas actuales</string>
+    <string name="quick_event_ambient_weather_enabled_info">Requiere que el servicio de clima esté habilitado</string>
+    <string name="background_opacity_title">Opacidad del fondo</string>
     <string name="recents_screenshot_title">Captura de pantalla</string>
+    <string name="recents_clear_all_title">Borrar todo</string>
+    <string name="recents_lens_title">Lens</string>
     <string name="pref_themed_icons_title">Iconos tematizados</string>
+    <string name="pref_themed_icons_summary">Seguir temática de los iconos usados en la pantalla de inicio</string>
+    <string name="app_info_source">Fuente</string>
     <string name="app_info_source_system">Sistema</string>
+    <string name="app_info_last_update">Última actualización</string>
     <string name="app_info_version">Versión</string>
     <string name="app_info_more">Más</string>
     <string name="icon_pack_title">Paquete de íconos</string>
     <string name="icon_pack_default_label">Por defecto</string>
+    <string name="icon_pack_add">Instalar más</string>
+    <string name="icon_pack_no_market">No hay una tienda de aplicaciones disponible</string>
+    <string name="recent_task_option_kill_app">Matar</string>
+    <string name="recents_app_killed">App cerrada</string>
+    <string name="meminfo_text">%1$s Disponibles | %2$s Total</string>
+    <string name="recents_meminfo_title">Información de memoria</string>
     <string name="drawer_search_title">Barra de búsqueda de la aplicación</string>
+    <string name="drawer_search_summary">Barra de búsqueda encima del cajón de aplicaciones</string>
     <string name="pref_restart_title">Reiniciar</string>
+    <string name="pref_restart_summary">Reinicia el lanzador manualmente para aplicar cualquier configuración pendiente</string>
+    <string name="laboratory_parallel_space_title">Espacio Paralelo</string>
+    <string name="laboratory_parallel_space_summary">Permite ejecutar varias versiones de una misma aplicación en paralelo</string>
+    <string name="recents_shake_clear_all_title">Agitar el teléfono para limpiar todas las apps de recientes</string>
 </resources>
